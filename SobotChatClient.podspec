@@ -9,7 +9,7 @@ s.description      = <<-DESC
   It is marquee view used on iOS, which implement by Objective-C.
 DESC
 
-s.homepage         = "https://github.com/ZCSDK/SobotChatClient"
+s.homepage         = "https://github.com/ZCSDK/SobotChatClient.git"
 s.license          = 'MIT'
 s.author           = { 'zhangxy' => 'app_dev@sobot.com' }
 s.source           = { :git => "https://github.com/ZCSDK/SobotChatClient.git", :tag => s.version.to_s }
