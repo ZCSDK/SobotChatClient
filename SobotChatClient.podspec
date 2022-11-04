@@ -18,7 +18,7 @@ s.source           = { :git => "https://github.com/ZCSDK/SobotChatClient.git", :
 s.platform     = :ios, '9.0'
 s.requires_arc = true
 
-s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 arm64' }
+s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 i386 arm64' }
 
 s.frameworks =  "AudioToolbox","AssetsLibrary","SystemConfiguration","AVFoundation","MobileCoreServices","WebKit"
 #s.library   = 'z.1.2.5'

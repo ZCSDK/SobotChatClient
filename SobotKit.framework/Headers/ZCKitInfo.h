@@ -213,21 +213,21 @@
 @property (nonatomic,assign) BOOL isShowTansfer;
 
 /**
- *  机器人优先模式，通过记录机器人未知说辞的次数设置是否直接显示转人工按钮
- *  默认 0次。
- */
-@property (nonatomic,strong) NSString *unWordsCount;
+// *  机器人优先模式，通过记录机器人未知说辞的次数设置是否直接显示转人工按钮
+// *  默认 0次。
+// */
+//@property (nonatomic,strong) NSString *unWordsCount;
 
 /**
- * 是否开启智能转人工,(如输入“转人工”，直接转接人工)
- * 需要隐藏转人工按钮，请参见isShowTansfer和unWordsCount属性
- */
-@property (nonatomic,assign) BOOL isOpenActiveUser;
+// * 是否开启智能转人工,(如输入“转人工”，直接转接人工)
+// * 需要隐藏转人工按钮，请参见isShowTansfer和unWordsCount属性
+// */
+//@property (nonatomic,assign) BOOL isOpenActiveUser;
 
 /**
  智能转人工关键字，关键字作为key{@"转人工",@"1",@"R":@"1"}
  */
-@property (nonatomic,strong) NSDictionary *activeKeywords;
+//@property (nonatomic,strong) NSDictionary *activeKeywords;
 
 /**
  *  自定义快捷入口
