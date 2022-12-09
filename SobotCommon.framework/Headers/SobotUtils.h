@@ -25,6 +25,10 @@ NSString *sobotGetCommonVersion(void);
 NSString *sobotConvertToString(id object);
 
 
+/// nsdata转字符串
+/// @param object nsdata数据集
+NSString *sobotConvertDataToString(NSData *object);
+
 /// int 转字符串
 /// @param number num
 NSString *sobotConvertIntToString(int number);

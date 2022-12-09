@@ -5,7 +5,7 @@
 //  Created by zhangxy on 2022/8/30.
 //
 
-#import <SobotCommon/SobotBaseEntity.h>
+#import "SobotBaseEntity.h"
 
 /**消息体类型*/
 typedef NS_ENUM(NSInteger,SobotMessageType) {
@@ -151,9 +151,258 @@ typedef NS_ENUM(NSInteger,SobotMessageActionType) {
 };
 
 NS_ASSUME_NONNULL_BEGIN
-@class SobotChatRichContent;
-@class SobotChatContent;
-@class SobotChatRobotAnswerContent;
+
+// richList and loopchat
+@interface SobotChatRichContent : SobotBaseEntity
+
+// richList 消息体
+@property(nonatomic,copy) NSString *height;//": null,
+@property(nonatomic,copy) NSString *width;//":
+@property(nonatomic,copy) NSString *fileSize;//":
+@property(nonatomic,copy) NSString *list;//": null,
+@property(nonatomic,copy) NSString *msg;//,
+@property(nonatomic,copy) NSString *name;//": null,
+@property(nonatomic,copy) NSString *showType;//": null,
+
+// 富文本数组:0：文本，1：图片，2：音频，3：视频，4：文件
+@property(nonatomic,assign) SobotMessageType type;//": 0
+// end
+
+@property(nonatomic,copy) NSMutableAttributedString *attr;
+
+// 多伦
+@property(nonatomic,copy) NSString *leaveTemplateId;//": "测试多轮",
+@property(nonatomic,assign) int templateId;//": 0,
+@property(nonatomic,copy) NSString *question;//": "测试多轮",
+@property(nonatomic,assign) int level;//": 0,
+@property(nonatomic,copy) NSString *conversationId;//": "cc047a23-797c-4424-85b0-de7f689ebd8f",
+@property(nonatomic,copy) NSString *docId;//": "e7a9c56c3a2a4621916fee3a563d2072",
+@property(nonatomic,copy) NSString *groupId;//": "a2df4376421c490ba94b48c7d0e8e91c",
+@property(nonatomic,copy) NSString *remindQuestion;//": "<p>姓名？</p>",
+@property(nonatomic,assign) BOOL endFlag;//": false,
+@property(nonatomic,copy) NSString *levelName;//": "节点1",
+@property(nonatomic,copy) NSString *retCode;//": "000000",
+@property(nonatomic,copy) NSString *inputContentList;//": "贾渣渣,默默,小王八",
+@property(nonatomic,copy) NSString *outPutParamList;//": "节点1"
+
+
+// 0，模板一，带标题的图文，interfaceRetList，  当interfaceRetList和inputContentList都为空时，作为普通富文本消息处理，当inputContentList不为空是，用模板二处理
+//1：模板二，文字选项(有框和无框居左)， inputContentList
+// 2：模板3，不带标题的图文，interfaceRetList
+//3：模板4 查看详情(interfaceRetList第一个，有图文+查看详情)，
+//4：自定义模板（interfaceRetList第一个的title和外部answerStrip(未结束remindQuestion)）
+// 99:自定义模板 （interfaceRetList第一个的tempStr和外部answerStrip(未结束remindQuestion)）
+// templateid为空：inputContentList和interfaceRetList都为空显示4自定义模板的样式，任意一个不为空，显示1 模板二，文字选项(有框和无框居左)
+@property (nonatomic,strong) NSMutableArray   *interfaceRetList;// 问题列表
+@property (nonatomic,assign) int   curShowCount;// 当前显示的总数，默认显示9条
+
+
+
+// 小程序
+@property(nonatomic,copy) NSString *appId;//": "wx3173b4df42371aa6",
+@property(nonatomic,copy) NSString *pagepath;//": "pages/shop/shop.html?fissionLevel=oguD05ZFHAG063-PYL6Cb-Cd5vnI&kUuidfrom=oguD05ZFHAG063-PYL6Cb-Cd5vnI",
+@property(nonatomic,copy) NSString *thumbUrl;//"https://img.sobot.com/xxx.jpg",
+@property(nonatomic,copy) NSString *title;
+@property(nonatomic,copy) NSString *logo;//": "临时文案"
+@property(nonatomic,copy) NSString *describe;//": "临时文案"
+
+// 文章
+@property(nonatomic,copy) NSString *desc;//": "简介，只有纯文字",
+@property(nonatomic,copy) NSString *richMoreUrl;//": "https://test.sobot.com/chat-web/user/chatByMsgId?cid=8f88d5660fe546318372f841dac6abc7&msgId=f10cc68e1c944e0faf87d0eb686a7d91&uid=aae384d84ce54d02bf96aaf861aaf18d",
+@property(nonatomic,copy) NSString *snapshot;//": "头图",
+@property(nonatomic,copy) NSString *content;//": "临时文案"
+@property(nonatomic,copy) NSString *articleBody;//": "临时文案"
+
+@property(nonatomic,assign) int clickFlag;//": "临时文案"
+
+@property(nonatomic,assign) int showLinkStyle;
+@property(nonatomic,copy) NSString *retErrorMsg;
+
+// 位置 type = 2
+@property(nonatomic,copy) NSString *picUrl;//": "https://img.sobot.com/console/common/res/sdk_default_location.jpg",
+@property(nonatomic,copy) NSString *lng;//": "116.353276",
+//@property(nonatomic,copy) NSString *title;//": "云景四季餐厅",
+@property(nonatomic,copy) NSString *url;//": "https://ditu.amap.com/regeo?lng=116.353276&lat=40.001693&src=uriapi&callnative=1&name=云景四季餐厅",
+@property(nonatomic,copy) NSString *lat;//": "40.001693",
+//@property(nonatomic,copy) NSString *desc;//": "云景四季餐厅"
+
+// 订单卡片 type =4
+@property(nonatomic,copy) NSString *orderUrl;//": "https://www.sobot.com",
+@property(nonatomic,copy) NSString *createTimeFormat;//": "2022-09-24 17:05:21",
+@property(nonatomic,copy) NSString *goodsCount;//": 2,
+@property(nonatomic,copy) NSString *createTime;//": 1664010321113,
+@property(nonatomic,copy) NSString *statusCustom;//": "不一样的烟火",
+@property(nonatomic,copy) NSString *totalFee;//": 881,
+
+//[{"pictureUrl": "xxx.png","name": "商品名称"}],
+@property(nonatomic,copy) NSArray *goods;//":
+@property(nonatomic,copy) NSString *orderStatus;//": 0,
+@property(nonatomic,copy) NSString *orderCode;//": "1000234242342345"
+
+// 商品卡片，type=3
+@property(nonatomic,copy) NSString *thumbnail;//": "png",
+//@property(nonatomic,copy) NSString *description;//": ",
+@property(nonatomic,copy) NSString *label;//": "标签1111",
+//@property(nonatomic,copy) NSString *title;//": "标题标题标题标题标题标题",
+//@property(nonatomic,copy) NSString *url;//"
+
+
+-(NSString *)getRequestText:(NSDictionary *)dic;
+
+-(NSString *)getQuestion:(NSDictionary *)dic;
+
+
+@end
+
+
+@interface SobotChatRobotAnswerContent : SobotBaseEntity
+
+// 常见问题start
+@property (nonatomic,strong) NSArray  *showFaqDocRespVos;
+@property (nonatomic,strong) NSArray  *faqDocRespVos;
+@property (nonatomic,strong) NSArray  *businessLineRespVos;
+@property (nonatomic,strong) NSArray  *groupRespVos;
+@property (nonatomic,assign) int showType;//": 0,
+@property (nonatomic,assign) BOOL next;//": 0,
+// 如果有分页，当前第几页，写死每页5个
+@property (nonatomic,assign) int curFaqPage;//": 0,
+@property (nonatomic,assign) int curBusinessPage;//": 0,
+@property (nonatomic,assign) int curGroupPage;//": 0,
+@property (nonatomic,strong  ) NSString     *showName;//": "",
+@property (nonatomic,strong  ) NSString     *guideWords;//": "",
+@property (nonatomic,assign  ) int     guidePageCount;//": 0,
+@property (nonatomic,strong  ) NSString     *templateId;//": "",
+@property (nonatomic,strong  ) NSString     *templateName;//": "",
+@property (nonatomic,strong  ) NSString     *sort;//": 0,
+@property (nonatomic,strong  ) NSString     *model;//": 0,
+@property (nonatomic,strong  ) NSString     *imgUrl;//": "",
+@property (nonatomic,strong  ) NSString     *receiveRobot;//": "",
+@property (nonatomic,assign) int status;//": 0,
+// 常见问题end
+
+
+@property (nonatomic,strong  ) NSString     *guide;//": null,
+@property (nonatomic,strong  ) NSString     *answerStrip;//": null,
+@property (nonatomic,strong) NSMutableArray  * sugguestions;//": null,
+/**
+ *  1 直接回答，2 理解回答，3 不能回答, 4引导回答，6互联网寒暄，
+ *  7 私有寒暄（包括第三方天气、快递接口）,8百科, 9 向导回答,10 业务接口    // 151 152 153 待接口 多轮会话的类型,1525 多轮触发留言
+ */
+@property (nonatomic,assign) int answerType; //
+@property (nonatomic,strong  ) NSString     *stripe;//": null,
+@property (nonatomic,strong) NSMutableArray  * suggestionList;//": null,
+@property (nonatomic,strong  ) NSString         *question;//": null,
+@property (nonatomic,strong  ) NSString         *time;//": null,
+@property (nonatomic,strong  ) NSString         *docId;//": "884e2243ec374410964980f52c050b17",
+@property (nonatomic,strong  ) NSString         *docName;//": "多消息样式V6",
+@property (nonatomic,strong  ) NSString         *msgTransfer;//": null,
+@property (nonatomic,strong  ) NSString         *msgId;//": "b9ed6e8aac2f489e9e7f123f78702efe",
+
+
+@property (nonatomic,strong  ) NSDictionary     *keywordVo;//": null,
+// 转人工提示语
+@property (nonatomic,strong) NSString  *tipsMessage;
+
+/**keyword:命中的关键字
+ **/
+@property (nonatomic,copy) NSString * groupId;
+@property (nonatomic,copy) NSString * keywordId;
+@property (nonatomic,copy) NSString * keyword;
+/**
+ *
+ *    groupList:选择技能组列表，模型：[{groupId：技能组id，groupName:技能组名称}，……]
+ *
+ **/
+@property (nonatomic,strong) NSMutableArray * groupList;
+
+/**
+ *
+ *  queueFlag  排队方式标记  只在关键字转人工的时候传给服务端，其他情况传空
+ *  1:展示排队或者客服不在线提示，为0不展示(如果转人工失败显示机器人回复，如果成功，不显示机器人回复)
+ *
+ **/
+@property (nonatomic,assign)  int queueFlag;
+
+// 1-客服在线可以转入，0-客服忙碌或不在线，不能转入
+@property (nonatomic,assign) int  onlineFlag;
+
+// 转人工提示语
+@property (nonatomic,strong) NSString  *transferTips;
+
+
+/**
+ *
+ *   transferFlag:1-指定技能组接入，2-选择技能组列表，3-直接转入;
+ *
+ **/
+@property (nonatomic,assign) int  transferFlag;
+
+/**
+ *
+ *  transferType  转人工类型，0-不转，1-重复提问转人工，2-情绪负向转人工  3、关键词转人工、4、多次命中转人工(显示转人工按钮，不主动转人工)，5:机器人自动转人工(新版拆分为6-9,activeTransfer此时为1) 6直接转人工，7理解转人工，8引导转人工，9未知转人工 10，点踩转人工
+ **/
+@property (nonatomic,assign  ) int         transferType;//": 1,
+@property (nonatomic,assign  ) int         guideGroupFlag;//": null,
+@property (nonatomic,assign  ) int         guideGroupNum;//": null,
+
+// 当前显示页数，从0开始
+@property (nonatomic,assign  ) int              guideGroupPage;
+// 客户原始提问 用于接下来针对词条点赞点踩用，点踩/赞时需要记录用户的原始问题用于统计展示
+@property (nonatomic,strong  ) NSString         *originQuestion;//": "多消息样式V6",
+
+@property (nonatomic,strong  ) NSString         *desensitizationWord;//": null
+@property (nonatomic,strong  ) NSString         *sensitiveWord;//": null
+
+@property (nonatomic,strong  ) NSString         *answerId;//": "19bb0437e7d54a739e4abcf61399383c",
+@property (nonatomic,strong  ) NSString         *ruleId;//": null,
+@property (nonatomic,strong  ) NSString         *kbId;//": "3",
+@property (nonatomic,strong  ) NSString         *kbName;//": "小智机器人-3"
+
+@end
+
+
+@interface SobotChatContent : SobotBaseEntity
+
+// msgType =0/1，图片和文本
+@property(nonatomic,copy) NSString *content;
+
+/**
+ 语音翻译
+ */
+@property(nonatomic,strong) NSString  *msgtranslation;
+@property(nonatomic,copy) NSString *duration;
+@property(nonatomic,copy) NSString *fileName;
+@property(nonatomic,copy) NSString *url;
+@property(nonatomic,copy) NSString *fileSize;
+@property(nonatomic,copy) NSString *snapshot;
+
+@property(nonatomic,copy) NSString *richmoreurl;
+
+// 文件
+@property(nonatomic,copy) NSString *coverUrl;//": "",
+//@property(nonatomic,copy) NSString *fileName;//": "\r\n\tces.txt",
+//@property(nonatomic,copy) NSString *size;//": 0,
+//@property(nonatomic,copy) NSString *fileSize;//": "0 KB",
+//@property(nonatomic,copy) NSString *type;//": 7,
+//@property(nonatomic,copy) NSString *url;//
+
+//msgType==5,type=0富文本，1多伦，6微信小程序，17文章
+@property(nonatomic,assign) SobotMessageRichJsonType type;//": 0,
+// msgType=5,type =0
+@property(nonatomic,copy) NSMutableArray *richList;
+
+//msgType=5,type!=0
+@property(nonatomic,strong) SobotChatRichContent *richContent;
+// 文件类型,或富文本时，消息类型
+@property(nonatomic,assign) SobotMessageFileType fileType;
+
+
+// 未格式化的文件大小
+@property(nonatomic,assign) int size;
+
+@end
+
+
 @interface SobotChatMessage : SobotBaseEntity
 
 // 消息类型
@@ -373,254 +622,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString *)getHtmlAttrStringWithText:(NSString *)text;
 @end
 
-@class SobotChatRichContent;
-
-
-@interface SobotChatRobotAnswerContent : SobotBaseEntity
-
-// 常见问题start
-@property (nonatomic,strong) NSArray  *showFaqDocRespVos;
-@property (nonatomic,strong) NSArray  *faqDocRespVos;
-@property (nonatomic,strong) NSArray  *businessLineRespVos;
-@property (nonatomic,strong) NSArray  *groupRespVos;
-@property (nonatomic,assign) int showType;//": 0,
-@property (nonatomic,assign) BOOL next;//": 0,
-// 如果有分页，当前第几页，写死每页5个
-@property (nonatomic,assign) int curFaqPage;//": 0,
-@property (nonatomic,assign) int curBusinessPage;//": 0,
-@property (nonatomic,assign) int curGroupPage;//": 0,
-@property (nonatomic,strong  ) NSString     *showName;//": "",
-@property (nonatomic,strong  ) NSString     *guideWords;//": "",
-@property (nonatomic,assign  ) int     guidePageCount;//": 0,
-@property (nonatomic,strong  ) NSString     *templateId;//": "",
-@property (nonatomic,strong  ) NSString     *templateName;//": "",
-@property (nonatomic,strong  ) NSString     *sort;//": 0,
-@property (nonatomic,strong  ) NSString     *model;//": 0,
-@property (nonatomic,strong  ) NSString     *imgUrl;//": "",
-@property (nonatomic,strong  ) NSString     *receiveRobot;//": "",
-@property (nonatomic,assign) int status;//": 0,
-// 常见问题end
-
-
-@property (nonatomic,strong  ) NSString     *guide;//": null,
-@property (nonatomic,strong  ) NSString     *answerStrip;//": null,
-@property (nonatomic,strong) NSMutableArray  * sugguestions;//": null,
-/**
- *  1 直接回答，2 理解回答，3 不能回答, 4引导回答，6互联网寒暄，
- *  7 私有寒暄（包括第三方天气、快递接口）,8百科, 9 向导回答,10 业务接口    // 151 152 153 待接口 多轮会话的类型,1525 多轮触发留言
- */
-@property (nonatomic,assign) int answerType; //
-@property (nonatomic,strong  ) NSString     *stripe;//": null,
-@property (nonatomic,strong) NSMutableArray  * suggestionList;//": null,
-@property (nonatomic,strong  ) NSString         *question;//": null,
-@property (nonatomic,strong  ) NSString         *time;//": null,
-@property (nonatomic,strong  ) NSString         *docId;//": "884e2243ec374410964980f52c050b17",
-@property (nonatomic,strong  ) NSString         *docName;//": "多消息样式V6",
-@property (nonatomic,strong  ) NSString         *msgTransfer;//": null,
-@property (nonatomic,strong  ) NSString         *msgId;//": "b9ed6e8aac2f489e9e7f123f78702efe",
-
-
-@property (nonatomic,strong  ) NSDictionary     *keywordVo;//": null,
-// 转人工提示语
-@property (nonatomic,strong) NSString  *tipsMessage;
-
-/**keyword:命中的关键字
- **/
-@property (nonatomic,copy) NSString * groupId;
-@property (nonatomic,copy) NSString * keywordId;
-@property (nonatomic,copy) NSString * keyword;
-/**
- *
- *    groupList:选择技能组列表，模型：[{groupId：技能组id，groupName:技能组名称}，……]
- *
- **/
-@property (nonatomic,strong) NSMutableArray * groupList;
-
-/**
- *
- *  queueFlag  排队方式标记  只在关键字转人工的时候传给服务端，其他情况传空
- *  1:展示排队或者客服不在线提示，为0不展示(如果转人工失败显示机器人回复，如果成功，不显示机器人回复)
- *
- **/
-@property (nonatomic,assign)  int queueFlag;
-
-// 1-客服在线可以转入，0-客服忙碌或不在线，不能转入
-@property (nonatomic,assign) int  onlineFlag;
-
-// 转人工提示语
-@property (nonatomic,strong) NSString  *transferTips;
-
-
-/**
- *
- *   transferFlag:1-指定技能组接入，2-选择技能组列表，3-直接转入;
- *
- **/
-@property (nonatomic,assign) int  transferFlag;
-
-/**
- *
- *  transferType  转人工类型，0-不转，1-重复提问转人工，2-情绪负向转人工  3、关键词转人工、4、多次命中转人工(显示转人工按钮，不主动转人工)，5:机器人自动转人工(新版拆分为6-9,activeTransfer此时为1) 6直接转人工，7理解转人工，8引导转人工，9未知转人工 10，点踩转人工
- **/
-@property (nonatomic,assign  ) int         transferType;//": 1,
-@property (nonatomic,assign  ) int         guideGroupFlag;//": null,
-@property (nonatomic,assign  ) int         guideGroupNum;//": null,
-
-// 当前显示页数，从0开始
-@property (nonatomic,assign  ) int              guideGroupPage;
-// 客户原始提问 用于接下来针对词条点赞点踩用，点踩/赞时需要记录用户的原始问题用于统计展示
-@property (nonatomic,strong  ) NSString         *originQuestion;//": "多消息样式V6",
-
-@property (nonatomic,strong  ) NSString         *desensitizationWord;//": null
-@property (nonatomic,strong  ) NSString         *sensitiveWord;//": null
-
-@property (nonatomic,strong  ) NSString         *answerId;//": "19bb0437e7d54a739e4abcf61399383c",
-@property (nonatomic,strong  ) NSString         *ruleId;//": null,
-@property (nonatomic,strong  ) NSString         *kbId;//": "3",
-@property (nonatomic,strong  ) NSString         *kbName;//": "小智机器人-3"
-
-@end
-
-@interface SobotChatContent : SobotBaseEntity
-
-// msgType =0/1，图片和文本
-@property(nonatomic,copy) NSString *content;
-
-/**
- 语音翻译
- */
-@property(nonatomic,strong) NSString  *msgtranslation;
-@property(nonatomic,copy) NSString *duration;
-@property(nonatomic,copy) NSString *fileName;
-@property(nonatomic,copy) NSString *url;
-@property(nonatomic,copy) NSString *fileSize;
-@property(nonatomic,copy) NSString *snapshot;
-
-@property(nonatomic,copy) NSString *richmoreurl;
-
-// 文件
-@property(nonatomic,copy) NSString *coverUrl;//": "",
-//@property(nonatomic,copy) NSString *fileName;//": "\r\n\tces.txt",
-//@property(nonatomic,copy) NSString *size;//": 0,
-//@property(nonatomic,copy) NSString *fileSize;//": "0 KB",
-//@property(nonatomic,copy) NSString *type;//": 7,
-//@property(nonatomic,copy) NSString *url;//
-
-//msgType==5,type=0富文本，1多伦，6微信小程序，17文章
-@property(nonatomic,assign) SobotMessageRichJsonType type;//": 0,
-// msgType=5,type =0
-@property(nonatomic,copy) NSMutableArray *richList;
-
-//msgType=5,type!=0
-@property(nonatomic,strong) SobotChatRichContent *richContent;
-// 文件类型,或富文本时，消息类型
-@property(nonatomic,assign) SobotMessageFileType fileType;
-
-
-// 未格式化的文件大小
-@property(nonatomic,assign) int size;
-
-@end
-
-// richList and loopchat
-@interface SobotChatRichContent : SobotBaseEntity
-
-// richList 消息体
-@property(nonatomic,copy) NSString *height;//": null,
-@property(nonatomic,copy) NSString *width;//":
-@property(nonatomic,copy) NSString *fileSize;//":
-@property(nonatomic,copy) NSString *list;//": null,
-@property(nonatomic,copy) NSString *msg;//,
-@property(nonatomic,copy) NSString *name;//": null,
-@property(nonatomic,copy) NSString *showType;//": null,
-
-// 富文本数组:0：文本，1：图片，2：音频，3：视频，4：文件
-@property(nonatomic,assign) SobotMessageType type;//": 0
-// end
-
-@property(nonatomic,copy) NSMutableAttributedString *attr;
-
-// 多伦
-@property(nonatomic,copy) NSString *leaveTemplateId;//": "测试多轮",
-@property(nonatomic,assign) int templateId;//": 0,
-@property(nonatomic,copy) NSString *question;//": "测试多轮",
-@property(nonatomic,assign) int level;//": 0,
-@property(nonatomic,copy) NSString *conversationId;//": "cc047a23-797c-4424-85b0-de7f689ebd8f",
-@property(nonatomic,copy) NSString *docId;//": "e7a9c56c3a2a4621916fee3a563d2072",
-@property(nonatomic,copy) NSString *groupId;//": "a2df4376421c490ba94b48c7d0e8e91c",
-@property(nonatomic,copy) NSString *remindQuestion;//": "<p>姓名？</p>",
-@property(nonatomic,assign) BOOL endFlag;//": false,
-@property(nonatomic,copy) NSString *levelName;//": "节点1",
-@property(nonatomic,copy) NSString *retCode;//": "000000",
-@property(nonatomic,copy) NSString *inputContentList;//": "贾渣渣,默默,小王八",
-@property(nonatomic,copy) NSString *outPutParamList;//": "节点1"
-
-
-// 0，模板一，带标题的图文，interfaceRetList，  当interfaceRetList和inputContentList都为空时，作为普通富文本消息处理，当inputContentList不为空是，用模板二处理
-//1：模板二，文字选项(有框和无框居左)， inputContentList
-// 2：模板3，不带标题的图文，interfaceRetList
-//3：模板4 查看详情(interfaceRetList第一个，有图文+查看详情)，
-//4：自定义模板（interfaceRetList第一个的title和外部answerStrip(未结束remindQuestion)）
-// 99:自定义模板 （interfaceRetList第一个的tempStr和外部answerStrip(未结束remindQuestion)）
-// templateid为空：inputContentList和interfaceRetList都为空显示4自定义模板的样式，任意一个不为空，显示1 模板二，文字选项(有框和无框居左)
-@property (nonatomic,strong) NSMutableArray   *interfaceRetList;// 问题列表
-@property (nonatomic,assign) int   curShowCount;// 当前显示的总数，默认显示9条
 
 
 
-// 小程序
-@property(nonatomic,copy) NSString *appId;//": "wx3173b4df42371aa6",
-@property(nonatomic,copy) NSString *pagepath;//": "pages/shop/shop.html?fissionLevel=oguD05ZFHAG063-PYL6Cb-Cd5vnI&kUuidfrom=oguD05ZFHAG063-PYL6Cb-Cd5vnI",
-@property(nonatomic,copy) NSString *thumbUrl;//"https://img.sobot.com/xxx.jpg",
-@property(nonatomic,copy) NSString *title;
-@property(nonatomic,copy) NSString *logo;//": "临时文案"
-@property(nonatomic,copy) NSString *describe;//": "临时文案"
-
-// 文章
-@property(nonatomic,copy) NSString *desc;//": "简介，只有纯文字",
-@property(nonatomic,copy) NSString *richMoreUrl;//": "https://test.sobot.com/chat-web/user/chatByMsgId?cid=8f88d5660fe546318372f841dac6abc7&msgId=f10cc68e1c944e0faf87d0eb686a7d91&uid=aae384d84ce54d02bf96aaf861aaf18d",
-@property(nonatomic,copy) NSString *snapshot;//": "头图",
-@property(nonatomic,copy) NSString *content;//": "临时文案"
-@property(nonatomic,copy) NSString *articleBody;//": "临时文案"
-
-@property(nonatomic,assign) int clickFlag;//": "临时文案"
-
-@property(nonatomic,assign) int showLinkStyle;
-@property(nonatomic,copy) NSString *retErrorMsg;
-
-// 位置 type = 2
-@property(nonatomic,copy) NSString *picUrl;//": "https://img.sobot.com/console/common/res/sdk_default_location.jpg",
-@property(nonatomic,copy) NSString *lng;//": "116.353276",
-//@property(nonatomic,copy) NSString *title;//": "云景四季餐厅",
-@property(nonatomic,copy) NSString *url;//": "https://ditu.amap.com/regeo?lng=116.353276&lat=40.001693&src=uriapi&callnative=1&name=云景四季餐厅",
-@property(nonatomic,copy) NSString *lat;//": "40.001693",
-//@property(nonatomic,copy) NSString *desc;//": "云景四季餐厅"
-
-// 订单卡片 type =4
-@property(nonatomic,copy) NSString *orderUrl;//": "https://www.sobot.com",
-@property(nonatomic,copy) NSString *createTimeFormat;//": "2022-09-24 17:05:21",
-@property(nonatomic,copy) NSString *goodsCount;//": 2,
-@property(nonatomic,copy) NSString *createTime;//": 1664010321113,
-@property(nonatomic,copy) NSString *statusCustom;//": "不一样的烟火",
-@property(nonatomic,copy) NSString *totalFee;//": 881,
-
-//[{"pictureUrl": "xxx.png","name": "商品名称"}],
-@property(nonatomic,copy) NSArray *goods;//":
-@property(nonatomic,copy) NSString *orderStatus;//": 0,
-@property(nonatomic,copy) NSString *orderCode;//": "1000234242342345"
-
-// 商品卡片，type=3
-@property(nonatomic,copy) NSString *thumbnail;//": "png",
-//@property(nonatomic,copy) NSString *description;//": ",
-@property(nonatomic,copy) NSString *label;//": "标签1111",
-//@property(nonatomic,copy) NSString *title;//": "标题标题标题标题标题标题",
-//@property(nonatomic,copy) NSString *url;//"
-
-
--(NSString *)getRequestText:(NSDictionary *)dic;
-
--(NSString *)getQuestion:(NSDictionary *)dic;
-
-
-@end
 NS_ASSUME_NONNULL_END

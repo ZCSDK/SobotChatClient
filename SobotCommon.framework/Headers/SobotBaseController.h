@@ -46,6 +46,9 @@ typedef NS_ENUM(NSInteger,SobotButtonClick) {
  */
 @property(nonatomic,strong) UIView *topView;
 
+// 顶部view 内容视图
+@property(nonatomic,strong) UIView *topContentView;
+
 /**
  *  关闭按钮（返回）
  */
@@ -79,7 +82,6 @@ typedef NS_ENUM(NSInteger,SobotButtonClick) {
 @property (nonatomic,assign) BOOL isAppear;
 
 
-
 // 约束相关
 @property(nonatomic,strong)NSLayoutConstraint *topViewEH;
 @property(nonatomic,strong) NSLayoutConstraint *titleViewEW;
@@ -87,6 +89,9 @@ typedef NS_ENUM(NSInteger,SobotButtonClick) {
 @property(nonatomic,strong)NSLayoutConstraint *topViewPL;
 @property(nonatomic,strong)NSLayoutConstraint *topViewPR;
 
+@property(nonatomic,strong)NSLayoutConstraint *topContentViewPL;
+@property(nonatomic,strong)NSLayoutConstraint *topContentViewPR;
+@property(nonatomic,strong)NSLayoutConstraint *topContentViewEH;
 -(void)goBack;
 
 -(void)buttonClick:(UIButton *) sender;

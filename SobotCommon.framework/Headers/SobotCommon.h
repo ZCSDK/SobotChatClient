@@ -48,6 +48,9 @@
 #import <SobotCommon/SobotHtmlCore.h>
 #import <SobotCommon/SobotUIImageLoader.h>
 #import <SobotCommon/SobotVoiceTools.h>
+#import <SobotCommon/SobotLoginEntity.h>
+#import <SobotCommon/SobotHttps.h>
+#import <SobotCommon/SobotLoginTools.h>
 
 //! Project version number for SobotCommon.
 FOUNDATION_EXPORT double SobotCommonVersionNumber;
