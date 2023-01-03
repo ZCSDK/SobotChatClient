@@ -16,6 +16,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 NSString *sobotGetCurrentTimes(void);
 
+// 几天之后
+NSString *sobotBackToPassedTimeWithDaysNumber(NSInteger number);
+
 /**
  *  日期格式
  *

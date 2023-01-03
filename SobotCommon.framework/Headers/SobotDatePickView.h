@@ -21,7 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface SobotDatePickView : UIView
 
 @property(nonatomic,assign) id<SobotDatePickViewDelegate> delegate;
-
+// action:0，取消；1；搜索，2、筛选
+@property (nonatomic,strong) void(^onCommitListner)(NSString *resultText,NSInteger index);
 /**
  *  通过plistName添加一个pickView
  *

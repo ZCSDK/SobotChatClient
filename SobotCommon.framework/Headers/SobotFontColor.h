@@ -63,7 +63,7 @@ static SobotTypeColor const SobotColorBgSubToMain  = @"SobotBgSub2MainColor";// 
 static SobotTypeColor const SobotColorBgSub   = @"SobotColorBgSub";// 普通页面浅色背景"#262628";
 static SobotTypeColor const SobotColorBgSub2  = @"SobotColorBgSub2";// 搜索等次级背景" 搜索栏背景颜色 附件背景色
 static SobotTypeColor const SobotColorBgSub3  = @"SobotBgSub3Color";// 搜索等次级背景"#FFFFFF";
-static SobotTypeColor const SobotColorBlack = @"SobotBlackColor";//纯黑色"#000000";
+static SobotTypeColor const SobotColorBlack = @"SobotColorBlack";//纯黑色"#000000";
 static SobotTypeColor const SobotColorWhite = @"SobotColorWhite";//纯白色"#FFFFFF";
 static SobotTypeColor const SobotColorYellow = @"SobotColorYellow";//黄色"#F8C46E";
 static SobotTypeColor const SobotColorRed  = @"SobotColorRed";// 红色标记颜色 #FF6D63
@@ -72,13 +72,14 @@ static SobotTypeColor const SobotColorBgWhite = @"SobotColorBgWhite";
 static SobotTypeColor const SobotColorBgTitle = @"SobotColorBgTitle"; // 接单按钮背景颜色和工单详情页选选项卡选中状态文字颜色
 static SobotTypeColor const SobotColorBgActionSheetView = @"SobotColorBgActionSheetView"; // 排序弹窗背景色
 static SobotTypeColor const SobotColorBgGreen = @"SobotColorBgGreen";// 果绿色 #21CFA6
+static SobotTypeColor const SobotColorBgGray = @"SobotColorBgGray";// 果绿色 #21CFA6
 
 
 // 文字颜色
 static SobotTypeColor const SobotColorTextMain = @"SobotColorTextMain";//主文本颜色
 static SobotTypeColor const SobotColorTextSub  = @"SobotColorTextSub";//次级文本颜色"#888890";
 static SobotTypeColor const SobotColorTextSub1 = @"SobotColorTextSub1";//次级1文本颜色"#74747c";
-static SobotTypeColor const SobotColorTextSub2 = @"SobotTextSub2Color";//次级2文本颜色"#7B7B7B";
+static SobotTypeColor const SobotColorTextSub2 = @"SobotColorTextSub2";//次级2文本颜色"#7B7B7B";
 static SobotTypeColor const SobotColorTextSub3 = @"SobotColorTextSub3";//次级3文本颜色#BDC3D1
 static SobotTypeColor const SobotColorTextSub4 = @"SobotColorTextSub4"; //次级4文字颜色  8B98AD
 static SobotTypeColor const SobotColorTextSection = @"SobotColorTextSection"; // 首页homecell中title文字颜色 #3D4966
