@@ -404,6 +404,15 @@
  */
 @property (nonatomic,strong) UIColor *videoCellBgSelColor;
 
+/**
+ * 语音文字颜色背景色
+ */
+@property (nonatomic,strong) UIColor *videoConversionBgColor;
+/**
+ * 语音文字颜色
+ */
+@property (nonatomic,strong) UIColor *videoConversionTextColor;
+
 
 /**
  *  底部bottom的背景颜色

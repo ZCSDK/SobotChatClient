@@ -212,3 +212,5 @@
 "小程序" = "AppletName";
 "小程序只能通过微信打开" = "Applet kann nur über Wechat geöffnet werden";
 "解析中..." = "Analyse";
+"转换失败" = "Ansicht wechseln";
+"转换完成" = "Netzwerk konvertieren";

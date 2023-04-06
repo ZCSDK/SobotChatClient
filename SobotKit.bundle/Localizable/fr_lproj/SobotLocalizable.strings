@@ -204,3 +204,5 @@
 "小程序" = "Applet";
 "小程序只能通过微信打开" = "Les applets ne peuvent être ouverts que par Wechat";
 "解析中..." = "Parsing...";
+"转换失败" = "La conversion a échoué";
+"转换完成" = "Conversion terminée";

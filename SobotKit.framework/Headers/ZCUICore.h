@@ -119,6 +119,8 @@ typedef NS_ENUM(NSInteger,ZCInitStatus) {
 
 @interface ZCUICore : NSObject
 
+@property(nonatomic,copy) void (^PageLoadBlock)(id object,ZCPageStateType type);
+
 +(ZCUICore * _Nonnull)getUICore;
 
 @property (nonatomic,copy) NSString *checkGroupId;
@@ -243,6 +245,7 @@ typedef NS_ENUM(NSInteger,ZCInitStatus) {
 
 -(void)destoryViewsData;
 
+-(void)parseRobotMessage:(SobotChatMessage *) message;
 
 /// 处理评价事件
 /// @param isBcak 是否是返回触发的评价

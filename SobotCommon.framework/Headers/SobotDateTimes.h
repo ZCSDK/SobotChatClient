@@ -58,6 +58,10 @@ int sobotIntervalDateSinceSimpleNow(NSString *theDate);
  */
 NSInteger sobotGetDataYear(NSDate *date);
 
+
+// 计数日期之间的差值
+NSTimeInterval sobotDiffTimeSinceNow(NSString *theDate);
+
 @end
 
 NS_ASSUME_NONNULL_END

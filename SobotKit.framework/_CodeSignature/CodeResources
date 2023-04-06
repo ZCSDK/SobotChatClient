@@ -14,15 +14,15 @@
 		</data>
 		<key>Headers/ZCChatController.h</key>
 		<data>
-		b3R/v986UHLw++/WV4bHfdRQ8cE=
+		SHaZdKiLpzGiUygVVVrp3LCUU1U=
 		</data>
 		<key>Headers/ZCChatView.h</key>
 		<data>
-		F5n0Y9lub8lx+IwZPwUBKlyB58E=
+		85pUBVFCuebk7FPBCyZEBPFr6aQ=
 		</data>
 		<key>Headers/ZCKitInfo.h</key>
 		<data>
-		ch0CmcIjCLMLwVlPHduw9XwUCZQ=
+		447W1IhsDRzaruuvZ4jRhghMnLs=
 		</data>
 		<key>Headers/ZCLibCusMenu.h</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Headers/ZCUICore.h</key>
 		<data>
-		Wyk/vN5qP5SKLX/KZdL3kaMJZkA=
+		RdyMeAkO0/0G0vs3Ly4JJ/4YrKQ=
 		</data>
 		<key>Headers/ZCUIWebController.h</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		n/vjKXLxlaQ96+FJT2AslTUjrLo=
+		sLw3LhZUihwcgi4je/1IrmjRg8A=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -81,33 +81,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			b3R/v986UHLw++/WV4bHfdRQ8cE=
+			SHaZdKiLpzGiUygVVVrp3LCUU1U=
 			</data>
 			<key>hash2</key>
 			<data>
-			IqSWFNPJJ+9vcpHzyJMYCSKi0J38vYJ5q6kKz7VcE78=
+			Kb2z1aYTOVofI+9nUp2wbJftkUsU852A3ZiWWcyVEzc=
 			</data>
 		</dict>
 		<key>Headers/ZCChatView.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			F5n0Y9lub8lx+IwZPwUBKlyB58E=
+			85pUBVFCuebk7FPBCyZEBPFr6aQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			ippJ4rtG97NT4lEQLjsi8Q4/bP+5YcTj2KeI/bYIQFA=
+			7DXaCjF87tjvZbZnuiDH+sRmSMQX7QQstVUnbZX+bVU=
 			</data>
 		</dict>
 		<key>Headers/ZCKitInfo.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ch0CmcIjCLMLwVlPHduw9XwUCZQ=
+			447W1IhsDRzaruuvZ4jRhghMnLs=
 			</data>
 			<key>hash2</key>
 			<data>
-			JrUVE9x3XV1CW30tDVxErZXBzv0lNYiTWXHd6KhZ+NM=
+			GAQE/V5g2rT6YWFuT/E06QlbzDdicRAUcYwx/xCq1ow=
 			</data>
 		</dict>
 		<key>Headers/ZCLibCusMenu.h</key>
@@ -147,11 +147,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Wyk/vN5qP5SKLX/KZdL3kaMJZkA=
+			RdyMeAkO0/0G0vs3Ly4JJ/4YrKQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			bmkc6ax1VxsDtKrhZ5OMUw4DOUsqTVxn1rHU+YRFoF8=
+			xp35VdOW+snulB4Dev2lrN5IMTcLnlzxxktigv2GQ3w=
 			</data>
 		</dict>
 		<key>Headers/ZCUIWebController.h</key>

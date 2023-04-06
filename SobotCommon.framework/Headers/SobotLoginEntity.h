@@ -26,6 +26,12 @@ extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_ORDER_EDIT;// 工单编
 extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_ORDER_DELETE;// 工单删除的权限
 extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_ORDER_REPLYDELETE;// 工单详情页面删除回复的权限
 
+extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_ORDER_CLOSE;// 关闭工单
+extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_ORDER_ACTIVATION;// 激活工单
+extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_ORDER_SEARCH;// 全局搜索工单
+extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_ORDER_OPERATE;// 工单操作记录
+extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_ORDER_STATUS;// 工单操作状态
+
 typedef NSString *SobotLoginModuleType NS_STRING_ENUM;
 
 static SobotLoginModuleType _Nullable const SobotLoginModuleType1222  = @"1222";// 可删除工单
@@ -44,6 +50,8 @@ NS_ASSUME_NONNULL_BEGIN
 // code
 @property (nonatomic,assign) int code;
 
+
+@property(nonatomic,copy) NSString * language;
 
 // 是否开通呼叫线路
 @property (nonatomic,strong) NSString * centerNumber;
@@ -230,6 +238,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,strong)NSArray *globalPermissions;// 权限 是否显示密文，V6使用
 
 @property (nonatomic,assign) BOOL isHiddenNumber;// 是否显示 密文  9999
+
+
+@property (nonatomic,strong) NSDictionary * authMenu;
 
 // key : SOBOT_LOGIN_MODULE_KEY_
 -(BOOL)checkModule:(NSString *) key;

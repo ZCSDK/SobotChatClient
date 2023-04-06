@@ -413,13 +413,13 @@
 @property(nonatomic,copy) NSString *wwwStaticPath NS_AVAILABLE_IOS(2.8.5);
 
 /*
- 默认语言，默认为en_lproj,可选ar_lproj,zh-Hans_lproj,zh-Hant_lproj....
+ 默认语言，默认为en,可选ar,zh-Hans,zh-Hant....
  */
 @property(nonatomic,copy) NSString *default_language NS_AVAILABLE_IOS(2.8.6);
 
 /*
  指定语言，指定后系统不会在自动切换，如果不存在，会从服务器同步
- 例如：可选ar_lproj,zh-Hans_lproj,zh-Hant_lproj,en_lproj...
+ 例如：可选ar,zh-Hans,zh-Hant,en...
  */
 @property(nonatomic,copy) NSString *absolute_language NS_AVAILABLE_IOS(2.8.6);
 

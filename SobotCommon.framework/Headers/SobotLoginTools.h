@@ -9,6 +9,7 @@
 
 #import <Foundation/Foundation.h>
 #import "SobotLoginEntity.h"
+#define SobotNotification_PermissionsRefresh @"SobotNotification_PermissionsRefresh"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -33,6 +34,9 @@ NS_ASSUME_NONNULL_BEGIN
 -(NSString *)getAccessToken;
 -(NSString *)getServiceEmail;
 
+/// 查询当前正在使用的token
+-(NSString *)getExpiresToken;
+
 
 
 
@@ -43,6 +47,8 @@ NS_ASSUME_NONNULL_BEGIN
 ///   - version: app版本
 ///   - loginStatue: 当前登录状态
 ///   - resultBlock: 结果
+///   --包含登录客服的所有属性，不包含accessToken
+///   -- 用户信息，新旧权限信息
 -(void)doAppLogin:(NSString *  _Nullable)loginAcount pwd:(NSString *  _Nullable)loginPwd appVersin:(NSString *)version status:(int) loginStatue result:(void (^)(NSInteger code, NSDictionary * _Nullable, NSString * _Nullable))resultBlock;
 
 /// 登录
@@ -50,7 +56,7 @@ NS_ASSUME_NONNULL_BEGIN
 ///   - loginAcount: 账号
 ///   - loginPwd: 如果当前已经登录，不要传此参数
 ///   - token: 如果此参数不为空，并且loginPwd为空，会默认登录成功，直接获取用户信息
-///   - resultBlock: 登录结果
+///   - resultBlock: 登录结果，包含token和用户信息，不包含accessToken
 -(void)doLogin:(NSString *  _Nullable)loginAcount pwd:(NSString *  _Nullable)loginPwd token:(NSString *  _Nullable)token result:(void (^)(NSInteger code, NSDictionary * _Nullable, NSString * _Nullable))resultBlock;
 
 
@@ -68,9 +74,39 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 退出登录
 /// - Parameters:
-///   - loginUser: 当前账号
 ///   - resultBlock: 结果
--(void)logOut:(NSString *)loginUser result:(void(^)(NSInteger code,NSDictionary * _Nullable dict,NSString * _Nullable msg)) resultBlock;
+-(void)logOut:(void(^)(NSInteger code,NSDictionary * _Nullable dict,NSString * _Nullable msg)) resultBlock;
+
+
+/// 清理登录数据，退出登录成功接口，会主动调用
+/// 当被踢下线时，可单独调用此接口
+-(void)clearLoginInfo;
+
+
+/// 查询当前登录用户的主域名
+-(NSString *) getApiHost;
+
+/// 查询当前登录用户开放接口域名
+-(NSString *) getOpenApiHost;
+
+
+/// 查询当前登录用户的所有服务域名属性
+-(NSDictionary *) getHostObject;
+
+
+///  查询当前账号支持的域名
+/// - Parameters:
+///   - account: 当前账号
+///   - pwd: 账号密码
+///   - apiMainhost: 查询所需要的环境
+///   - resultBlock:
+///   code = 1说明成功，当items不为空时，说明当前是多个域名，需要调用saveHost:函数选择一个
+-(void)getApiHostAddress:(NSString *)account password:(NSString *) pwd with:(NSString *) apiMainhost result:(void(^)(NSInteger code,NSMutableArray * _Nullable items,NSString * _Nullable host)) resultBlock;
+
+
+/// 多个域名环境时，选中后设置域名
+/// - Parameter checkItem: 当前选择的环境
+-(void)saveHost:(NSDictionary *) checkItem;
 
 
 @end

@@ -212,3 +212,6 @@
 "小程序" = "Applet";
 "小程序只能通过微信打开" = "A 'Applet' só pode ser aberta através do wechat";
 "解析中..." = "Analisar";
+"转换失败" = "mudar as vistas";
+"转换完成" = "converter rede";
+

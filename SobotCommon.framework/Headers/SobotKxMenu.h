@@ -63,11 +63,16 @@
                fromRect:(CGRect)rect
               menuItems:(NSArray *)menuItems;
 
+
 + (void) showMenuInView:(UIView *)view
                fromRect:(CGRect)rect
               menuItems:(NSArray *)menuItems
        currentItemTitle:(NSString *)currentTitle;
 
++ (void) showMenuInView:(UIView *)view
+               fromRect:(CGRect)rect
+              menuItems:(NSArray *)menuItems
+              slideable:(BOOL)isSlideable;
 
 
 + (void) dismissMenu;

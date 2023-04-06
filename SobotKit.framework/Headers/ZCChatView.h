@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 // 跳转留言
 -(void)onLeaveMsgClick:(NSString*)tipMsg;
 
-- (void)onPageStatusChange:(BOOL)isArtificial;
+- (void)onPageConnectStatusChange:(BOOL)isArtificial;
 
 /// 返回页面
 /// @param isAction 是否返回

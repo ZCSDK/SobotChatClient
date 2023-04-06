@@ -4,6 +4,34 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Frameworks/SobotCommon.framework/Info.plist</key>
+		<data>
+		IUaBSLS0rJ9aIbZiQHyaFGu74y4=
+		</data>
+		<key>Frameworks/SobotCommon.framework/SobotCommon</key>
+		<data>
+		VO4t/UzcuiAQEpvuscG5c6F0goc=
+		</data>
+		<key>Frameworks/SobotCommon.framework/_CodeSignature/CodeDirectory</key>
+		<data>
+		bGv+AHjxa+3HXddj+5NgwPU/tMM=
+		</data>
+		<key>Frameworks/SobotCommon.framework/_CodeSignature/CodeRequirements</key>
+		<data>
+		S3r4/SvEMZTPlJ1QJG1kc7m63wU=
+		</data>
+		<key>Frameworks/SobotCommon.framework/_CodeSignature/CodeRequirements-1</key>
+		<data>
+		jxHOiHZ7yAQw+ig3LZv29a6vaQs=
+		</data>
+		<key>Frameworks/SobotCommon.framework/_CodeSignature/CodeResources</key>
+		<data>
+		qq1S+MysJgtZ6heXdHOtD9yFq6s=
+		</data>
+		<key>Frameworks/SobotCommon.framework/_CodeSignature/CodeSignature</key>
+		<data>
+		dktEJG3AcFl8bvRVzSiJaACQUUI=
+		</data>
 		<key>Headers/SobotChatClient.h</key>
 		<data>
 		HhZ3nKmiVlwZ5nkvbDuu3oQfZBo=
@@ -30,11 +58,11 @@
 		</data>
 		<key>Headers/ZCLibClient.h</key>
 		<data>
-		v5/jZtre7X4ilIwwy4lrPc5iMGg=
+		3JUNyizs23Zqo42XKPLf1KXpON0=
 		</data>
 		<key>Headers/ZCLibConfig.h</key>
 		<data>
-		1h8rrybaySf9ByMj9p7I4OwVq7M=
+		98z0SFowqAupPZjJbYllDCU1bdY=
 		</data>
 		<key>Headers/ZCLibHttpConstants.h</key>
 		<data>
@@ -46,11 +74,11 @@
 		</data>
 		<key>Headers/ZCLibInitInfo.h</key>
 		<data>
-		8GlGwUTXiy8E9O3yLk3qxJvKoOk=
+		cA0lXp7tNw09VMV5GLgyzhG3Uis=
 		</data>
 		<key>Headers/ZCLibRobotSet.h</key>
 		<data>
-		+Wv11Wei1FMaycDOfvgswOOq5ZM=
+		nkj7Yd+AKuEsa4A73YLIAdBDlcw=
 		</data>
 		<key>Headers/ZCLibSatisfaction.h</key>
 		<data>
@@ -58,7 +86,7 @@
 		</data>
 		<key>Headers/ZCLibServer.h</key>
 		<data>
-		9S18Gw5FdCfJsaQcTFq4652ONGg=
+		vyUZDw8YcgJUgq3jxr8RMba3uLo=
 		</data>
 		<key>Headers/ZCLibSkillSet.h</key>
 		<data>
@@ -106,7 +134,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		R2VTv1P3D9fUcCIBcjcnonFdsss=
+		oIgqqKtGmE7tun676PLwiD6QJ6g=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -115,6 +143,83 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Frameworks/SobotCommon.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IUaBSLS0rJ9aIbZiQHyaFGu74y4=
+			</data>
+			<key>hash2</key>
+			<data>
+			CYVkCNhwCtQIM+xM7aoi49emQ9yjCPO7ok1g4D5nmYY=
+			</data>
+		</dict>
+		<key>Frameworks/SobotCommon.framework/SobotCommon</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VO4t/UzcuiAQEpvuscG5c6F0goc=
+			</data>
+			<key>hash2</key>
+			<data>
+			Xvh3BNTy0h016VAKLs8dqHwJy7/v6nkbb4NOBopdid8=
+			</data>
+		</dict>
+		<key>Frameworks/SobotCommon.framework/_CodeSignature/CodeDirectory</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bGv+AHjxa+3HXddj+5NgwPU/tMM=
+			</data>
+			<key>hash2</key>
+			<data>
+			sSsCznXzQ/JkwVKklu50gURzVJKOHzmrvNAz2wJ5lXM=
+			</data>
+		</dict>
+		<key>Frameworks/SobotCommon.framework/_CodeSignature/CodeRequirements</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			S3r4/SvEMZTPlJ1QJG1kc7m63wU=
+			</data>
+			<key>hash2</key>
+			<data>
+			J0XuSw7rbIRI6gPsHpCpbGHubES5NH7J5nWf+AnXwVc=
+			</data>
+		</dict>
+		<key>Frameworks/SobotCommon.framework/_CodeSignature/CodeRequirements-1</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jxHOiHZ7yAQw+ig3LZv29a6vaQs=
+			</data>
+			<key>hash2</key>
+			<data>
+			dmPA630xhJsuBrrgr1kOHZUtsnOCwCxewZOF8JQbl30=
+			</data>
+		</dict>
+		<key>Frameworks/SobotCommon.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qq1S+MysJgtZ6heXdHOtD9yFq6s=
+			</data>
+			<key>hash2</key>
+			<data>
+			U3eRg9pTFtQYlbQew5nZBG8o+OMNuJpKoVfboJi3r8E=
+			</data>
+		</dict>
+		<key>Frameworks/SobotCommon.framework/_CodeSignature/CodeSignature</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dktEJG3AcFl8bvRVzSiJaACQUUI=
+			</data>
+			<key>hash2</key>
+			<data>
+			pTUnXjNmDh38D3u5Kbkq4/EBSndfJHhVDMaZgmdT7Vw=
+			</data>
+		</dict>
 		<key>Headers/SobotChatClient.h</key>
 		<dict>
 			<key>hash</key>
@@ -185,22 +290,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			v5/jZtre7X4ilIwwy4lrPc5iMGg=
+			3JUNyizs23Zqo42XKPLf1KXpON0=
 			</data>
 			<key>hash2</key>
 			<data>
-			pu664LgVGmziXHtxKqpGKPgVM2ZsFiucfsztxZEa030=
+			13w/Kcs2lAohDpSwcOZ0GNX3DzZYmGb/Fo9W8DNbVB4=
 			</data>
 		</dict>
 		<key>Headers/ZCLibConfig.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1h8rrybaySf9ByMj9p7I4OwVq7M=
+			98z0SFowqAupPZjJbYllDCU1bdY=
 			</data>
 			<key>hash2</key>
 			<data>
-			cVY34IbXrNndhKbbaI6NmVOuZmG+YH3lWF2hdB/aDmQ=
+			X3CK5pDaCWHp+ynGXA73b3fXiiL9iDJpb67/woAsZo4=
 			</data>
 		</dict>
 		<key>Headers/ZCLibHttpConstants.h</key>
@@ -229,22 +334,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8GlGwUTXiy8E9O3yLk3qxJvKoOk=
+			cA0lXp7tNw09VMV5GLgyzhG3Uis=
 			</data>
 			<key>hash2</key>
 			<data>
-			n0gS4eF/9O0lJYlqdkxcB65DY1zcxfPMFKkxmpEObZE=
+			EQlPdiP4rCmkktYnR/4ca/mOEk2yczC98si6eNtJV3I=
 			</data>
 		</dict>
 		<key>Headers/ZCLibRobotSet.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+Wv11Wei1FMaycDOfvgswOOq5ZM=
+			nkj7Yd+AKuEsa4A73YLIAdBDlcw=
 			</data>
 			<key>hash2</key>
 			<data>
-			6H9uE/mT4rs5IirEdLCn86kFhLl4WEqUQDQqznArscQ=
+			MaKyQEwAtpvGYQrLUsQ1bbDMX3HRnUCNm8YuWCwWUQA=
 			</data>
 		</dict>
 		<key>Headers/ZCLibSatisfaction.h</key>
@@ -262,11 +367,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9S18Gw5FdCfJsaQcTFq4652ONGg=
+			vyUZDw8YcgJUgq3jxr8RMba3uLo=
 			</data>
 			<key>hash2</key>
 			<data>
-			Gd/veZRt3AJBfXo4yOQHaAfeHzp3SNy4itsPlLm25kM=
+			Z+G4OAq3RGkkg8qrBQxcWXVfIxkpU8UzUZOd1pKKuA8=
 			</data>
 		</dict>
 		<key>Headers/ZCLibSkillSet.h</key>

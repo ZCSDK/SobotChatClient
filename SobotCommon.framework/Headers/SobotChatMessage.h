@@ -233,6 +233,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,copy) NSString *createTime;//": 1664010321113,
 @property(nonatomic,copy) NSString *statusCustom;//": "不一样的烟火",
 @property(nonatomic,copy) NSString *totalFee;//": 881,
+@property(nonatomic,strong)NSArray *extendFields;// 自定义字段
 
 //[{"pictureUrl": "xxx.png","name": "商品名称"}],
 @property(nonatomic,copy) NSArray *goods;//":
@@ -378,6 +379,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic,copy) NSString *richmoreurl;
 
+//语音转换状态：-1 未转换，1 成功，0 失败
+@property(nonatomic,assign) int state;
+//语音内容信息
+@property(nonatomic,copy) NSString *voiceText;
+@property(nonatomic,assign) int *voiceType;
+
 // 文件
 @property(nonatomic,copy) NSString *coverUrl;//": "",
 //@property(nonatomic,copy) NSString *fileName;//": "\r\n\tces.txt",
@@ -411,8 +418,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,copy) NSString *sensitiveWord;
 @property(nonatomic,strong) SobotChatContent *richModel;
 @property(nonatomic,strong) SobotChatRobotAnswerContent *robotAnswer;
-
-
 
 /**
  *  会话时间
@@ -542,13 +547,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic , assign) int commentType;
 
-
 /**
  机器人显示转人工按钮
  YES 显示，NO不显示
  */
 @property (nonatomic , assign) BOOL showTurnUser;
-
 
 /**
  *  0 没有评价 1已解决  2未解决
@@ -574,14 +577,12 @@ NS_ASSUME_NONNULL_BEGIN
  **/
 @property (nonatomic,assign) BOOL userOffline;
 
-
 /**
  *
  *   revokeFlag  0    1 撤回 “显示 客服xxx 撤回了一条消息”
  *
  **/
 @property (nonatomic,assign) BOOL revokeFlag;
-
 
 
 /**
@@ -607,8 +608,36 @@ NS_ASSUME_NONNULL_BEGIN
 // 是否显示发送者信息
 @property (nonatomic , assign) BOOL isShowSenderFlag;
 
-@property (nonatomic,strong) NSMutableAttributedString         * _Nullable displayMsgAttr;
-@property (nonatomic,strong) NSMutableAttributedString         * _Nullable displaySugestionattr;
+//========================= 这些字段为了记录重新发送时 调用发送接口传入的之前传入的参数 start =========================
+// 消息内容，文件地址等
+@property (nonatomic,strong) NSString *content;
+
+// 如发送多伦时，发送的是json，实际显示的为单个字符串
+@property (nonatomic,strong) NSString *msgContent;
+@property (nonatomic,strong) NSString *question;
+@property (nonatomic,strong) NSString *requestText;
+
+// 0,普通消息，1，有docId的普通消息，2有docId的多伦消息
+@property (nonatomic,strong) NSString *questionFlag;
+@property (nonatomic,strong) NSString *docId;
+@property (nonatomic,strong) NSString *duration;
+@property (nonatomic,assign) int robotflag;
+
+// 内部知识库 fromEnum=4，机器人知识库=3 ，5快捷问
+@property (nonatomic,strong) NSString *fromEnum;
+
+// 卡片信息时，初始化本地模型
+/**
+ 位置：localName/lat/lng/localLabel/file
+ 视频：conver
+ 卡片：。。。
+ */
+@property (nonatomic,strong) NSDictionary *exParams;
+//========================= 这些字段为了记录重新发送时 调用发送接口传入的之前传入的参数 end =========================
+
+
+@property (nonatomic,strong) NSMutableAttributedString * _Nullable displayMsgAttr;
+@property (nonatomic,strong) NSMutableAttributedString * _Nullable displaySugestionattr;
 
 
 // 保证使用时不创建NSMutableAttributedString属性

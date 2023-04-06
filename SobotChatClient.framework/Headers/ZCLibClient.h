@@ -178,4 +178,9 @@ typedef void(^TurnServiceBlock)(SobotChatMessage *_Nullable model, NSInteger tur
 -(NSString *)getLastMessage;
 
 +(NSString *) readLogFileDateString:(NSString *) dateString;
+
+
+/// 当前正在使用的语言
+/// 不能获取default_language配置，次配置会在实际使用失败时生效
++(NSString *)getCurUseLanguagePreHeader;
 @end

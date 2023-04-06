@@ -74,6 +74,9 @@ typedef void(^SobotNetworkProgressBlock)(CGFloat progress);
 //};
 +(void)post:(NSString *)stringURL params:(NSDictionary *)dict header:(NSDictionary *) header timeOut:(CGFloat)timeOut mode:(NSInteger )mode start:(SobotNetworkStartBlock)startBlock finish:(SobotNetworkFinishBlock)finishBlock result:(SobotNetworkResultBlock)resultBlock progress:(SobotNetworkProgressBlock)progressBlock;
 
+
+// 可以设置请求方式
++(void)url:(NSString *)stringURL params:(NSDictionary *)dict header:(NSDictionary *) header timeOut:(CGFloat)timeOut mode:(NSInteger )mode method:(NSString *)method start:(SobotNetworkStartBlock)startBlock finish:(SobotNetworkFinishBlock)finishBlock result:(SobotNetworkResultBlock)resultBlock progress:(SobotNetworkProgressBlock)progressBlock;
 @end
 
 NS_ASSUME_NONNULL_END

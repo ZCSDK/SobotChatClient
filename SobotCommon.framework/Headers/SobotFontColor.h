@@ -59,10 +59,10 @@ typedef NSString *SobotTypeColor NS_STRING_ENUM;
 static SobotTypeColor const SobotColorBanner  = @"SobotColorBanner";// 导航"#1B1B1C";
 static SobotTypeColor const SobotColorTheme   = @"SobotColorTheme";// 主题色，固定"#0DAEAF";
 static SobotTypeColor const SobotColorBgMain  = @"SobotColorBgMain";// 新增默认背景"#000000";
-static SobotTypeColor const SobotColorBgSubToMain  = @"SobotBgSub2MainColor";// 搜索等次级背景"#353538";
+static SobotTypeColor const SobotColorBgSubToMain  = @"SobotColorBgSub2Main";// 搜索等次级背景"#353538";
 static SobotTypeColor const SobotColorBgSub   = @"SobotColorBgSub";// 普通页面浅色背景"#262628";
 static SobotTypeColor const SobotColorBgSub2  = @"SobotColorBgSub2";// 搜索等次级背景" 搜索栏背景颜色 附件背景色
-static SobotTypeColor const SobotColorBgSub3  = @"SobotBgSub3Color";// 搜索等次级背景"#FFFFFF";
+static SobotTypeColor const SobotColorBgSub3  = @"SobotColorBgSub3";// 搜索等次级背景"#FFFFFF";
 static SobotTypeColor const SobotColorBlack = @"SobotColorBlack";//纯黑色"#000000";
 static SobotTypeColor const SobotColorWhite = @"SobotColorWhite";//纯白色"#FFFFFF";
 static SobotTypeColor const SobotColorYellow = @"SobotColorYellow";//黄色"#F8C46E";

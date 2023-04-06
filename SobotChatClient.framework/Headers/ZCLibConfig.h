@@ -57,6 +57,9 @@
 //客服欢迎语规则，1-只显示一次，0-默认值
 @property (nonatomic , assign) int      adminHelloWordCountRule;
 
+// 是否为新用户，4.0.3新增属性，新用户首次咨询
+@property (nonatomic , assign) int      isNew;
+
 /**
  *  用户无应答提示时间
  */
@@ -276,6 +279,10 @@
  * 机器人编号
  */
 @property (nonatomic, assign) int      robotFlag;
+
+
+/// 4.0.3新增，=1时机器人启用chatgpt，超时时间增加
+@property (nonatomic, assign) int      aiStatus;
 
 
 /*

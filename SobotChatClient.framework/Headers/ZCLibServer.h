@@ -189,6 +189,22 @@ typedef void(^SobotKitResultBlock)(ZCNetWorkCode code,id _Nullable obj,NSDiction
                             success:(void(^)(NSDictionary *dict,NSMutableArray * typeArr,ZCNetWorkCode sendCode)) successBlock
                              failed:(void(^)(NSString *errorMessage,ZCNetWorkCode errorCode)) failedBlock;
 
+
+/// 获取 选择留言模版
+/// @param config config description
+/// @param uid uid description
+/// @param groupId groupId description
+/// @param startBlock startBlock description
+/// @param successBlock successBlock description
+/// @param failBlock failBlock description
++(void)getWsTemplateList:(ZCLibConfig *)config
+                            uid:(NSString*)uid
+                        groupId:(NSString *)groupId
+                          start:(void (^)(void))startBlock
+                        success:(void(^)(NSDictionary *dict,NSMutableArray *typeArr,ZCNetWorkCode sendCode)) successBlock
+                           fail:(void(^)(NSString *errorMsg,ZCNetWorkCode errorCode)) failBlock;
+
+
 /**
  *   提交询前表单的接口
  *   @param   uid           用户ID
