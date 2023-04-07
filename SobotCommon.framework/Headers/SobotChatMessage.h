@@ -383,7 +383,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,assign) int state;
 //语音内容信息
 @property(nonatomic,copy) NSString *voiceText;
-@property(nonatomic,assign) int *voiceType;
+@property(nonatomic,assign) int voiceType;
 
 // 文件
 @property(nonatomic,copy) NSString *coverUrl;//": "",

@@ -10,11 +10,11 @@
 		</data>
 		<key>Frameworks/SobotCommon.framework/SobotCommon</key>
 		<data>
-		VO4t/UzcuiAQEpvuscG5c6F0goc=
+		ul5+WwqM1XpEKGhRKy2uqeUxDv8=
 		</data>
 		<key>Frameworks/SobotCommon.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		bGv+AHjxa+3HXddj+5NgwPU/tMM=
+		TFb27MIkJz5R/fdiGc441VYTSz4=
 		</data>
 		<key>Frameworks/SobotCommon.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Frameworks/SobotCommon.framework/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		jxHOiHZ7yAQw+ig3LZv29a6vaQs=
+		6SM0Mdp4GmQIdABhEldmfqfcXlo=
 		</data>
 		<key>Frameworks/SobotCommon.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Frameworks/SobotCommon.framework/_CodeSignature/CodeSignature</key>
 		<data>
-		dktEJG3AcFl8bvRVzSiJaACQUUI=
+		9Ri0+uoZ019F4So/OjBLSoivdLk=
 		</data>
 		<key>Headers/SobotChatClient.h</key>
 		<data>
@@ -158,22 +158,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VO4t/UzcuiAQEpvuscG5c6F0goc=
+			ul5+WwqM1XpEKGhRKy2uqeUxDv8=
 			</data>
 			<key>hash2</key>
 			<data>
-			Xvh3BNTy0h016VAKLs8dqHwJy7/v6nkbb4NOBopdid8=
+			T8NVG857g3b7a1LlZGKUcuIRsZsAYWmg4I/28jRoihE=
 			</data>
 		</dict>
 		<key>Frameworks/SobotCommon.framework/_CodeSignature/CodeDirectory</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bGv+AHjxa+3HXddj+5NgwPU/tMM=
+			TFb27MIkJz5R/fdiGc441VYTSz4=
 			</data>
 			<key>hash2</key>
 			<data>
-			sSsCznXzQ/JkwVKklu50gURzVJKOHzmrvNAz2wJ5lXM=
+			JWmN9Oi0DSM9m/uPQbOr9sR7dxUOMMXleFlTiA+A8Ts=
 			</data>
 		</dict>
 		<key>Frameworks/SobotCommon.framework/_CodeSignature/CodeRequirements</key>
@@ -191,11 +191,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jxHOiHZ7yAQw+ig3LZv29a6vaQs=
+			6SM0Mdp4GmQIdABhEldmfqfcXlo=
 			</data>
 			<key>hash2</key>
 			<data>
-			dmPA630xhJsuBrrgr1kOHZUtsnOCwCxewZOF8JQbl30=
+			eOD/kWWMV/zhTq1JjLtLwhZNRz897wMoBVvg7bdEHRg=
 			</data>
 		</dict>
 		<key>Frameworks/SobotCommon.framework/_CodeSignature/CodeResources</key>
@@ -213,11 +213,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dktEJG3AcFl8bvRVzSiJaACQUUI=
+			9Ri0+uoZ019F4So/OjBLSoivdLk=
 			</data>
 			<key>hash2</key>
 			<data>
-			pTUnXjNmDh38D3u5Kbkq4/EBSndfJHhVDMaZgmdT7Vw=
+			8gStdKAI/6gJ/rDS8kQsQtEPQroVZZRKHqn0DVOEjV8=
 			</data>
 		</dict>
 		<key>Headers/SobotChatClient.h</key>
