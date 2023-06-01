@@ -38,11 +38,20 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SobotClientBaseController : SobotBaseController
 
+-(void)updateNavOrTopView;
+
 // 更新导航栏背景色和渐变色
 -(void)updateTopViewBgColor;
 
 // 更新帮助中心导航栏渐变色
 -(void)updateCenterViewBgColor;
+
+// 设置导航栏的样式
+- (void)setNavigationBarStyle;
+
+// 设置导航栏按钮
+-(void)setNavigationBarLeft:(NSArray *__nullable)leftTags right:(NSArray *__nullable)rightTags;
+
 @end
 
 NS_ASSUME_NONNULL_END

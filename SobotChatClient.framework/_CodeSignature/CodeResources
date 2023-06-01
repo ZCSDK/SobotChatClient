@@ -10,11 +10,11 @@
 		</data>
 		<key>Frameworks/SobotCommon.framework/SobotCommon</key>
 		<data>
-		ul5+WwqM1XpEKGhRKy2uqeUxDv8=
+		ekCI4HbfxatLtmWabQitmLmpNiA=
 		</data>
 		<key>Frameworks/SobotCommon.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		TFb27MIkJz5R/fdiGc441VYTSz4=
+		ib/iKbESAsq7iIYNZTtw/1kbwhw=
 		</data>
 		<key>Frameworks/SobotCommon.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Frameworks/SobotCommon.framework/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		6SM0Mdp4GmQIdABhEldmfqfcXlo=
+		H7cCzanyI0vZyGqHyobi/a6XYzw=
 		</data>
 		<key>Frameworks/SobotCommon.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Frameworks/SobotCommon.framework/_CodeSignature/CodeSignature</key>
 		<data>
-		9Ri0+uoZ019F4So/OjBLSoivdLk=
+		nT3A4M/ijFGNtztApzpZ/M9qpM0=
 		</data>
 		<key>Headers/SobotChatClient.h</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Headers/SobotMessageDefines.h</key>
 		<data>
-		UC5OmbpfO/OIyO8mAVY9j6vOZ8A=
+		EyI6XVD5+vCqSqI5ctE/QbbZXDU=
 		</data>
 		<key>Headers/ZCAddressModel.h</key>
 		<data>
@@ -58,11 +58,11 @@
 		</data>
 		<key>Headers/ZCLibClient.h</key>
 		<data>
-		3JUNyizs23Zqo42XKPLf1KXpON0=
+		jITScuVjKbZuWKvGReTUJyZp180=
 		</data>
 		<key>Headers/ZCLibConfig.h</key>
 		<data>
-		98z0SFowqAupPZjJbYllDCU1bdY=
+		kkXIjKvEGPI/QhLpafsl+4CfxK8=
 		</data>
 		<key>Headers/ZCLibHttpConstants.h</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>Headers/ZCLibInitInfo.h</key>
 		<data>
-		cA0lXp7tNw09VMV5GLgyzhG3Uis=
+		qq/5AfOjHrv3+WWDILHosvxPgSY=
 		</data>
 		<key>Headers/ZCLibRobotSet.h</key>
 		<data>
@@ -158,22 +158,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ul5+WwqM1XpEKGhRKy2uqeUxDv8=
+			ekCI4HbfxatLtmWabQitmLmpNiA=
 			</data>
 			<key>hash2</key>
 			<data>
-			T8NVG857g3b7a1LlZGKUcuIRsZsAYWmg4I/28jRoihE=
+			tM8wytWOVMCDItxlc2maxQ/sRus4EtW0N2H+CVWpo5s=
 			</data>
 		</dict>
 		<key>Frameworks/SobotCommon.framework/_CodeSignature/CodeDirectory</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			TFb27MIkJz5R/fdiGc441VYTSz4=
+			ib/iKbESAsq7iIYNZTtw/1kbwhw=
 			</data>
 			<key>hash2</key>
 			<data>
-			JWmN9Oi0DSM9m/uPQbOr9sR7dxUOMMXleFlTiA+A8Ts=
+			kBeVbRIa7Ojm3Y/+vgWqrW6Pa8TQhkxmZbl8tYfHn7E=
 			</data>
 		</dict>
 		<key>Frameworks/SobotCommon.framework/_CodeSignature/CodeRequirements</key>
@@ -191,11 +191,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6SM0Mdp4GmQIdABhEldmfqfcXlo=
+			H7cCzanyI0vZyGqHyobi/a6XYzw=
 			</data>
 			<key>hash2</key>
 			<data>
-			eOD/kWWMV/zhTq1JjLtLwhZNRz897wMoBVvg7bdEHRg=
+			qBC6fGH3PpKE4pk0g4WsbnfpG+MoGWvVEmg7YDYlXIA=
 			</data>
 		</dict>
 		<key>Frameworks/SobotCommon.framework/_CodeSignature/CodeResources</key>
@@ -213,11 +213,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9Ri0+uoZ019F4So/OjBLSoivdLk=
+			nT3A4M/ijFGNtztApzpZ/M9qpM0=
 			</data>
 			<key>hash2</key>
 			<data>
-			8gStdKAI/6gJ/rDS8kQsQtEPQroVZZRKHqn0DVOEjV8=
+			tPbvCozq39BRmK9Gm+L3A72LTzRHbYDp/3NwxG1jCMY=
 			</data>
 		</dict>
 		<key>Headers/SobotChatClient.h</key>
@@ -257,11 +257,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UC5OmbpfO/OIyO8mAVY9j6vOZ8A=
+			EyI6XVD5+vCqSqI5ctE/QbbZXDU=
 			</data>
 			<key>hash2</key>
 			<data>
-			VEsxfgzrVvjRquDag7lNYGvNQ0EwDnpa7CbnJb0b1+A=
+			VrWipwqzESofpekER0YSWGS5o/31pEn5+CpLTDiOGaA=
 			</data>
 		</dict>
 		<key>Headers/ZCAddressModel.h</key>
@@ -290,22 +290,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3JUNyizs23Zqo42XKPLf1KXpON0=
+			jITScuVjKbZuWKvGReTUJyZp180=
 			</data>
 			<key>hash2</key>
 			<data>
-			13w/Kcs2lAohDpSwcOZ0GNX3DzZYmGb/Fo9W8DNbVB4=
+			wETM3olFFpD/wjXa7TQ17whhsIo/+0UW97TLtFqVPqs=
 			</data>
 		</dict>
 		<key>Headers/ZCLibConfig.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			98z0SFowqAupPZjJbYllDCU1bdY=
+			kkXIjKvEGPI/QhLpafsl+4CfxK8=
 			</data>
 			<key>hash2</key>
 			<data>
-			X3CK5pDaCWHp+ynGXA73b3fXiiL9iDJpb67/woAsZo4=
+			/4Gah9w6p1q5Y6SQYskOSmnvcbpXCHCjJql8DsN7yvo=
 			</data>
 		</dict>
 		<key>Headers/ZCLibHttpConstants.h</key>
@@ -334,11 +334,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cA0lXp7tNw09VMV5GLgyzhG3Uis=
+			qq/5AfOjHrv3+WWDILHosvxPgSY=
 			</data>
 			<key>hash2</key>
 			<data>
-			EQlPdiP4rCmkktYnR/4ca/mOEk2yczC98si6eNtJV3I=
+			b9dkFRwpu0p2Bgls7ebzfJYjfY2UA6k/upHgbP92DZk=
 			</data>
 		</dict>
 		<key>Headers/ZCLibRobotSet.h</key>

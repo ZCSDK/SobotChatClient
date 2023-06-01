@@ -102,6 +102,11 @@ typedef NS_ENUM(NSInteger,ZCReceivedMessageType) {
     ZCReceivedMessageLockType_1      = 2131,// 会话锁定
     ZCReceivedMessageLockType_2      = 2132,// 会话解锁
     ZCReceivedMessageTransferTips     = 301,// 转接提示语
+    /**
+     * 用户排队超时离线提醒,继续排队
+     */
+    ZCReceivedMessageWaitingContinueTips = 101,
+    ZCReceivedMessageWaitingContinueMsg = 102
 };
 
 

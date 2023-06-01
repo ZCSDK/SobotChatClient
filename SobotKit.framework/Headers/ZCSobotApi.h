@@ -90,6 +90,9 @@ NS_ASSUME_NONNULL_BEGIN
 // 打开留言记录详情页面
 +(void)openRecordDetail:(NSString *)ticketId viewController:(UIViewController *) byController;
 
+// 打开webview页面
+//+(void)openWebView:(NSString*)url viewController:(UIViewController *)byController;
+
 // 获取当前企业id
 +(NSString *)getCommanyId;
 

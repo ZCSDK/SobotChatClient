@@ -242,9 +242,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 // 商品卡片，type=3
 @property(nonatomic,copy) NSString *thumbnail;//": "png",
-//@property(nonatomic,copy) NSString *description;//": ",
+@property(nonatomic,copy) NSString *descriptionStr;//": ",
 @property(nonatomic,copy) NSString *label;//": "标签1111",
-//@property(nonatomic,copy) NSString *title;//": "标题标题标题标题标题标题",
+@property(nonatomic,copy) NSString *cardTitle;//": "标题标题标题标题标题标题",
 //@property(nonatomic,copy) NSString *url;//"
 
 

@@ -240,6 +240,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,assign) BOOL isHiddenNumber;// 是否显示 密文  9999
 
 
+@property (nonatomic,assign) int region;
+@property(nonatomic,copy) NSString *kbVersion;//v1,v6
+
 @property (nonatomic,strong) NSDictionary * authMenu;
 
 // key : SOBOT_LOGIN_MODULE_KEY_

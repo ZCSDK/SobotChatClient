@@ -78,11 +78,11 @@
 // 导航栏的高度
 #define isLandspace     ([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationLandscapeRight || [UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationLandscapeLeft)
 #define NavLandspaceBarHeight               ([UIApplication sharedApplication].statusBarHidden?32.0:64.0)
-#define NavBarHeight                        (isLandspace ? NavLandspaceBarHeight : (Sobot_iPhoneX ? 88.f : (iOS7 ? 64.0 : 44.0)))
+#define NavBarHeight                        (isLandspace ? NavLandspaceBarHeight : (Sobot_iPhoneX ? 88.f : 64.0))
 
 
 // 状态栏的高度
-#define StatusBarHeight                     (Sobot_iPhoneX ? 44.f : (iOS7 ? 0.0 : 20.0))
+#define StatusBarHeight                     (Sobot_iPhoneX ? 44.f : 20.0)
 
 #define XBottomBarHeight                    (Sobot_iPhoneX ? 34.f : 0.0)
 

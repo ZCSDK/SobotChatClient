@@ -83,6 +83,7 @@ typedef NS_ENUM(NSInteger,ZCShowStatus) {
     ZCShowStatusLeaveOpenWithClose     = 35,  // 仅人工去留言，然后关闭
     ZCShowStatusOpenAskTable     = 36,  // 训前表单
     ZCShowStatusReConnectClick      = 37,  // 重新接入  新会话
+    ZCShowStatusRefreshFastMenuView = 38, // 会话保持进入人工聊天刷新快捷菜单
 };
 
 typedef NS_ENUM(NSInteger,ZCInitStatus) {
@@ -150,6 +151,7 @@ typedef NS_ENUM(NSInteger,ZCInitStatus) {
 
 @property (nonatomic,assign) BOOL isSendToUser;
 @property (nonatomic,assign) BOOL isSendToRobot;
+
 
 @property(nonatomic,copy) BOOL (^AppletClickBlock)(SobotChatMessage *model);
 

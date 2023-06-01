@@ -111,6 +111,13 @@ typedef NS_ENUM(NSInteger,SobotButtonClick) {
 // 仅设置自定义导航，1.0.2之后废弃
 -(void)setNavigationBarLeft:(NSArray *__nullable)leftTags right:(NSArray *__nullable)rightTags;
 
+
+/// 设置导航
+/// @param leftTags 左侧按钮
+/// @param rightTags 右侧按钮
+/// @param autoSetting 是否设置导航颜色
+-(void)setNavigationBarLeft:(NSArray *__nullable)leftTags right:(NSArray *__nullable)rightTags setBarStyle:(BOOL) autoSetting;
+
 /// 仅设置左右按钮
 /// @param leftTags 左边
 /// @param rightTags 右边

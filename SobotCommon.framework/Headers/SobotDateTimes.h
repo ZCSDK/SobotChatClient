@@ -37,6 +37,9 @@ NSString * sobotDateTransformString(NSString* fromate,NSDate*date);
  */
 NSString * sobotLongdateTransformString(NSString* fromate,long long longdate);
 
+// 时间戳转字符串
+NSString* sobotTimeWithYearMonthDayCountDown(NSString *timestamp);
+
 /**
  *  字符串转日期
  */

@@ -42,6 +42,7 @@ NS_ASSUME_NONNULL_BEGIN
 // 更新数据
 -(void)roadData;
 
+-(void)beginAniantions;
 
 /// 是否为点击关闭按钮
 /// @param isClose YES，点击关闭
@@ -51,6 +52,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 // 获取输入框 用户自定义
 -(UITextView *)getChatTextView;
+
+-(void)hiddenKeyboard;
 @end
 
 NS_ASSUME_NONNULL_END

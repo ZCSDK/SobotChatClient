@@ -33,6 +33,7 @@
  */
 @property (nonatomic , strong) NSString *app_key;
 
+@property(nonatomic,assign) BOOL realuateStyle;// realuateStyle 0-右侧展示 1-下方展示！机器人点踩按钮
 
 /**
  *  客服不在线标题
@@ -545,6 +546,8 @@
 
 // 智能路由
 @property (nonatomic,strong) NSArray *transferAction;
+
+
 // 指定客户优先
 //  同PC端 设置-在线客服分配-排队优先设置-指定客户优先   开启传1 默认不设置
 @property (nonatomic,assign) int queueFirst;

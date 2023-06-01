@@ -395,7 +395,7 @@
 */
 @property(nonatomic,copy) NSString *content;
 // 使用content替换
-@property (nonatomic,copy) NSString * goodMsg NS_DEPRECATED_IOS(1.0,2_8_0,"content");
+@property (nonatomic,copy) NSString *goodMsg NS_DEPRECATED_IOS(1.0,2_8_0,"content");
 
 
 

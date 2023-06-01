@@ -86,7 +86,7 @@
 @property (nonatomic,assign) BOOL isShowPortrait;
 
 /**
- *  仅支持竖屏
+ *  仅支持横屏
  *  默认为 NO，如何强制横屏，默认为LandscapeRight
  */
 @property (nonatomic,assign) BOOL isShowLandscape;
@@ -216,7 +216,7 @@
 // *  机器人优先模式，通过记录机器人未知说辞的次数设置是否直接显示转人工按钮
 // *  默认 0次。
 // */
-//@property (nonatomic,strong) NSString *unWordsCount;
+@property (nonatomic,strong) NSString *unWordsCount;
 
 /**
 // * 是否开启智能转人工,(如输入“转人工”，直接转接人工)
@@ -463,6 +463,11 @@
 @property (nonatomic,strong) UIColor *topViewBgColor;
 
 /**
+ * 留言页面 顶部 ”请您留言“ 标题文字颜色
+ */
+@property (nonatomic,strong) UIColor *leaveTitleTextColor;
+
+/**
  * 文件查看，ImgProgress 图片背景颜色  2.8.0新增
  */
 @property (nonatomic,strong) UIColor * documentLookImgProgressColor;
@@ -650,14 +655,14 @@
 @property (nonatomic,strong) UIColor *leaveSubmitBtnTextColor;
 
 /**
- * 帮助中心、导航 标题的文字颜色
+ * 帮助中心 详情页面、 导航栏标题的文字颜色
  */
 @property (nonatomic,strong) UIColor *scTopTextColor;
 
 /**
  * 帮助中心 顶部返回的文字颜色
  */
-@property (nonatomic,strong) UIColor *scTopBackTextColor;
+//@property (nonatomic,strong) UIColor *scTopBackTextColor; 
 
 
 /**
@@ -868,6 +873,10 @@
 // 是否显示聊天的头像和昵称(仅发送方)：0不显示，1头像+昵称，2仅头像 3仅昵称
 @property (nonatomic,assign) int showChatLeftNameHeader;
 
+
+// 把字典中的属性赋值给对象
+-(id)jsonValueToDict:(NSDictionary *)dict;
+
 @end
 
 
@@ -944,4 +953,5 @@
 
 // 获取状态字符串内容
 +(NSString *)getOrderStatusMsg:(int) status;
+
 @end
