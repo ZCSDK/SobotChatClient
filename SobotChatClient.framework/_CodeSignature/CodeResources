@@ -4,34 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Frameworks/SobotCommon.framework/Info.plist</key>
-		<data>
-		IUaBSLS0rJ9aIbZiQHyaFGu74y4=
-		</data>
-		<key>Frameworks/SobotCommon.framework/SobotCommon</key>
-		<data>
-		ekCI4HbfxatLtmWabQitmLmpNiA=
-		</data>
-		<key>Frameworks/SobotCommon.framework/_CodeSignature/CodeDirectory</key>
-		<data>
-		ib/iKbESAsq7iIYNZTtw/1kbwhw=
-		</data>
-		<key>Frameworks/SobotCommon.framework/_CodeSignature/CodeRequirements</key>
-		<data>
-		S3r4/SvEMZTPlJ1QJG1kc7m63wU=
-		</data>
-		<key>Frameworks/SobotCommon.framework/_CodeSignature/CodeRequirements-1</key>
-		<data>
-		H7cCzanyI0vZyGqHyobi/a6XYzw=
-		</data>
-		<key>Frameworks/SobotCommon.framework/_CodeSignature/CodeResources</key>
-		<data>
-		qq1S+MysJgtZ6heXdHOtD9yFq6s=
-		</data>
-		<key>Frameworks/SobotCommon.framework/_CodeSignature/CodeSignature</key>
-		<data>
-		nT3A4M/ijFGNtztApzpZ/M9qpM0=
-		</data>
 		<key>Headers/SobotChatClient.h</key>
 		<data>
 		HhZ3nKmiVlwZ5nkvbDuu3oQfZBo=
@@ -143,83 +115,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Frameworks/SobotCommon.framework/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			IUaBSLS0rJ9aIbZiQHyaFGu74y4=
-			</data>
-			<key>hash2</key>
-			<data>
-			CYVkCNhwCtQIM+xM7aoi49emQ9yjCPO7ok1g4D5nmYY=
-			</data>
-		</dict>
-		<key>Frameworks/SobotCommon.framework/SobotCommon</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ekCI4HbfxatLtmWabQitmLmpNiA=
-			</data>
-			<key>hash2</key>
-			<data>
-			tM8wytWOVMCDItxlc2maxQ/sRus4EtW0N2H+CVWpo5s=
-			</data>
-		</dict>
-		<key>Frameworks/SobotCommon.framework/_CodeSignature/CodeDirectory</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ib/iKbESAsq7iIYNZTtw/1kbwhw=
-			</data>
-			<key>hash2</key>
-			<data>
-			kBeVbRIa7Ojm3Y/+vgWqrW6Pa8TQhkxmZbl8tYfHn7E=
-			</data>
-		</dict>
-		<key>Frameworks/SobotCommon.framework/_CodeSignature/CodeRequirements</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			S3r4/SvEMZTPlJ1QJG1kc7m63wU=
-			</data>
-			<key>hash2</key>
-			<data>
-			J0XuSw7rbIRI6gPsHpCpbGHubES5NH7J5nWf+AnXwVc=
-			</data>
-		</dict>
-		<key>Frameworks/SobotCommon.framework/_CodeSignature/CodeRequirements-1</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			H7cCzanyI0vZyGqHyobi/a6XYzw=
-			</data>
-			<key>hash2</key>
-			<data>
-			qBC6fGH3PpKE4pk0g4WsbnfpG+MoGWvVEmg7YDYlXIA=
-			</data>
-		</dict>
-		<key>Frameworks/SobotCommon.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			qq1S+MysJgtZ6heXdHOtD9yFq6s=
-			</data>
-			<key>hash2</key>
-			<data>
-			U3eRg9pTFtQYlbQew5nZBG8o+OMNuJpKoVfboJi3r8E=
-			</data>
-		</dict>
-		<key>Frameworks/SobotCommon.framework/_CodeSignature/CodeSignature</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			nT3A4M/ijFGNtztApzpZ/M9qpM0=
-			</data>
-			<key>hash2</key>
-			<data>
-			tPbvCozq39BRmK9Gm+L3A72LTzRHbYDp/3NwxG1jCMY=
-			</data>
-		</dict>
 		<key>Headers/SobotChatClient.h</key>
 		<dict>
 			<key>hash</key>
