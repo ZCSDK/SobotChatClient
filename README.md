@@ -1,7 +1,10 @@
 # SobotChatClient
 智齿SDK_iOS V6 pod
 
-
+## SDK 4.0.4.3 版本更新说明[2023-6-3]
+1、[优化] iPad集成项目使用UISplitViewController跳转页面问题
+  
+ 
 
 ## SDK 4.0.4 版本更新说明[2023-6-1]
 1、【新增】欢迎语富文本标签支持  
