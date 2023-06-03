@@ -308,6 +308,10 @@
  */
 @property(nonatomic,assign) BOOL isEveryTimeAutoSend;
 
+/**
+ *  是否关闭wkwebview 页面暗夜模式   默认NO 支持暗夜模式，YES 关闭默认适配
+ */
+@property(nonatomic,assign)BOOL isCloseWKDarkMode;
 
 #pragma mark -- 自定义字体，（可选）
 //===========================================================  自定义字体 font ========================================
