@@ -1,10 +1,15 @@
 # SobotChatClient
 智齿SDK_iOS V6 pod
+## SDK 4.0.4.4 版本更新说明[2023-6-9]
+1、[优化] 首次加载历史记录中超链卡片聊天消息气泡高度刷新不及时的问题
+2、[优化] 解决UISplitViewController页面跳转问题
+
+
 
 ## SDK 4.0.4.3 版本更新说明[2023-6-3]
 1、[优化] iPad集成项目使用UISplitViewController跳转页面问题
   
- 
+
 
 ## SDK 4.0.4 版本更新说明[2023-6-1]
 1、【新增】欢迎语富文本标签支持  
