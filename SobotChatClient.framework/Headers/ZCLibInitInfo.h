@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <SobotCommon/SobotCommon.h>
 
 /**
  *  初始化配置用户信息
@@ -385,9 +386,10 @@
 
 //  ZCMessageTypeText  = 0, //文本
 //  ZCMessageTypePhoto = 1, //图片
-//  ZCMessageTypeFile  = 12, // 文件
-//  ZCMessageTypeVideo = 23, // 视频
 @property(nonatomic,assign) NSInteger auto_send_msgtype;
+
+// auto_send_msgtype = 5时生效，暂不开放使用
+@property(nonatomic,assign) NSInteger auto_send_richtype;
 
 /**
 *   自动发送文本内容，需要good_msg_type配合使用，单独设置无效
@@ -396,6 +398,18 @@
 @property(nonatomic,copy) NSString *content;
 // 使用content替换
 @property (nonatomic,copy) NSString *goodMsg NS_DEPRECATED_IOS(1.0,2_8_0,"content");
+
+
+/***
+ 自定义卡片消息
+ */
+@property (nonatomic,strong) SobotChatCustomCard *customCard;
+
+
+/// 是否自动添加到会话记录，一个会话仅添加一次
+/// 当customCard不为空时，当人工状态时默认添加，如果需要机器人也显示，设置为NO
+/// 默认NO，仅人工，设置YES时，人工机器人都显示(同一个会话只显示一次)
+@property (nonatomic,assign) BOOL showCustomCardAllMode;
 
 
 

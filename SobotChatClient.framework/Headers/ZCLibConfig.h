@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <SobotChatClient/ZCLibInitInfo.h>
+#import <SobotCommon/SobotCommon.h>
 
 /**
  *  配置信息
@@ -434,7 +435,8 @@
 /// 延迟转人工，1:开; 0:关
 @property (nonatomic,assign) BOOL invalidSessionFlag;
 
-
+/// 会话结束是否推送评价开关：1-开启，0-关闭
+@property(nonatomic,assign) BOOL commentFlag;
 
 /// *******************************************  v4.0.0 主题相关参数 千人千面 *******************************************
 @property(nonatomic,copy) NSDictionary *visitorScheme;
@@ -493,8 +495,12 @@
 // 超链点击颜色
 @property(nonatomic,copy) NSString *msgClickColor;
 
-// app渠道  对话框 拓展功能
+// app渠道  机器人对话框 拓展功能
 @property(nonatomic,strong)NSMutableArray *appExtModelList;
+
+
+// app渠道  人工对话框 拓展功能
+@property(nonatomic,strong)NSMutableArray *appExtModelManList;
 
 // 快捷菜单  menuSessionPhase 有 0 1 2 三种值组合 ，0 进入会话 1 机器人 2 转人工成功后  opportunity 调用规则
 @property(nonatomic,strong)NSArray *menuSessionPhase;
@@ -578,6 +584,15 @@
 // 消息内容，文件地址等
 @property (nonatomic,strong) NSString *content;
 
+// 发送卡片时的卡片id
+@property (nonatomic,strong) NSString *cardId;
+
+// 发生卡片的方式，0=进入会话记录,1=发送给客服或机器人
+@property (nonatomic,assign) NSInteger sendType;
+
+
+@property (nonatomic,assign) SobotMessageRichJsonType richType;
+
 // 如发送多伦时，发送的是json，实际显示的为单个字符串
 @property (nonatomic,strong) NSString *msgContent;
 @property (nonatomic,strong) NSString *question;
@@ -600,7 +615,10 @@
  */
 @property (nonatomic,strong) NSDictionary *exParams;
 
-
+@property(nonatomic,copy)NSString *fileSize;
+@property(nonatomic,copy)NSString *fileName;
+@property(nonatomic,copy)NSString *fileType;
+@property(nonatomic,assign)int msgType;
 @end
 
 // 对话框 拓展功能

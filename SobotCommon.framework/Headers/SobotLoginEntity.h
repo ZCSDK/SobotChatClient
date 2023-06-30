@@ -5,7 +5,7 @@
 //  Created by zhangxy on 2022/11/22.
 //
 
-#import "SobotBaseEntity.h"
+#import <SobotCommon/SobotBaseEntity.h>
 
 extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_CHAT; // 对话
 extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_ORDER; // 工单

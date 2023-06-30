@@ -89,7 +89,7 @@ static SobotTypeColor const SobotColorTextCancel = @"SobotColorTextCancel"; // �
 static SobotTypeColor const SobotColorTextNav = @"SobotColorTextNav";// 导航栏文字颜色
 static SobotTypeColor const SobotColorTextWhite = @"SobotColorTextWhite";// 白色文字颜色
 static SobotTypeColor const SobotColorTextGoods = @"SobotColorTextGoods";// 商品卡片和订单卡片的文字颜色
-
+static SobotTypeColor const SobotColorTextPricetTag = @"SobotColorTextPricetTag";// 商品卡片价格标签的文字颜色
 
 // 线条颜色
 static SobotTypeColor const SobotColorBgLine  = @"SobotColorBgLine";// 线条颜色"#2C2C2C";分割线

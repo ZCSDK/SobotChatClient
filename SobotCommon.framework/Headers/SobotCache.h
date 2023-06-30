@@ -23,6 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(strong,nonatomic) SobotCacheEntity *sobotCacheEntity;
 
+@property(assign,nonatomic) BOOL isUseImagesxcassets;
 
 -(void)addCacheEntity:(SobotCacheEntity *) entity;
 
@@ -39,7 +40,7 @@ NS_ASSUME_NONNULL_BEGIN
 +(NSBundle *)getSourceBundle:(NSBundle *__nullable) placeholderBundle withName:(NSString * __nullable) bundleName;
 
 
-+(BOOL)useImagesxcassets;
+-(BOOL)useImagesxcassets;
 +(NSString *)getSourceFilePath;
 
 

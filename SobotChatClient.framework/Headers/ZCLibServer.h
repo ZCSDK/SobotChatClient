@@ -347,6 +347,29 @@ typedef void(^SobotKitResultBlock)(ZCNetWorkCode code,id _Nullable obj,NSDiction
 /// @param failBlock 失败
 +(void)rbAnswerComment:(ZCLibConfig *)config message:(SobotChatMessage *)commentMessage status:(int)status start:(void (^)(NSString *url))startBlock success:(void (^)(ZCNetWorkCode))successBlock fail:(void (^)(ZCNetWorkCode))failBlock;
 
+
+
+
+/// 多伦触发留言节点，点击关闭和提交留言修改添加提醒消息
+/// @param config 初始化对象
+/// @param title 无用
+/// @param msg 实际内容，iOS不适用
+/// @param updateStatus (0表示插入 1表示更新)
+/// @param msgId 消息id
+/// @param deployId 留言模板id
+/// @param startBlock 开始
+/// @param successBlock 成功
+/// @param failedBlock 失败
++(void)sendLoopTipActionMsg:(ZCLibConfig *) config
+                title:(NSString*)title
+                msg:(NSString*)msg
+               updateStatus:(int) updateStatus // 0表示插入 1表示更新
+                      msgId:(NSString *) msgId
+                   deployId:(NSString *) deployId
+             start:(void (^)(void))startBlock
+           success:(void(^)(NSDictionary *dict,ZCNetWorkCode sendCode)) successBlock
+                     failed:(void(^)(NSString *errorMessage,ZCNetWorkCode errorCode)) failedBlock;
+
 /**
  *
  *   sdk保存发给用户的系统消息 (机器人点踩，触发转人工提示语 并发送给服务端保存)
@@ -358,6 +381,17 @@ typedef void(^SobotKitResultBlock)(ZCNetWorkCode code,id _Nullable obj,NSDiction
              start:(void (^)(NSString *url))startBlock
            success:(void(^)(NSDictionary *dict,ZCNetWorkCode sendCode)) successBlock
              failed:(void(^)(NSString *errorMessage,ZCNetWorkCode errorCode)) failedBlock;
+
+
+/// 点击卡片自定义按钮事件
+/// @param menu 按钮对象
+/// @param config 当前初始化结果对象
+/// @param successBlock 成功
+/// @param failedBlock 失败
++(void)addCusCardMenuClick:(SobotChatCustomCardMenu *)menu
+            config:(ZCLibConfig *)config
+           success:(void (^)(ZCNetWorkCode code))successBlock
+                      fail:(void (^)(NSString *errorMsg, ZCNetWorkCode code))failedBlock;
 
 /// 正在输入接口
 /// @param content 内容

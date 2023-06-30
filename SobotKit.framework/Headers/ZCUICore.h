@@ -185,8 +185,19 @@ typedef NS_ENUM(NSInteger,ZCInitStatus) {
 
 // 发送商品卡片
 -(void)sendProductInfo:(ZCProductInfo *_Nonnull)productInfo resultBlock:(nonnull void (^)(NSString * _Nonnull, int code))ResultBlock;
--(void)sendMessage:(NSString *_Nonnull) content type:(SobotMessageType) msgType exParams:(NSDictionary * _Nullable) dict duration:(NSString *_Nullable) duration;
+-(void)sendMessage:(NSString *_Nonnull) content type:(SobotMessageType) msgType exParams:(NSDictionary * _Nullable) dict duration:(NSString *_Nullable) duration richType:(SobotMessageRichJsonType )richType;
 -(void)sendMessage:(ZCLibSendMessageParams *_Nonnull) sendParams type:(SobotMessageType) msgType;
+
+
+/// 发送自定义卡片
+/// - Parameters:
+///   - card: 自定义卡片
+///   - sendType: 0:添加到会话记录，1:发送给机器人/人工
+-(void)sendCusCardMessage:(SobotChatCustomCard *_Nonnull) card type:(int) sendType;
+
+/// 自定义卡片menu点击计数
+/// @param menu 点击的menu
+-(void)addCusCardMenuClick:(SobotChatCustomCardMenu *_Nonnull) menu;
 
 /// 添加本地消息到消息列表
 /// @param action 提示类型
@@ -194,7 +205,7 @@ typedef NS_ENUM(NSInteger,ZCInitStatus) {
 /// @param msgType 消息类型
 /// @param message 消息内容
 -(SobotChatMessage *_Nullable)addMessageToList:(SobotMessageActionType) action content:(NSString * _Nullable) content type:(SobotMessageType )msgType dict:(NSDictionary * _Nullable) message;
--(void)addMessage:(SobotChatMessage *) message reload:(BOOL) isReload;
+-(void)addMessage:(SobotChatMessage *_Nonnull) message reload:(BOOL) isReload;
 
 
 /// 移除指定类型消息

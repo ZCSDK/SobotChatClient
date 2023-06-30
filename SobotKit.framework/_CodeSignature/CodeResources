@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/ZCKitInfo.h</key>
 		<data>
-		rguCUtESf/31PZgAOfDJ3SFbL64=
+		Etj7GQ4QCEXJxOgzMLX4AL5HE3w=
 		</data>
 		<key>Headers/ZCLibCusMenu.h</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Headers/ZCSobotApi.h</key>
 		<data>
-		vTBIz1OXPAc8PNX7ufM48wTiv54=
+		zTluFU/T22hndTK95lhCxyK9qwE=
 		</data>
 		<key>Headers/ZCTitleView.h</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Headers/ZCUICore.h</key>
 		<data>
-		iMZoy0ciRw89yztWrJEvRZn04H0=
+		8QEJHwqqgObhWFhaJn7VkH1yt4E=
 		</data>
 		<key>Headers/ZCUIWebController.h</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		sLw3LhZUihwcgi4je/1IrmjRg8A=
+		MYnl1eqUqjD+Y5nv+YPSqMr/cGA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -103,11 +103,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rguCUtESf/31PZgAOfDJ3SFbL64=
+			Etj7GQ4QCEXJxOgzMLX4AL5HE3w=
 			</data>
 			<key>hash2</key>
 			<data>
-			hlwR44v2qIpV/0hCYdYqxgQwWDBCrRxNPCL2rKjVz30=
+			2Jma20BPShM7F1KCf7n65BzzBdCwIAoa5dpUyGPVF3k=
 			</data>
 		</dict>
 		<key>Headers/ZCLibCusMenu.h</key>
@@ -125,11 +125,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vTBIz1OXPAc8PNX7ufM48wTiv54=
+			zTluFU/T22hndTK95lhCxyK9qwE=
 			</data>
 			<key>hash2</key>
 			<data>
-			4oS92oDc5h7ZULq61cx+AqkHr8ftxAVWR85Yuyt5K5g=
+			/mtof4pyDiXqqvdBF3Ndb8q7ElskhFwPIfooAUloyT8=
 			</data>
 		</dict>
 		<key>Headers/ZCTitleView.h</key>
@@ -147,11 +147,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			iMZoy0ciRw89yztWrJEvRZn04H0=
+			8QEJHwqqgObhWFhaJn7VkH1yt4E=
 			</data>
 			<key>hash2</key>
 			<data>
-			wtvhazHQp3O5dDBFuQuTqNh9N2Y1bjN/N8saW/qjLns=
+			UN99XbFrQsy4reupL2ZmFo5SN8ejUSzkPoSTFE8Wwyw=
 			</data>
 		</dict>
 		<key>Headers/ZCUIWebController.h</key>

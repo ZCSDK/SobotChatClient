@@ -105,7 +105,7 @@
  2、当收到link = sobot://sendlocation 调用智齿接口发送位置信息
  3、当收到link = sobot://openlocation?latitude=xx&longitude=xxx&address=xxx 可根据自己情况处理相关业务】
  **/
-@property (nonatomic,assign) BOOL canSendLocation;
+//@property (nonatomic,assign) BOOL canSendLocation;
 
 /**
  *   聊天页面底部加号中功能：隐藏评价，默认NO(不隐藏)
@@ -219,12 +219,14 @@
 @property (nonatomic,strong) NSString *unWordsCount;
 
 /**
+ *  V6 请在PC工作台配置该功能
 // * 是否开启智能转人工,(如输入“转人工”，直接转接人工)
 // * 需要隐藏转人工按钮，请参见isShowTansfer和unWordsCount属性
 // */
 //@property (nonatomic,assign) BOOL isOpenActiveUser;
 
 /**
+ V6 请在PC工作台配置该功能
  智能转人工关键字，关键字作为key{@"转人工",@"1",@"R":@"1"}
  */
 //@property (nonatomic,strong) NSDictionary *activeKeywords;
@@ -685,6 +687,9 @@
 
 ///  输入框 点击更多 中 评价 留言 图片等按钮的文字默认颜色
 @property (nonatomic,strong) UIColor *textNolColor;
+
+/// 自定义卡片 商品价格文件颜色
+@property(nonatomic,strong)UIColor *pricetTagTextColor;
 //=======================================================自定义文字颜色 end ==============================================
 
 #pragma Mark -- 图片相关
