@@ -214,3 +214,9 @@
 "解析中..." = "Parsing";
 "转换失败" = "Conversion failed";
 "转换完成" = "Conversion done";
+
+"订单号" = "Order number";
+"交易状态"="Trading status";
+"创建时间"="Creation time";
+"展开更多" = "Expand More";
+"共" = "common";

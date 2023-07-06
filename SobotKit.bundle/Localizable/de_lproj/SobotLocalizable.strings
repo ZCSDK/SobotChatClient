@@ -214,3 +214,10 @@
 "解析中..." = "Analyse";
 "转换失败" = "Ansicht wechseln";
 "转换完成" = "Netzwerk konvertieren";
+
+
+"订单号" = "Bestellnummer";
+"交易状态"="Handelsstatus";
+"创建时间"="Erstellungszeitpunkt";
+"展开更多" = "Mehr erweitern";
+"共" = "häufig";

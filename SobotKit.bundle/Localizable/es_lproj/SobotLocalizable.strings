@@ -214,3 +214,9 @@
 "解析中..." = "Analizar...";
 "转换失败" = "La conversión falló";
 "转换完成" = "Conversión completada";
+
+"订单号" = "número de orden";
+"交易状态"="estado comercial";
+"创建时间"="tiempo de creación";
+"展开更多" = "Lanza más";
+"共" = "Total";

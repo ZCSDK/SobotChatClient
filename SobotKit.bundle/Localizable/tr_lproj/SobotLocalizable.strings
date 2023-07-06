@@ -214,3 +214,9 @@
 "解析中..." = "ParsingAnalisi";
 "转换失败" = "Görüntüleri değiştir";
 "转换完成" = "Ağı dönüştür";
+
+"订单号" = "sipariş numarası";
+"交易状态"="ticaret durumu";
+"创建时间"="yaratma zamanı";
+"展开更多" = "Daha fazla genişletin";
+"共" = "ortak";
