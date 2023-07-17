@@ -50,7 +50,7 @@
 		</data>
 		<key>Headers/SobotChatMessage.h</key>
 		<data>
-		8RkUFkaxcjYy9g4tHePgdwM2XuQ=
+		totni084SIh59pPWeHXvT8xNY7E=
 		</data>
 		<key>Headers/SobotCommon.h</key>
 		<data>
@@ -76,6 +76,10 @@
 		<data>
 		v5ssIo4WGgNcUGWCkD9wWiejcoU=
 		</data>
+		<key>Headers/SobotDragView.h</key>
+		<data>
+		F4btBwXPAgHflJD9KFNJHt5mSds=
+		</data>
 		<key>Headers/SobotEmojiBoardView.h</key>
 		<data>
 		WH3UkAtZftJQ9zuxBeN4VhecG7s=
@@ -90,7 +94,7 @@
 		</data>
 		<key>Headers/SobotFontColor.h</key>
 		<data>
-		HcAPWVizYpg0TkHLGs9mL7aECCs=
+		mDb38DtufUl1TdCgXKNunYmfw3g=
 		</data>
 		<key>Headers/SobotHtmlCore.h</key>
 		<data>
@@ -106,7 +110,7 @@
 		</data>
 		<key>Headers/SobotImageTools.h</key>
 		<data>
-		Y1MnAsWpGKYynLmtTro8/tsTi8E=
+		Vhnf800TzRWHCdTJvAGWTzDFg/4=
 		</data>
 		<key>Headers/SobotImageView.h</key>
 		<data>
@@ -134,11 +138,11 @@
 		</data>
 		<key>Headers/SobotLoginEntity.h</key>
 		<data>
-		Pt3woyWM794qJOZrzC7mbeBOgmU=
+		iEFdVam7tRzGEKoGBD6oscK1wfQ=
 		</data>
 		<key>Headers/SobotLoginTools.h</key>
 		<data>
-		vbCxzi8UK+AIstPfuc5JRyi7tsw=
+		FCQujeXCNUe4T3aVIlyEuKdz2d0=
 		</data>
 		<key>Headers/SobotLooperTools.h</key>
 		<data>
@@ -318,7 +322,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		2UxR8a3pUPAmTibc4E1Owj2pMV0=
+		KZPFFL5X4sk/pbvMQrjeA/x+A+g=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -452,11 +456,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8RkUFkaxcjYy9g4tHePgdwM2XuQ=
+			totni084SIh59pPWeHXvT8xNY7E=
 			</data>
 			<key>hash2</key>
 			<data>
-			Nokjc7vAcgPv+D9NupvnkUkKymU004ne9L/NkOVlhFE=
+			wZlbqHeshi4ei3ft12girlUiEv4okzZEDDDmO3xV7c8=
 			</data>
 		</dict>
 		<key>Headers/SobotCommon.h</key>
@@ -525,6 +529,17 @@
 			rDkI29cr9cuZ1u4bLkRLUbHS3gU7Jok4lnYV6dmMFUU=
 			</data>
 		</dict>
+		<key>Headers/SobotDragView.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			F4btBwXPAgHflJD9KFNJHt5mSds=
+			</data>
+			<key>hash2</key>
+			<data>
+			i7Rxg8v7NiGfL+35zcaV4GgMAXLbo7ezZ8TWd7ukBgo=
+			</data>
+		</dict>
 		<key>Headers/SobotEmojiBoardView.h</key>
 		<dict>
 			<key>hash</key>
@@ -562,11 +577,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HcAPWVizYpg0TkHLGs9mL7aECCs=
+			mDb38DtufUl1TdCgXKNunYmfw3g=
 			</data>
 			<key>hash2</key>
 			<data>
-			occ4VKoaB5ynOmnrALCrMOF0wFWKZV/PsYSCQwzKnV0=
+			kMUTOROsqx2GdVqLbm9UpelPFy1PZL67TM5bfpFSylY=
 			</data>
 		</dict>
 		<key>Headers/SobotHtmlCore.h</key>
@@ -606,11 +621,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Y1MnAsWpGKYynLmtTro8/tsTi8E=
+			Vhnf800TzRWHCdTJvAGWTzDFg/4=
 			</data>
 			<key>hash2</key>
 			<data>
-			6JW9Q4KVWgnzQ6DE1pXEuGZbgfK8o2HoA6iIp4fDRtE=
+			KwxRm51qV9cXUlpKCFOyjEWL6zpdLal0frjYItITT1I=
 			</data>
 		</dict>
 		<key>Headers/SobotImageView.h</key>
@@ -683,22 +698,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Pt3woyWM794qJOZrzC7mbeBOgmU=
+			iEFdVam7tRzGEKoGBD6oscK1wfQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			9c6npjJSbMaRXQbusPqjpdyvhYM36LOybQoOevFz7Gk=
+			4SQpYTdF4sVr08mLBoGaLI6K3atsiml8MUu5bAAcFf4=
 			</data>
 		</dict>
 		<key>Headers/SobotLoginTools.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vbCxzi8UK+AIstPfuc5JRyi7tsw=
+			FCQujeXCNUe4T3aVIlyEuKdz2d0=
 			</data>
 			<key>hash2</key>
 			<data>
-			X2+yKXWV4Vm7me7kbyqcBEioeXf6lwfPtDDnV9kxzT4=
+			EWwuJYv5+PwpxXLWiUOa0/ymIzXkNXdHcdKCfGOVc6k=
 			</data>
 		</dict>
 		<key>Headers/SobotLooperTools.h</key>

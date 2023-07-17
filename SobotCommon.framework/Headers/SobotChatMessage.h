@@ -35,7 +35,7 @@ typedef NS_ENUM(NSInteger,SobotMessageRichJsonType) {
     SobotMessageRichJsonTypeOrder  = 4, // 订单
     SobotMessageRichJsonTypeApplet  = 6, // 小程序卡片
     SobotMessageRichJsonTypeArticle = 17,// 文章
-    SobotMessageRichJsonTypeCustomCard = 20,// 通用卡片
+    SobotMessageRichJsonTypeCustomCard = 21,// 通用卡片
 };
 
 typedef NS_ENUM(NSInteger,SobotMessageFileType) {

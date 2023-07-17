@@ -82,6 +82,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// 当被踢下线时，可单独调用此接口
 -(void)clearLoginInfo;
 
+-(void)clearLoginInfo:(BOOL)isClearHost;
 
 /// 查询当前登录用户的主域名
 -(NSString *) getApiHost;
