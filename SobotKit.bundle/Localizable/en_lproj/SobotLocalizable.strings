@@ -49,6 +49,7 @@
 "评分" = "Score";
 "评语" = "Comment";
 "是否解决了您的问题？" = "Has solved your problem?";
+"请选择是否解决了您的问题" = "Please choose whether your issue has been resolved";
 "受理中" = "Processing";
 "问题分类" = "Problem type";
 "问题详情" = "Issue details";
@@ -199,8 +200,8 @@
 "状态" = "status";
 "自定义字段" = "Custom field";
 "非常不满意" = "Very dissatisfied";
-"未解决问题？点击" = "Did not solve your problems?";
-"转人工服务" = "manual service";
+"未解决问题？点击" = "Sorry for not being helpful on this issue, kindly click ";
+"转人工服务" = "Live Chat";
 "展开消息" = "Expand message";
 "继续发送" = "Keep sending";
 "拒绝" = "Refuse";

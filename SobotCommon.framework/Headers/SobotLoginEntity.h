@@ -32,6 +32,32 @@ extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_ORDER_SEARCH;// 全局�
 extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_ORDER_OPERATE;// 工单操作记录
 extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_ORDER_STATUS;// 工单操作状态
 
+/**呼叫模块权限定义**/
+extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_CALL_cccv6_thjl;      //通话记录
+extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_CALL_cccv6_thxq;      // 通话详情
+extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_CALL_cccv6_thxq_thxx; //通话信息
+extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_CALL_cccv6_thxq_fwzj; //服务总结
+extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_CALL_cccv6_thxq_khxx; //客户信息
+extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_CALL_cccv6_thxq_ywjl; //业务记录
+extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_CALL_cccv6_thxq_lybf; //录音播放
+extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_CALL_cccv6_thxq_lyxz; //录音下载
+extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_CALL_cccv6_thxq_bcfwzj;   //保存服务总结
+extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_CALL_cccv6_thxq_xzkh; //新增客户
+extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_CALL_cccv6_thxq_glkh; //关联客户
+extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_CALL_cccv6_thxq_bjkh;    //编辑客户 ???与保存服务总结相同，需要调整
+extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_CALL_cccv6_thxq_dhhb;  //电话回拨
+extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_CALL_cccv6_dht;        //电话条
+extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_CALL_cccv6_dht_xgbddhhm;   //修改绑定电话号码
+extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_CALL_cccv6_dht_xgfjzh; //修改分机账号
+extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_CALL_cccv6_dht_lxhzdjb;    //离线后自动解绑
+extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_CALL_cccv6_dht_bchbcqx;//保持和保持取消
+extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_CALL_cccv6_dht_jyhjyqx;//静音和静音取消
+extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_CALL_cccv6_dht_fsmyd;  //发送满意度
+extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_CALL_cccv6_dht_yczlsc; //延长整理时长
+extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_CALL_cccv6_dht_jszlbzm; //结束整理并置忙
+//extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_CALL_cccv6_dht_czlx;   //重置离线
+
+
 typedef NSString *SobotLoginModuleType NS_STRING_ENUM;
 
 static SobotLoginModuleType _Nullable const SobotLoginModuleType1222  = @"1222";// 可删除工单

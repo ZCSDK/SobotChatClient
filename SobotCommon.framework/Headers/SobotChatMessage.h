@@ -845,6 +845,8 @@ NS_ASSUME_NONNULL_BEGIN
 -(NSString *) getModelDisplaySugestionText:(BOOL) createAttr;
 
 - (NSString *)getHtmlAttrStringWithText:(NSString *)text;
+// 不做html处理 只展示存文本
+-(NSString *)getModelDisplayTextUnHtml;
 @end
 
 

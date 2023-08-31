@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/SobotChatClient.h</key>
 		<data>
-		HhZ3nKmiVlwZ5nkvbDuu3oQfZBo=
+		PF7R4RW67OnRIR8oJYeldTuup6E=
 		</data>
 		<key>Headers/SobotChatClientCache.h</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Headers/ZCLibServer.h</key>
 		<data>
-		/rvBmvEmsqoMl2bDLmNek6fW9Bw=
+		+91EGZeXbSpDlvxTJg2vqszDcck=
 		</data>
 		<key>Headers/ZCLibSkillSet.h</key>
 		<data>
@@ -96,9 +96,13 @@
 		<data>
 		3iO7tnvNGibZnRwywUPO3uOodGQ=
 		</data>
+		<key>Headers/ZCSatisfactionConfig.h</key>
+		<data>
+		nI4bqPs5cIczeLc0YMaOZsY97jk=
+		</data>
 		<key>Headers/ZCUICustomActionSheetModel.h</key>
 		<data>
-		NiGWXjDUKCe+5IN5ZKZ01PkS3f4=
+		s7RAXUpyxMavv0e5yJFOXt6VaTs=
 		</data>
 		<key>Headers/ZCWsTemplateModel.h</key>
 		<data>
@@ -106,7 +110,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		rmJPyk2ez7Ve/hMEMt16oTXtfK4=
+		dcQLkYh1isPdyZlfxHjmOHn1xCs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -119,11 +123,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HhZ3nKmiVlwZ5nkvbDuu3oQfZBo=
+			PF7R4RW67OnRIR8oJYeldTuup6E=
 			</data>
 			<key>hash2</key>
 			<data>
-			pCMBtu6qoR02fc26nCbKOY3Q2nq9synnqUMSLM133Cw=
+			yBlY/MIxZVx9R2Uw5OSS280VOfHG3Q/5XSVI5z2PirA=
 			</data>
 		</dict>
 		<key>Headers/SobotChatClientCache.h</key>
@@ -262,11 +266,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/rvBmvEmsqoMl2bDLmNek6fW9Bw=
+			+91EGZeXbSpDlvxTJg2vqszDcck=
 			</data>
 			<key>hash2</key>
 			<data>
-			rcLhvt0aMdfFUNlEarRA2qvg5EsfEOTTjgCsbuIiFe8=
+			ZEnZqEtli1P+I4Yygs/W6Fam7H4qyvLpuDBu/LfxEhE=
 			</data>
 		</dict>
 		<key>Headers/ZCLibSkillSet.h</key>
@@ -368,15 +372,26 @@
 			WJ0CUbGGpPeGrtWPYPwXqB/BmQ4Qr85Bz1B7oL9OTOU=
 			</data>
 		</dict>
+		<key>Headers/ZCSatisfactionConfig.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nI4bqPs5cIczeLc0YMaOZsY97jk=
+			</data>
+			<key>hash2</key>
+			<data>
+			BHTHN8w+KVPp6PIq1R07x0cw0+fRZBItct3Ix9oEquo=
+			</data>
+		</dict>
 		<key>Headers/ZCUICustomActionSheetModel.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NiGWXjDUKCe+5IN5ZKZ01PkS3f4=
+			s7RAXUpyxMavv0e5yJFOXt6VaTs=
 			</data>
 			<key>hash2</key>
 			<data>
-			1R4vnRDAtLkn7o+uCOYhbdgW+BVeTwHcm+lGoxSe5dk=
+			GkhRjQdWOvSN9Ua+d2HKg0laWWGeiJB1MVup4JVgq2k=
 			</data>
 		</dict>
 		<key>Headers/ZCWsTemplateModel.h</key>

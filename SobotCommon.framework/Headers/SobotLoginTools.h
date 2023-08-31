@@ -27,6 +27,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(SobotLoginEntity *) getLoginInfo;
 
+// 静默登录时，外部接口获取的登录数据
+-(SobotLoginEntity *) configLoginEntity:(NSDictionary *) dict;
+
 -(BOOL) isLogin;
 -(BOOL) checkSupportV6;
 -(NSString *)getTempId;
@@ -80,6 +83,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 清理登录数据，退出登录成功接口，会主动调用
 /// 当被踢下线时，可单独调用此接口
+
+//-(void)clearLoginInfo;
+-(void)clearLoginToken;
+
 -(void)clearLoginInfo;
 
 -(void)clearLoginInfo:(BOOL)isClearHost;

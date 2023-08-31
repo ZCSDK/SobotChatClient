@@ -142,6 +142,7 @@ typedef NS_ENUM(NSInteger,SobotButtonClick) {
 /// 设置导航颜色
 /// - Parameter color: 导航颜色
 -(void)setTopBackgroudColor:(UIColor *) color;
+-(void)setTopBackgroudColor:(UIColor *) color titleColor:(UIColor *) titleColor;
 
 
 // 获取nav上的button
@@ -150,6 +151,9 @@ typedef NS_ENUM(NSInteger,SobotButtonClick) {
 // 获取页面内容的起始坐标
 -(CGFloat )getVCContentY;
 
+
+/// 当显示底部Bar菜单时，返回bar的高度
+-(CGFloat) getVCBarHeight;
 
 -(void)createPlaceHolderView:(UIView *) superView title:(NSString *) title desc:(NSString *__nullable )message image:(UIImage *__nullable )  tipImage block:(void(^__nullable)(UIButton *_Nonnull btn,NSInteger tag))  refreshClick;
 - (void)removePlaceholderView;

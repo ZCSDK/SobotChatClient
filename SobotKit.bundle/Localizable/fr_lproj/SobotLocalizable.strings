@@ -49,6 +49,7 @@
 "评分" = "Evaluation";
 "评语" = "Commentaires";
 "是否解决了您的问题？" = "a-t-il résolu votre problèm?";
+"请选择是否解决了您的问题" = "Veuillez choisir si votre problème est résolu";
 "受理中" = "Acceptant";
 "问题分类" = "Catégorie de question";
 "问题详情" = "Détails de la question";

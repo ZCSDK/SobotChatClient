@@ -141,7 +141,15 @@ typedef NS_ENUM(NSInteger,ZCInitStatus) {
 @property(nonatomic,assign) BOOL isShowRobotHello; // 是否显示机器人欢迎语
 @property(nonatomic,assign) BOOL isShowRobotGuide; // 是否显示机器人常见问题
 @property(nonatomic,strong) ZCKitInfo     *_Nonnull kitInfo;
-@property(nonatomic,strong) NSDictionary *satisfactionDict; // 评价选项
+
+//defaultQuestionFlag：“问题是否解决”默认选中状态：(0)-未解决 (1)-解决 (-1)-不选中
+//defaultType：默认显示星级  0-5星,1-0星 / 0-10分，1-5分，2-0分，3-不选中
+//isQuestionFlag：人工客服是否解决问题开关  1-开启 0-关闭
+//isQuestionMust：“问题是否解决”是否为必填选项： 0-非必填 1-必填
+//scoreFlag：星级类型 0-旧版5星级评价  1-nps评价
+//status：模板状态开关 0-关闭 1-开启
+@property(nonatomic,strong) ZCSatisfactionConfig *_Nullable satisfactionConfig; // 评价选项
+
 @property(nonatomic,assign) BOOL isOffline;
 @property (nonatomic,assign) BOOL isOfflineBeBlack; // 是否是拉黑
 // 结束会话之前是否为人工模式，方便评价时获取当前状态
@@ -220,7 +228,7 @@ typedef NS_ENUM(NSInteger,ZCInitStatus) {
 -(void)getChatMessages;
 
 
-/// 加载星级内容，成功以后，数据存在satisfactionDict中
+/// 加载星级内容，成功以后，数据存在satisfactionConfig中
 /// @param loadResult 0成功，1失败
 - (void)loadSatisfactionDictlock:(nonnull void (^)(int)) loadResult;
 

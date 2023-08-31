@@ -38,7 +38,7 @@
 		</data>
 		<key>Headers/ZCUICore.h</key>
 		<data>
-		8QEJHwqqgObhWFhaJn7VkH1yt4E=
+		lQwwVPMVwoWNBEVx1GCWULSVDWA=
 		</data>
 		<key>Headers/ZCUIWebController.h</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		AGyoBHPMEGG+yGCR39CODEKvcNk=
+		MYnl1eqUqjD+Y5nv+YPSqMr/cGA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -147,11 +147,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8QEJHwqqgObhWFhaJn7VkH1yt4E=
+			lQwwVPMVwoWNBEVx1GCWULSVDWA=
 			</data>
 			<key>hash2</key>
 			<data>
-			UN99XbFrQsy4reupL2ZmFo5SN8ejUSzkPoSTFE8Wwyw=
+			ebTiCQVlDDOgeH6Lmu7Gqc1HIaGkgtjLjislg5Vi+OU=
 			</data>
 		</dict>
 		<key>Headers/ZCUIWebController.h</key>

@@ -590,6 +590,18 @@ typedef void(^SobotKitResultBlock)(ZCNetWorkCode code,id _Nullable obj,NSDiction
                        uid:(NSString *)uid
                      error:(void (^)(ZCNetWorkCode status,NSString *errorMessage))errorBlock
                    success:(void(^)(NSString *msgLeaveTxt,NSString *msgLeaveContentTxt,NSString *leaveExplain)) successBlock;
+
+
+
+/// 延迟转人工排队时调用
+/// @param content 发送内容
+/// @param config 当前初始化对象
+/// @param errorBlock 失败
+/// @param successBlock 成功
++ (void)sendAfterModeWithConnectWait:(NSString *)content
+                       uid:(ZCLibConfig *)config
+                     error:(void (^)(ZCNetWorkCode status,NSString *errorMessage))errorBlock
+                             success:(void(^)(NSString *msgLeaveTxt,NSString *msgLeaveContentTxt,NSString *leaveExplain)) successBlock;
 @end
 
 NS_ASSUME_NONNULL_END

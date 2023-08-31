@@ -41,9 +41,18 @@ NSString * sobotLongdateTransformString(NSString* fromate,long long longdate);
 NSString* sobotTimeWithYearMonthDayCountDown(NSString *timestamp);
 
 /**
+ *  字符串转日期,指定fromate
+ */
+NSDate * sobotStringFormateDateFormateString(NSString * stringDate,NSString *formate);
+/**
  *  字符串转日期
  */
 NSDate * sobotStringFormateDate(NSString * stringDate);
+
+
+/// long字符串，转日期
+/// - Parameter stringDate: 时间戳
+NSDate *sobotLongTimeToDate(NSString *stringDate);
 
 /**
  *  计算日期与当前时间的差
@@ -64,6 +73,24 @@ NSInteger sobotGetDataYear(NSDate *date);
 
 // 计数日期之间的差值
 NSTimeInterval sobotDiffTimeSinceNow(NSString *theDate);
+
+NSInteger sobotGetDataMonth(NSDate *date);
+
+NSInteger sobotGetDataDay(NSDate *date);
+// 获取本月第一天
+NSString *sobotGetMonthBeginWith(NSString*data);
+
+// 获取本月最后一天
+NSString *sobotGetMonthEndWith(NSString*data);
+
+// 获取上个月第一天
+NSString *sobotGetLastMonthBeginWith(NSString*data);
+
+// 获取上个月最后一天
+NSString *sobotGetLastMonthEndWith(NSString*data);
+
+// 通过 秒数 转换成 时：分：秒
+NSString *sobotTimeFormattedShow(int totalSeconds);
 
 @end
 

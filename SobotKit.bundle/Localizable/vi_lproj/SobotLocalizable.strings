@@ -49,6 +49,7 @@
 "评分" = "Điểm số";
 "评语" = "Lời đánh giá";
 "是否解决了您的问题？" = "Có giải quyết được vấn đề của bạn không?";
+"请选择是否解决了您的问题" = "Vui lòng chọn nếu vấn đề của bạn được giải quyết";
 "受理中" = "Đang xử lý";
 "问题分类" = "Loại câu hỏi";
 "问题详情" = "Chi tiết câu hỏi";

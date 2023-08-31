@@ -29,6 +29,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(SobotCacheEntity *)getCacheEntity:(NSString *) bundleName;
 
+
+// 缓存对象
+-(void)addCacheObject:(id )obj key:(NSString *) key;
+-(id )getCacheObject:(NSString *)key;
+
+
 /**
  *  单例
  *

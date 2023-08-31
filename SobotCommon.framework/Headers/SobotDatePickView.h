@@ -20,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SobotDatePickView : UIView
 
+@property (nonatomic,strong) UIButton * rightBtn;
+
 @property(nonatomic,assign) id<SobotDatePickViewDelegate> delegate;
 // action:0，取消；1；搜索，2、筛选
 @property (nonatomic,strong) void(^onCommitListner)(NSString *resultText,NSInteger index);
@@ -73,6 +75,10 @@ NS_ASSUME_NONNULL_BEGIN
  *  设置toobar的背景颜色
  */
 -(void)setToolbarTintColor:(UIColor *)color;
+
+
+
+-(void)setPickViewTitle:(NSString *)title;
 
 @end
 
