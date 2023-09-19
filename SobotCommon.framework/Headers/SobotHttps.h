@@ -43,7 +43,8 @@ typedef void(^SobotNetworkProgressBlock)(CGFloat progress);
 
 
 @interface SobotHttps : NSObject
-
++(SobotHttps *) getZCHttpManager;
+-(void)cancelConnectMsgId:(NSString *)msgid;
 // 如果是国内添加/text,呼叫和其它环境不加/text
 +(NSString *)adapteUrlHost:(NSString *) url;
 

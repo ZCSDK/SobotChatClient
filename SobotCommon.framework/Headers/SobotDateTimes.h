@@ -7,7 +7,8 @@
 
 #import <Foundation/Foundation.h>
 
-#define SOBOT_FORMATE_DATETIME @"YYYY-MM-dd HH:mm:ss SSS"
+#define SOBOT_FORMATE_DATETIME @"YYYY-MM-dd HH:mm:ss"
+#define SOBOT_FORMATE_DATETIMESSS @"YYYY-MM-dd HH:mm:ss SSS"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -61,7 +62,9 @@ NSString *sobotIntervalSinceNow(NSString *theDate);
 
 
 /**
- 返回时差小时
+ 返回时差秒
+ /60 分钟
+ /3600 小时
  **/
 int sobotIntervalDateSinceSimpleNow(NSString *theDate);
 
@@ -92,6 +95,11 @@ NSString *sobotGetLastMonthEndWith(NSString*data);
 // 通过 秒数 转换成 时：分：秒
 NSString *sobotTimeFormattedShow(int totalSeconds);
 
+// 获取本周的第一天和最后一天 传1 第一天按星期日，传2 第一天按星期日计算
+NSArray *sobotGetCurrentWeekFistDayAndLastDay(NSUInteger firstWeekday);
+
+// 获取上周 第一天和最后一天 firstWeekday 传1 第一天按星期日，传2 第一天按星期日计算
+NSArray *sobotGetLastWeekFistDayAndLastDay(NSUInteger firstWeekday);
 @end
 
 NS_ASSUME_NONNULL_END

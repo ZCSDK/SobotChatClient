@@ -156,6 +156,8 @@ typedef NS_ENUM(NSInteger,SobotButtonClick) {
 -(CGFloat) getVCBarHeight;
 
 -(void)createPlaceHolderView:(UIView *) superView title:(NSString *) title desc:(NSString *__nullable )message image:(UIImage *__nullable )  tipImage block:(void(^__nullable)(UIButton *_Nonnull btn,NSInteger tag))  refreshClick;
+
+-(void)createPlaceHolderView:(UIView *) superView title:(NSString *) title desc:(NSString *__nullable )message image:(UIImage *__nullable)  tipImage imgSize:(CGSize)size block:(void(^__nullable)(UIButton *_Nonnull btn,NSInteger tag)) refreshClick;
 - (void)removePlaceholderView;
 
 @end

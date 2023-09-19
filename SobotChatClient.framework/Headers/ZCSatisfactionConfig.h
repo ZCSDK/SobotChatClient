@@ -21,6 +21,22 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,assign) int scoreFlag;//：星级类型 0-旧版5星级评价  1-nps评价 
 @property (nonatomic,assign) int status;//：模板状态开关 0-关闭 1-开启
 
+// 0自定义，1默认
+@property (nonatomic,assign) int isDefaultButton;
+@property (nonatomic,strong) NSString *buttonDesc;//": "提交",
+
+// 0自定义，1默认
+@property (nonatomic,assign) int isDefaultGuide;
+@property (nonatomic,strong) NSString *guideCopyWriting;//": "服务评价",
+
+@property (nonatomic,assign) int isDefault;//": 1
+// 1显示，0不显示
+@property (nonatomic,assign) int txtFlag;//": 1
+
+// 未使用
+@property (nonatomic,strong) NSString *txtDesc;//": "引导文案欢迎给我们的服务提建议",
+
+
 /**  子集 */
 @property (nonatomic,strong) NSMutableArray * list;
 

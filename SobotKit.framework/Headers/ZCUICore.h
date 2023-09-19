@@ -10,6 +10,7 @@
 #import <SobotKit/SobotClientBaseController.h>
 #import <SobotChatClient/SobotChatClient.h>
 #import <SobotCommon/SobotCommon.h>
+#import "SobotSatisfactionView.h"
 // 链接点击类型
 typedef NS_ENUM(NSInteger,ZCLinkClickType) {
     ZCLinkClickTypeURL    = 0,
@@ -131,7 +132,7 @@ typedef NS_ENUM(NSInteger,ZCInitStatus) {
 @property(nonatomic,strong) NSMutableArray * cids;
 @property(nonatomic,strong) NSMutableArray * _Nullable chatMessages;
 @property(nonatomic,weak) id<ZCUICoreDelegate> _Nullable delegate;
-
+@property(nonatomic,copy) void (^ZCClosePageBlock)(ZCPageStateType type);
 // 是否已经执行过转人工，再发送消息的时候使用，YES时，说明已经转过人工了，但是未说过话不做真正的转人工调用
 @property (nonatomic,assign) BOOL isAfterConnectUser;
 @property(nonatomic,strong) SobotChatMessage * _Nullable lineModel;
@@ -149,6 +150,7 @@ typedef NS_ENUM(NSInteger,ZCInitStatus) {
 //scoreFlag：星级类型 0-旧版5星级评价  1-nps评价
 //status：模板状态开关 0-关闭 1-开启
 @property(nonatomic,strong) ZCSatisfactionConfig *_Nullable satisfactionConfig; // 评价选项
+@property(nonatomic,strong) ZCSatisfactionConfig *satisfactionLeaveConfig; // 留言评价选项
 
 @property(nonatomic,assign) BOOL isOffline;
 @property (nonatomic,assign) BOOL isOfflineBeBlack; // 是否是拉黑
@@ -244,9 +246,9 @@ typedef NS_ENUM(NSInteger,ZCInitStatus) {
 -(void)dismissGroupView;
 
 // 评价之前，检查是否可以触发评价
--(BOOL)checkSatisfacetion:(BOOL) isEvalutionAdmin type:(SatisfactionType ) type;
+-(BOOL)checkSatisfacetion:(BOOL) isEvalutionAdmin type:(SobotSatisfactionFromSrouce ) type;
 // 邀请评价是，有值了
--(BOOL)checkSatisfacetion:(BOOL) isEvalutionAdmin type:(SatisfactionType ) type rating:(int) rating resolve:(int) resolve;
+-(BOOL)checkSatisfacetion:(BOOL) isEvalutionAdmin type:(SobotSatisfactionFromSrouce ) type rating:(int) rating resolve:(int) resolve;
 // 邀请评价，提交
 - (void)commitSatisfactionWithIsResolved:(int)isResolved Rating:(int)rating problem:(NSString *) problem scoreFlag:(float)scoreFlag;
 

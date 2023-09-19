@@ -15,7 +15,7 @@
 "时间" = "time";
 "日期" = "date";
 "标题" = "Title";
-"标签为必选" = "The label is required";
+"标签为必选" = "Review label cannot be empty!";
 "感谢您的评价!" = "Thank you for your feedback";
 "暂时离开" = "Leave temporarily";
 "暂不评价" = "Skip";
@@ -221,3 +221,5 @@
 "创建时间"="Creation time";
 "展开更多" = "Expand More";
 "共" = "common";
+"标签" = "Label";
+"是否解决" = "Is it resolved";

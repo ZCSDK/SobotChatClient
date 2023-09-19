@@ -6,11 +6,15 @@
 	<dict>
 		<key>Headers/SobotClientBaseController.h</key>
 		<data>
-		XrtZh4KwWal5M4IgEVCICEdBkYE=
+		OSxOSOIdg7MKozBGV8Awiz8MPks=
 		</data>
 		<key>Headers/SobotKit.h</key>
 		<data>
 		4/qajpcoQBoOPKpWtw1eojDObf8=
+		</data>
+		<key>Headers/SobotSatisfactionView.h</key>
+		<data>
+		ubD1HiPkqaR7jyFS6gvUmnYlsnE=
 		</data>
 		<key>Headers/ZCChatController.h</key>
 		<data>
@@ -38,7 +42,7 @@
 		</data>
 		<key>Headers/ZCUICore.h</key>
 		<data>
-		lQwwVPMVwoWNBEVx1GCWULSVDWA=
+		Hazybt+7BH3wVYd4e3LUsKiXjWI=
 		</data>
 		<key>Headers/ZCUIWebController.h</key>
 		<data>
@@ -59,11 +63,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XrtZh4KwWal5M4IgEVCICEdBkYE=
+			OSxOSOIdg7MKozBGV8Awiz8MPks=
 			</data>
 			<key>hash2</key>
 			<data>
-			QRzIOhRIQZN+u8DD0lmea8q0y+Pswhr5+Zlgqaexb14=
+			oKrSnSuur07onHcZJRLsXxpdQMKyMJIKt4u1kmG+/dI=
 			</data>
 		</dict>
 		<key>Headers/SobotKit.h</key>
@@ -75,6 +79,17 @@
 			<key>hash2</key>
 			<data>
 			Ne2dq9uUIXTy+braSaWh7P06pbXWpZlB2kvyzojz6Kk=
+			</data>
+		</dict>
+		<key>Headers/SobotSatisfactionView.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ubD1HiPkqaR7jyFS6gvUmnYlsnE=
+			</data>
+			<key>hash2</key>
+			<data>
+			hyGY+o7AbVVJf6UQN5XONkWagXdQtHSNy9z9DG3UGvk=
 			</data>
 		</dict>
 		<key>Headers/ZCChatController.h</key>
@@ -147,11 +162,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lQwwVPMVwoWNBEVx1GCWULSVDWA=
+			Hazybt+7BH3wVYd4e3LUsKiXjWI=
 			</data>
 			<key>hash2</key>
 			<data>
-			ebTiCQVlDDOgeH6Lmu7Gqc1HIaGkgtjLjislg5Vi+OU=
+			OfDMop8tMZN0E3ZW50RYQZcFjXU9TWAgNgEn2a2zPOs=
 			</data>
 		</dict>
 		<key>Headers/ZCUIWebController.h</key>

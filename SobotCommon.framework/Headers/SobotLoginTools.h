@@ -10,7 +10,7 @@
 #import <Foundation/Foundation.h>
 #import "SobotLoginEntity.h"
 #define SobotNotification_PermissionsRefresh @"SobotNotification_PermissionsRefresh"
-
+#define KVAppLoginDict @"SobotAppLoginInfo"
 NS_ASSUME_NONNULL_BEGIN
 
 /// 登录
@@ -27,18 +27,19 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(SobotLoginEntity *) getLoginInfo;
 
-// 静默登录时，外部接口获取的登录数据
--(SobotLoginEntity *) configLoginEntity:(NSDictionary *) dict;
 
 -(BOOL) isLogin;
 -(BOOL) checkSupportV6;
 -(NSString *)getTempId;
 -(NSString *)getToken;
--(NSString *)getAccessToken;
+-(NSString *)getLoginAccessToken;
 -(NSString *)getServiceEmail;
 
-/// 查询当前正在使用的token
--(NSString *)getExpiresToken;
+/// 检查当前token是否有效
+-(BOOL )checkExpiresToken;
+
+// 移除本地token，如果需要强制登录，执行此操作
+-(void) removeExpiresToken;
 
 
 
@@ -72,7 +73,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// - Parameters:
 ///   - token: 需要先登录成功
 ///   - resultBlock: 获取结果
--(void)getAccessToken:(NSString *) token result:(void(^)(NSInteger code,NSDictionary * _Nullable dict,NSString * _Nullable msg)) resultBlock;
+-(void)getAccessTokenWithApi:(NSString *) token result:(void(^)(NSInteger code,NSDictionary * _Nullable dict,NSString * _Nullable msg)) resultBlock;
 
 
 /// 退出登录

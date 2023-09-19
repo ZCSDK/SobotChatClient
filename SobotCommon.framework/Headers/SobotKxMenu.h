@@ -81,6 +81,9 @@
 + (UIColor *) tintColor;
 + (void) setTintColor: (UIColor *) tintColor;
 
++(UIColor *)lineColor;
++ (void) setLineColor: (UIColor *) lineColor;
+
 // 隐藏箭头
 + (BOOL ) hiddenArrow;
 + (void) setHideArrow: (BOOL) isHidden;

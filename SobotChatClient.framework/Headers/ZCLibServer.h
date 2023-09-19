@@ -500,15 +500,11 @@ typedef void(^SobotKitResultBlock)(ZCNetWorkCode code,id _Nullable obj,NSDiction
 /**
  *  提交工单评价 （工单详情页面触发评价）
  */
-+(void)postAddTicketSatisfactionWith:(NSString*)ticketId
-                                 Uid:(NSString*)uid
-                           CompanyId:(NSString*)companyId
-                               Score:(NSString*)score
-                              Remark:(NSString*)remark
++(void)postAddTicketSatisfactionWith:(NSString*)uid
+                                dict:(NSDictionary*)inParam
                                start:(void (^)(void))startBlock
                              success:(void(^)(NSDictionary *dict,ZCNetWorkCode sendCode)) successBlock
                               failed:(void(^)(NSString *errorMessage,ZCNetWorkCode errorCode)) failedBlock;
-
 
 /**
  *  评价客户
