@@ -167,8 +167,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,strong) NSString *wslink_default;
 @property (nonatomic,strong) NSArray  *wslink_bak;
-
-@property (nonatomic,strong) NSString *timezoneId;// 时区
+@property (nonatomic,strong) NSString *timezone; // "+08:00"
+@property (nonatomic,strong) NSString *timezoneId;// 时区 "Asia/Shanghai"
 
 // 是否有拉黑的权限  0无 1有
 @property (nonatomic,assign) int blackFunction;

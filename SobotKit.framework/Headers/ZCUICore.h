@@ -21,6 +21,7 @@ typedef NS_ENUM(NSInteger,ZCLinkClickType) {
 typedef NS_ENUM(NSInteger,ZCTurnType) {
     ZCTurnType_KeyWord                 = 1,  // 关键字转人工
     ZCTurnType_KeyWordNoGroup,               // 关键字转人工,直接转
+    ZCTurnType_KeyWordSelGroup,              // 关键字转人工，并且是弹技能组选择框，由用户选择技能组
     ZCTurnType_KeyWordSmart,                // 智能转人工，静默转
     ZCTurnType_CellGroupClick,              // 点击关键字cell 中技能组
     ZCTurnType_BtnClick,                    // 点击转人工按钮
