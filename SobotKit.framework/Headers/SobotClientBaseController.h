@@ -14,6 +14,7 @@ typedef NS_ENUM(NSInteger,ZCPageStateType) {
     ZCPageStateTypeChatLoadFinish = 2,// 加载界面完成，可对UI进行修改
     ZCPageStateTypeLeave      = 3,// 留言
     ZCPageStateTypeUserClose = 4,// 用户自己调用关闭页面
+    ZCPageStateViewShow   = 5,// SDK页面将要显示
 };
 
 typedef NS_ENUM(NSInteger, ZCButtonClickTag) {

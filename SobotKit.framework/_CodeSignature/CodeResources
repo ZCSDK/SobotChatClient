@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/SobotClientBaseController.h</key>
 		<data>
-		OSxOSOIdg7MKozBGV8Awiz8MPks=
+		V/ljuXYtZsxMnfUWdDPhXVcmOnQ=
 		</data>
 		<key>Headers/SobotKit.h</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		MYnl1eqUqjD+Y5nv+YPSqMr/cGA=
+		T4Hiv5MM9vRwjmeVo7FHK8Oac3M=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		jRUTPvbvsk+dRzaOvvoJhbiW6fQ=
+		arOPryFFr7WnHU2ps1ZQB3KfazE=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -63,11 +63,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OSxOSOIdg7MKozBGV8Awiz8MPks=
+			V/ljuXYtZsxMnfUWdDPhXVcmOnQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			oKrSnSuur07onHcZJRLsXxpdQMKyMJIKt4u1kmG+/dI=
+			BvmF5lbCT7JClAfAm1MM7g8UEo0RZxbWx0/IBKhHVJA=
 			</data>
 		</dict>
 		<key>Headers/SobotKit.h</key>
@@ -184,11 +184,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jRUTPvbvsk+dRzaOvvoJhbiW6fQ=
+			arOPryFFr7WnHU2ps1ZQB3KfazE=
 			</data>
 			<key>hash2</key>
 			<data>
-			+/vfbnUaJxtTO658++KyAvgiOI9NEY3NsaWHwp8Wl2A=
+			leYug7Z9ZGDMuo7o0lLcWJYbYLHgohJo/JzvbzvakYI=
 			</data>
 		</dict>
 	</dict>
