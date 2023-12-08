@@ -95,6 +95,7 @@ NS_ASSUME_NONNULL_BEGIN
 +(BOOL) checkLeaveMessageModule;
 
 
++(NSMutableDictionary *)getMessageDict:(NSDictionary *) message type:(SobotMessageType ) type richType:(SobotMessageRichJsonType) richType robot:(BOOL) robotAnswer;
 /// 创建消息对象
 /// @param isSender 是否为发送者，如果不是就是机器人或客服
 /// @param type 消息类型
@@ -102,10 +103,11 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param action 提示语
 /// @param message 普通消息@{content:xxx}
 /// @param libConfig 创建对象需要的基础信息
+///
 +(SobotChatMessage *)createLocalMessage:(BOOL) isSender messageType:(SobotMessageType) type richType:(SobotMessageRichJsonType )richType action:(SobotMessageActionType ) action message:(NSDictionary * _Nullable ) message robot:(BOOL)robotAnswer config:(ZCLibConfig *) libConfig;
 
 
-+(NSString *)getLastMessage:(SobotChatMessage *) chatMsg;
++(NSString *)getLastMessage:(SobotChatMessage *) chatMsg urlRegular:(NSString *)urlRegular;
 /**
  *  获取提示语实际内容
  *

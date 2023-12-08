@@ -508,6 +508,32 @@
 // 是触发阶段 0.进入会话时、1.进入机器人会话时、2.进入人工会话时
 @property(nonatomic,copy)NSString *opportunity;
 
+// 是否显示转人工开关   0-否  1-是
+@property(nonatomic,assign) BOOL showTurnManualBtn;
+// 仅在客户消息累计触发n次机器人未知回答后，常驻显示 0-关闭 1-开启
+@property(nonatomic,assign) BOOL isManualBtnFlag;
+// 多少次后显示转人工按钮
+@property(nonatomic,assign) int manualBtnCount;
+
+// 访客端消息引用 1-开启，0-关闭。
+@property (nonatomic,assign) int msgAppointFlag;
+
+
+/**
+ 人工消息是否开启已读未读，1开启，0未开启
+ --当readFlag=1时，人工发送接口（文字、图片、视频、文件等）新增readStatus=0
+ --当readFlag=0，不处理
+ */
+@property (nonatomic,assign) int readFlag;
+
+/**
+ 机器人消息是否开启已读未读，1开启，0未开启;
+ adminReadFlag = 1时，发送机器人消息(文字、图片、视频等)成功以后，调用标记接口
+ adminReadFlag = 0时，不处理
+ */
+@property (nonatomic,assign) int adminReadFlag;
+
+
 /// *******************************************  v4.0.0 主题相关参数 千人千面  end*******************************************
 
 /**
@@ -580,6 +606,9 @@
 
 
 @interface ZCLibSendMessageParams : NSObject
+
+// 引用消息，仅当msgType是纯文本时有效
+@property (nonatomic,strong) SobotChatMessage *referenceMessage;
 
 // 消息内容，文件地址等
 @property (nonatomic,strong) NSString *content;

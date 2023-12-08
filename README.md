@@ -1,6 +1,10 @@
 # SobotChatClient
 智齿SDK_iOS V6 pod
 
+## SDK 4.1.0 版本更新说明[2023-12-08]
+1.[优化]iOS17系统上UIGraphicsBeginImageContextWithOptions 方法调用异常
+2.[优化]视频录制时音频没有录入的问题
+
 ## SDK 4.0.9.1 版本更新说明[2023-11-23]
 1.【优化】修改iOS 17录制视频沙盒文件存储位置
 2.【优化】优化关键字转人工逻辑

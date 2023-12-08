@@ -223,3 +223,15 @@
 "共" = "common";
 "标签" = "Label";
 "是否解决" = "Is it resolved";
+
+"已读"="Read";
+"未读"="Unread";
+"我"="Me";
+
+"已读"="read";
+"未读"="Unread";
+"我"="Me";
+"机器人"="Robot";
+"链接" = "Link";
+"文章" = "Article";
+"引用"="Quote";

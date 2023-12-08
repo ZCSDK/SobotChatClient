@@ -86,6 +86,7 @@ typedef NS_ENUM(NSInteger,ZCShowStatus) {
     ZCShowStatusOpenAskTable     = 36,  // 训前表单
     ZCShowStatusReConnectClick      = 37,  // 重新接入  新会话
     ZCShowStatusRefreshFastMenuView = 38, // 会话保持进入人工聊天刷新快捷菜单
+    ZCShowStatusShowReferenceMessage = 39, // 添加引用消息
 };
 
 typedef NS_ENUM(NSInteger,ZCInitStatus) {
@@ -120,9 +121,12 @@ typedef NS_ENUM(NSInteger,ZCInitStatus) {
 
 @end
 
+typedef void (^DetailViewBlock)(SobotChatMessage * _Nonnull model,int type ,id obj);
 @interface ZCUICore : NSObject
 
 @property(nonatomic,copy) void (^PageLoadBlock)(id object,ZCPageStateType type);
+
+@property(nonatomic,copy) DetailViewBlock detailViewBlock;
 
 +(ZCUICore * _Nonnull)getUICore;
 
@@ -143,6 +147,10 @@ typedef NS_ENUM(NSInteger,ZCInitStatus) {
 @property(nonatomic,assign) BOOL isShowRobotHello; // 是否显示机器人欢迎语
 @property(nonatomic,assign) BOOL isShowRobotGuide; // 是否显示机器人常见问题
 @property(nonatomic,strong) ZCKitInfo     *_Nonnull kitInfo;
+
+
+// 滑动时，记录已阅读的消息
+@property (nonatomic,strong)NSMutableDictionary * _Nonnull unReadMessageCache;
 
 //defaultQuestionFlag：“问题是否解决”默认选中状态：(0)-未解决 (1)-解决 (-1)-不选中
 //defaultType：默认显示星级  0-5星,1-0星 / 0-10分，1-5分，2-0分，3-不选中
@@ -197,6 +205,10 @@ typedef NS_ENUM(NSInteger,ZCInitStatus) {
 // 发送商品卡片
 -(void)sendProductInfo:(ZCProductInfo *_Nonnull)productInfo resultBlock:(nonnull void (^)(NSString * _Nonnull, int code))ResultBlock;
 -(void)sendMessage:(NSString *_Nonnull) content type:(SobotMessageType) msgType exParams:(NSDictionary * _Nullable) dict duration:(NSString *_Nullable) duration richType:(SobotMessageRichJsonType )richType;
+
+// 添加一个扩展对象，可以传递添加引用消息
+-(void)sendMessage:(NSString *_Nonnull) content type:(SobotMessageType) msgType exParams:(NSDictionary * _Nullable) dict duration:(NSString *_Nullable) duration richType:(SobotMessageRichJsonType )richType obj:(id _Nullable) obj;
+
 -(void)sendMessage:(ZCLibSendMessageParams *_Nonnull) sendParams type:(SobotMessageType) msgType;
 
 
@@ -216,7 +228,7 @@ typedef NS_ENUM(NSInteger,ZCInitStatus) {
 /// @param msgType 消息类型
 /// @param message 消息内容
 -(SobotChatMessage *_Nullable)addMessageToList:(SobotMessageActionType) action content:(NSString * _Nullable) content type:(SobotMessageType )msgType dict:(NSDictionary * _Nullable) message;
--(void)addMessage:(SobotChatMessage *_Nonnull) message reload:(BOOL) isReload;
+-(void)addMessage:(SobotChatMessage * _Nullable) message reload:(BOOL) isReload;
 
 
 /// 移除指定类型消息
@@ -274,4 +286,18 @@ typedef NS_ENUM(NSInteger,ZCInitStatus) {
 /// 处理评价事件
 /// @param isBcak 是否是返回触发的评价
 -(void)keyboardOnClickSatisfacetion:(BOOL)isBcak;
+
+// 显示详情页面
+-(void)showDetailViewWiht:(SobotChatMessage *)model;
+
+// 详情页面横竖屏切换事件
+-(void)updateChatDetailView:(CGFloat)y;
+
+// 详情页面点击事件
+-(void)detailViewClikBlock:(void(^)(SobotChatMessage *model,int type,id obj))detailViewBlock;
+
+
+// 添加引用消息到键盘
+-(void)doReferenceMessage:(SobotChatMessage *)model;
+
 @end

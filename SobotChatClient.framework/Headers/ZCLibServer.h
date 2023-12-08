@@ -57,6 +57,11 @@ typedef void(^SobotKitResultBlock)(ZCNetWorkCode code,id _Nullable obj,NSDiction
 /// @param resultBlock 结果
 +(void)ack:(NSDictionary *) params result:(void (^)(ZCNetWorkCode code,id _Nullable message))resultBlock;
 
+
+/// 生成本地消息Id
+/// @param cid 当前cid
++(NSString *)getLocalMsgId:(NSString *) cid;
+
 /// 轮训消息
 /// @param config 参数
 /// @param resultBlock 结果
@@ -383,6 +388,20 @@ typedef void(^SobotKitResultBlock)(ZCNetWorkCode code,id _Nullable obj,NSDiction
              failed:(void(^)(NSString *errorMessage,ZCNetWorkCode errorCode)) failedBlock;
 
 
+
+/// 标记用户消息，是否已读
+/// - Parameters:
+///   - config: 当前会话
+///   - msgIdArr: 要标记的msgId
+///   - startBlock: 开始
+///   - successBlock: 成功
+///   - failedBlock: 失败
++(void)realMarkReadToAdmin:(ZCLibConfig *) config
+                msgId:(NSMutableArray *)msgIdArr
+             start:(void (^)(NSString *url))startBlock
+           success:(void(^)(NSDictionary *dict,ZCNetWorkCode sendCode)) successBlock
+                    failed:(void(^)(NSString *errorMessage,ZCNetWorkCode errorCode)) failedBlock;
+    
 /// 点击卡片自定义按钮事件
 /// @param menu 按钮对象
 /// @param config 当前初始化结果对象

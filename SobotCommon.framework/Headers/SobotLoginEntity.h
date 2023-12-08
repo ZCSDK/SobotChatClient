@@ -56,6 +56,9 @@ extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_CALL_cccv6_dht_fsmyd;  
 extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_CALL_cccv6_dht_yczlsc; //延长整理时长
 extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_CALL_cccv6_dht_jszlbzm; //结束整理并置忙
 //extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_CALL_cccv6_dht_czlx;   //重置离线
+extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_CALL_cccv6_whrw;//呼叫任务
+extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_CALL_cccv6_whrw_rwxxbj;//呼叫任务信息编辑
+extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_CALL_cccv6_whrw_rwzjbj;//呼叫任务总结编辑
 
 
 typedef NSString *SobotLoginModuleType NS_STRING_ENUM;
@@ -94,6 +97,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 // 最大接待数量
 @property (nonatomic,assign) int        maxServiceCount;
+// 3.2.5修改，与maxServiceCount分开
+@property (nonatomic,assign) int        maxcount;
 
 // 用户状态，2忙碌、1在线,-1在线(有在线会话数据需要同步)  2.6.0新增 1-在线，2-忙碌 statusCode:3-小休，4-培训，5-会议，6-用餐，7-活动
 @property (nonatomic,assign) int        status;

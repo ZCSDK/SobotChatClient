@@ -610,6 +610,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong) SobotChatContent *richModel;
 @property(nonatomic,strong) SobotChatRobotAnswerContent *robotAnswer;
 
+
+// -1未知，0自己，1对方，2机器人
+@property(nonatomic,assign) int appointType;
+// 引用消息
+@property(nonatomic,strong) SobotChatMessage *appointMessage;
+
 /**
  *  会话时间
  */
@@ -704,6 +710,11 @@ NS_ASSUME_NONNULL_BEGIN
  *  是否已读
  */
 @property (nonatomic , assign) BOOL isRead;
+
+/*
+ * 0-未标记，1-未读，2-已读
+ */
+@property (nonatomic , assign) int readStatus;
 
 /**
  *  上传进度
