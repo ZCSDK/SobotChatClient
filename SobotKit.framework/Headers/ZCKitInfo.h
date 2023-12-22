@@ -690,6 +690,18 @@
 
 /// 自定义卡片 商品价格文件颜色
 @property(nonatomic,strong)UIColor *pricetTagTextColor;
+
+
+
+///  引用消息，左右文字
+@property (nonatomic,strong) UIColor *referenceLeftLineColor;
+@property (nonatomic,strong) UIColor *referenceLeftNameColor;
+@property (nonatomic,strong) UIColor *referenceLeftTextColor;
+
+@property (nonatomic,strong) UIColor *referenceRightLineColor;
+@property (nonatomic,strong) UIColor *referenceRightNameColor;
+@property (nonatomic,strong) UIColor *referenceRightTextColor;
+
 //=======================================================自定义文字颜色 end ==============================================
 
 #pragma Mark -- 图片相关

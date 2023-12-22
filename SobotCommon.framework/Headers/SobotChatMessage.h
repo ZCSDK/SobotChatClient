@@ -611,7 +611,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong) SobotChatRobotAnswerContent *robotAnswer;
 
 
-// -1未知，0自己，1对方，2机器人
+//-1未知、0-客服 1-客戸2-引用机器人
 @property(nonatomic,assign) int appointType;
 // 引用消息
 @property(nonatomic,strong) SobotChatMessage *appointMessage;
