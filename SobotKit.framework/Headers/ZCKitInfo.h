@@ -493,10 +493,6 @@
  */
 @property (nonatomic, strong) UIColor *satisfactionSelectedBgColor;
 
-/**
- *  留言页面背景色
- */
-@property(nonatomic,strong) UIColor *leaveVCBgColor;
 
 /**
  *  留言页面中 提交按钮的背景颜色和留言页面顶部选项卡底部线条颜色
@@ -516,7 +512,7 @@
 //========================================================= 自定义背景颜色 end ========================================
 
 
-#pragma Mark -- 自定义文字颜色，（可选）
+#pragma Mark -- 自定义文字颜色，可选
 //=======================================================  自定义文字颜色 ========================================
 
 /**
@@ -670,11 +666,6 @@
  */
 //@property (nonatomic,strong) UIColor *scTopBackTextColor; 
 
-
-/**
- *   超链卡片的标题文字颜色
- */
-@property (nonatomic,strong) UIColor *linkTitleTextColor;
 
 /**
  *  提交留言成功后提示页面的背景颜色
