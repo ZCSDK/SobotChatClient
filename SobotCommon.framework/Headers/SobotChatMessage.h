@@ -277,6 +277,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic,assign)BOOL isHistory;// 临时变量，记录是否是历史记录
 
+
 @end
 
 /**
@@ -647,7 +648,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic , strong) NSString *sender;
 
 /**
- *  用户名称
+ *  真实姓名
  */
 @property (nonatomic , strong) NSString *senderName;
 
@@ -846,6 +847,14 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,strong) NSMutableAttributedString * _Nullable displayMsgAttr;
 @property (nonatomic,strong) NSMutableAttributedString * _Nullable displaySugestionattr;
 
+//// 小程序卡片 带引导建议
+////[
+////"课程简介是什么？",
+////"课程名称是什么？"
+////],
+//@property(nonatomic,strong) NSMutableArray *sugguestions;//": null,
+//// 小程序卡片 引导说辞 eg："测试根据您的问题，为您推荐以下关联问题，点击或回复序号即可得到对应问题的答案："
+//@property(nonatomic,copy) NSString *strip;
 
 // 保证使用时不创建NSMutableAttributedString属性
 -(NSString *) getModelDisplayText;

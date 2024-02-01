@@ -15,6 +15,7 @@ typedef NS_ENUM(NSInteger,ZCPageStateType) {
     ZCPageStateTypeLeave      = 3,// 留言
     ZCPageStateTypeUserClose = 4,// 用户自己调用关闭页面
     ZCPageStateViewShow   = 5,// SDK页面将要显示
+    ZCPageStateTypeChatDealloc = 6,// 聊天页面调用Dealloc 销毁
 };
 
 typedef NS_ENUM(NSInteger, ZCButtonClickTag) {

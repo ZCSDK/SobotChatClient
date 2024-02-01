@@ -34,7 +34,7 @@
 		</data>
 		<key>Headers/ZCLibConfig.h</key>
 		<data>
-		riT0MDvWe3luiKhzKq9euwNrGuM=
+		deBTqJnEGkm0YMV5ifhOzses48c=
 		</data>
 		<key>Headers/ZCLibHttpConstants.h</key>
 		<data>
@@ -110,7 +110,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		kDI5mkeVFIYyUmcjlyVmLD2kSUg=
+		rwtaeojaYte+ERxTmOPLvBiIVwA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -200,11 +200,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			riT0MDvWe3luiKhzKq9euwNrGuM=
+			deBTqJnEGkm0YMV5ifhOzses48c=
 			</data>
 			<key>hash2</key>
 			<data>
-			ALSXl0r8mtUK34cC/c9LRPdNaaOIbgptbBEyhJ1ahIo=
+			CI4ELEqdqcR/0+6L5pScJPL0GjmZZg182ShCqWmBRPE=
 			</data>
 		</dict>
 		<key>Headers/ZCLibHttpConstants.h</key>
