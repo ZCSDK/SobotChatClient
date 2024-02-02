@@ -31,6 +31,9 @@
 //// 多语言支持
 #define SobotLocalString(key) [[SobotLocaliable shareSobotLocaliable] sobotGetLocalString:key]
 
+// 资源
+#define SobotGetImage(imageName) [SobotUITools getSysImageByName:imageName]
+
 #ifndef SobotCommonDefine_h
 #define SobotCommonDefine_h
 

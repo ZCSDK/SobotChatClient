@@ -51,6 +51,7 @@
 #import <SobotCommon/SobotLoginEntity.h>
 #import <SobotCommon/SobotHttps.h>
 #import <SobotCommon/SobotLoginTools.h>
+#import <SobotCommon/SobotFieldBaseCell.h>
 
 //! Project version number for SobotCommon.
 FOUNDATION_EXPORT double SobotCommonVersionNumber;
