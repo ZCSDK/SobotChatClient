@@ -54,11 +54,11 @@
 		</data>
 		<key>Headers/SobotCommon.h</key>
 		<data>
-		Ja8Z4V9+P0VQOuxSsJahXcdKWZg=
+		lXvkJ5iGT8GCy3SBghmg7qfKwK0=
 		</data>
 		<key>Headers/SobotCommonDefine.h</key>
 		<data>
-		ChegjrkmQcV9Cmhrz9Xf/6RFZa8=
+		ucdwQcVHz5NDMXE4A8M2w7q3iAo=
 		</data>
 		<key>Headers/SobotCommonVersion.h</key>
 		<data>
@@ -130,7 +130,7 @@
 		</data>
 		<key>Headers/SobotLocaliable.h</key>
 		<data>
-		3j2nQKLAqolUDld6puJ39lgPWzI=
+		oitSHJsB+KVplJlvqy2j+fVmF90=
 		</data>
 		<key>Headers/SobotLog.h</key>
 		<data>
@@ -171,6 +171,30 @@
 		<key>Headers/SobotNotificationTools.h</key>
 		<data>
 		0+bUZluU68rhcgl35kVn2do48bw=
+		</data>
+		<key>Headers/SobotPHImagePickerTools.h</key>
+		<data>
+		qA9jYHRtcteCOUmPkwCYggZGqbs=
+		</data>
+		<key>Headers/SobotPHPickerAlbumView.h</key>
+		<data>
+		+/+4DNLXKOSW5k2XmHv6fMqTQKc=
+		</data>
+		<key>Headers/SobotPHPickerCell.h</key>
+		<data>
+		UQ/A8T9Us17Uag00FtHIEMdlRKU=
+		</data>
+		<key>Headers/SobotPHPickerController.h</key>
+		<data>
+		m476Qft7Dl13po+eCXZ7QD8m7iM=
+		</data>
+		<key>Headers/SobotPHPickerPreviewController.h</key>
+		<data>
+		ndBeUQe657jWaRJbXr6yW3PVbYs=
+		</data>
+		<key>Headers/SobotPHPickerTools.h</key>
+		<data>
+		c2fSHP95X/hwtCOidRhMrQHDIaA=
 		</data>
 		<key>Headers/SobotPickView.h</key>
 		<data>
@@ -250,7 +274,7 @@
 		</data>
 		<key>Headers/SobotTextView.h</key>
 		<data>
-		DKqHIq0kENaBeBMMFN3+sY01xfY=
+		xfLNt5lLxnFJAiQZc7kP5NmHnj0=
 		</data>
 		<key>Headers/SobotToast.h</key>
 		<data>
@@ -286,7 +310,7 @@
 		</data>
 		<key>Headers/SobotVideoPlayer.h</key>
 		<data>
-		OE+glxau1bc0wfMmHrdY3zWrhvY=
+		De3+DMVhL3cUZ9iT5AHVZJ3kDtk=
 		</data>
 		<key>Headers/SobotView.h</key>
 		<data>
@@ -322,7 +346,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		xRmeNIOLJ6NGN8rJemiaXdyZa5s=
+		33fnRJQK9kIEnVQw0WhsPAtyG08=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -467,22 +491,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ja8Z4V9+P0VQOuxSsJahXcdKWZg=
+			lXvkJ5iGT8GCy3SBghmg7qfKwK0=
 			</data>
 			<key>hash2</key>
 			<data>
-			AiZGfedf1XuDA5D7LrKL4dYjrle4Jk79KFwZHMlbxtA=
+			KkT/XW2zKTH8gP6B5ox0OVbC0spRSGCXRQdk50J0k6s=
 			</data>
 		</dict>
 		<key>Headers/SobotCommonDefine.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ChegjrkmQcV9Cmhrz9Xf/6RFZa8=
+			ucdwQcVHz5NDMXE4A8M2w7q3iAo=
 			</data>
 			<key>hash2</key>
 			<data>
-			BzD3VFlR5vP9AgQ7VASK/3dch6P3KTkmVRtSYm94sQo=
+			S2JXqqaKZWyqlU2JFKqJ7I2pucgLdpHNkmS91Zm7xEI=
 			</data>
 		</dict>
 		<key>Headers/SobotCommonVersion.h</key>
@@ -676,11 +700,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3j2nQKLAqolUDld6puJ39lgPWzI=
+			oitSHJsB+KVplJlvqy2j+fVmF90=
 			</data>
 			<key>hash2</key>
 			<data>
-			iBMBQL2kO5tcIlQJjlR22zO2ll0PB+8YkIBDuDr5GTM=
+			MebvhBs9budVqiO238ritVL+5lVkAw875Sv8ZibSofo=
 			</data>
 		</dict>
 		<key>Headers/SobotLog.h</key>
@@ -791,6 +815,72 @@
 			<key>hash2</key>
 			<data>
 			/BtHlhISMvVIIRtdByEupHmKbob/PWygeAVuyjk5360=
+			</data>
+		</dict>
+		<key>Headers/SobotPHImagePickerTools.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qA9jYHRtcteCOUmPkwCYggZGqbs=
+			</data>
+			<key>hash2</key>
+			<data>
+			7S0iau7cfkp/ivWOaILXFqzpZTFexh3sqPwwW3f/Ao4=
+			</data>
+		</dict>
+		<key>Headers/SobotPHPickerAlbumView.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+/+4DNLXKOSW5k2XmHv6fMqTQKc=
+			</data>
+			<key>hash2</key>
+			<data>
+			NC5cKPbYLrIt6QBt1J9mpDy4fOU8hs6mgo3TgwrzAN8=
+			</data>
+		</dict>
+		<key>Headers/SobotPHPickerCell.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UQ/A8T9Us17Uag00FtHIEMdlRKU=
+			</data>
+			<key>hash2</key>
+			<data>
+			lRdgrGpW5n8ZhFbewXCi2BscDRQiV7+ohGuBlRFKiy4=
+			</data>
+		</dict>
+		<key>Headers/SobotPHPickerController.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			m476Qft7Dl13po+eCXZ7QD8m7iM=
+			</data>
+			<key>hash2</key>
+			<data>
+			fnO47bM6rqE5kUjrSvCbKnt46Xur+HJyyckowEwi80I=
+			</data>
+		</dict>
+		<key>Headers/SobotPHPickerPreviewController.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ndBeUQe657jWaRJbXr6yW3PVbYs=
+			</data>
+			<key>hash2</key>
+			<data>
+			U1Tp8jZpKhb9rXWHUByzPgwpO384sOKerBrsLtjTBV4=
+			</data>
+		</dict>
+		<key>Headers/SobotPHPickerTools.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			c2fSHP95X/hwtCOidRhMrQHDIaA=
+			</data>
+			<key>hash2</key>
+			<data>
+			hxdn+wbR4x+yLcrgSGlFhkXh4hMYSTbZmp8fHWNxSkE=
 			</data>
 		</dict>
 		<key>Headers/SobotPickView.h</key>
@@ -1006,11 +1096,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DKqHIq0kENaBeBMMFN3+sY01xfY=
+			xfLNt5lLxnFJAiQZc7kP5NmHnj0=
 			</data>
 			<key>hash2</key>
 			<data>
-			GpLJ0V1XLR3LzAlKF3VKdrdRdKDugcTfNDjgasmeQek=
+			IXohnhCi33zV+05VBWnU6YCZnPIPF51Lf0asm2Urn08=
 			</data>
 		</dict>
 		<key>Headers/SobotToast.h</key>
@@ -1105,11 +1195,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OE+glxau1bc0wfMmHrdY3zWrhvY=
+			De3+DMVhL3cUZ9iT5AHVZJ3kDtk=
 			</data>
 			<key>hash2</key>
 			<data>
-			OYrJw0x9fUUDsu8tWC7wdTWKvS3UHp34XaZQx3LDKkE=
+			UTYjGa9N39yeX+rzmCavrXOlON/SP9FLNfYZ8trds3g=
 			</data>
 		</dict>
 		<key>Headers/SobotView.h</key>

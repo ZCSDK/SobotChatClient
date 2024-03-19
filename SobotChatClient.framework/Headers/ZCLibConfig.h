@@ -534,6 +534,29 @@
 @property (nonatomic,assign) int adminReadFlag;
 
 
+/**
+ 转人工提示语开关: 0-关闭 1-开启(默认开启)
+ */
+@property (nonatomic,assign) int transferManualPromptFlag;
+/**
+ 转人工提示语;4.1.3 新增
+ 默认值:"对不起，未能解决您的问题，正 在为您转接人工服务"
+ */
+@property (nonatomic,copy) NSString *transferManualPromptWord;
+
+/**
+ 接入人工提示语开关: 0-关闭 1-开启(默认开启)
+ */
+@property (nonatomic,assign) int servicePromptFlag;
+
+/**
+ 转人工提示语;4.1.3 新增，中文替换“#客服昵称#”其它语言替换“#Customer nickname#”
+ 默认值:您好，客服 #客服昵称# 为您提供服务
+ 已对默认值“#客服昵称#”做了多语言处理
+ */
+@property (nonatomic,copy) NSString *servicePromptWord;
+
+
 
 /// *******************************************  v4.0.0 主题相关参数 千人千面  end*******************************************
 
