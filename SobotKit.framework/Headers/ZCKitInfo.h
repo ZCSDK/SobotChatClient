@@ -456,12 +456,12 @@
 /**
  *  返回按钮的默认背景色
  */
-@property (nonatomic,strong) UIColor *topBackNolColor;
+//@property (nonatomic,strong) UIColor *topBackNolColor;
 
 /**
  *  返回按钮的高亮背景色
  */
-@property (nonatomic,strong) UIColor *topBackSelColor;
+//@property (nonatomic,strong) UIColor *topBackSelColor;
 
 /**
  * 导航栏背景色  （系统导航栏 和自定义导航栏View背景色  默认白色）
