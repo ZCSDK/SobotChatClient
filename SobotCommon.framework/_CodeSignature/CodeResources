@@ -58,7 +58,11 @@
 		</data>
 		<key>Headers/SobotCommonDefine.h</key>
 		<data>
-		Kgas/ssQP19bCp+bDdkgxKKhEyU=
+<<<<<<< HEAD
+		ucdwQcVHz5NDMXE4A8M2w7q3iAo=
+=======
+		PN8fgDIVL/DProDx5iKHQeGpbrE=
+>>>>>>> c535fdd09a1c790d2f5e90c28ec567353bc073fa
 		</data>
 		<key>Headers/SobotCommonVersion.h</key>
 		<data>
@@ -122,7 +126,7 @@
 		</data>
 		<key>Headers/SobotKxMenu.h</key>
 		<data>
-		4WjUWEl4+1oVmzX5UEH0a5r852s=
+		Qj/ficiAvdCYAYWYDZTi1KXP3w0=
 		</data>
 		<key>Headers/SobotLayoutTools.h</key>
 		<data>
@@ -502,11 +506,19 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Kgas/ssQP19bCp+bDdkgxKKhEyU=
+<<<<<<< HEAD
+			ucdwQcVHz5NDMXE4A8M2w7q3iAo=
 			</data>
 			<key>hash2</key>
 			<data>
-			R0Iq7hjo3aixLfhuTfSNRKLjvfxsogg8iKOZyQcVutQ=
+			S2JXqqaKZWyqlU2JFKqJ7I2pucgLdpHNkmS91Zm7xEI=
+=======
+			PN8fgDIVL/DProDx5iKHQeGpbrE=
+			</data>
+			<key>hash2</key>
+			<data>
+			D4+6Qts21MZloMDeFcmUvIv6X2r8f6y2yWEvnHTVhCY=
+>>>>>>> c535fdd09a1c790d2f5e90c28ec567353bc073fa
 			</data>
 		</dict>
 		<key>Headers/SobotCommonVersion.h</key>
@@ -678,11 +690,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4WjUWEl4+1oVmzX5UEH0a5r852s=
+			Qj/ficiAvdCYAYWYDZTi1KXP3w0=
 			</data>
 			<key>hash2</key>
 			<data>
-			bLsgcnIKjXIOsQXZtpZ5ueKlIFTMUgwrQgkOcN8522w=
+			Pb97GIuoqT0CukEkH0l1VfMFmTakd6/zS/ZCN3k/zlA=
 			</data>
 		</dict>
 		<key>Headers/SobotLayoutTools.h</key>

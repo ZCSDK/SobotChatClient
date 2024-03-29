@@ -28,9 +28,11 @@
 
 //#import <SobotUtils_private/SobotUtils.h>
 //#import <SobotUtils_private/SobotLocaliable.h>
-//// 多语言支持
+
+//// 多语言支持    这里需要注意 App使用下面的获取方式App有自己的组件图片资源包文件  SDK使用传入的
 #define SobotLocalString(key) [[SobotLocaliable shareSobotLocaliable] sobotGetLocalString:key]
 //#define SobotLocalString(key) [[SobotLocaliable shareSobotLocaliable] sobotGetLocalString:key bundleName:@"SobotCommon"]
+
 // 资源
 #define SobotGetImage(imageName) [SobotUITools getSysImageByName:imageName]
 
