@@ -31,6 +31,9 @@ typedef NS_ENUM(NSInteger,ZCTurnType) {
     ZCTurnType_InitOnUserType,              // 初始化仅人工或人工优先
     ZCTurnType_CustomKeyWord,               // 客户自定义关键字转人工，不出转人工按钮，在ZCLibInitInfo中配置
     ZCTurnType_OffMessageAdmin,            // 转接到发送过离线消息的客服
+    ZCTurnType_LoopAdmin,                   //多轮节点指定客服转人工
+    ZCTurnType_LoopGroup,                   //多轮节点指定技能组转人工
+    ZCTurnType_LoopNol,                   //多轮节点默认转人工
 };
 
 typedef NS_ENUM(NSInteger,ZCShowStatus) {
@@ -128,8 +131,9 @@ typedef void (^DetailViewBlock)(SobotChatMessage * _Nonnull model,int type ,id o
 
 @property(nonatomic,copy) DetailViewBlock detailViewBlock;
 
-+(ZCUICore * _Nonnull)getUICore;
 
++(ZCUICore * _Nonnull)getUICore;
+@property(nonatomic,assign) CGFloat zc_keyBoardHeight;
 @property (nonatomic,copy) NSString *checkGroupId;
 @property (nonatomic,copy) NSString *checkGroupName;
 @property(nonatomic,assign) BOOL isShowForm;// 是否直接去转人工，不在查询询前表单的接口
@@ -216,7 +220,9 @@ typedef void (^DetailViewBlock)(SobotChatMessage * _Nonnull model,int type ,id o
 /// - Parameters:
 ///   - card: 自定义卡片
 ///   - sendType: 0:添加到会话记录，1:发送给机器人/人工
--(void)sendCusCardMessage:(SobotChatCustomCard *_Nonnull) card type:(int) sendType;
+///    isRobot 是否是发给机器人
+///    isFirst 是否首次
+-(void)sendCusCardMessage:(SobotChatCustomCard *_Nonnull) card type:(int) sendType isRobot:(BOOL)isRobot isFirst:(BOOL)isFirst;
 
 /// 自定义卡片menu点击计数
 /// @param menu 点击的menu
@@ -300,4 +306,16 @@ typedef void (^DetailViewBlock)(SobotChatMessage * _Nonnull model,int type ,id o
 // 添加引用消息到键盘
 -(void)doReferenceMessage:(SobotChatMessage *)model;
 
+// 获取机器人点踩的配置
+-(void)getRobotTip;
+
+-(void)addRobotRealuateMsg:(SobotChatMessage *)robotMsg newMsg:(SobotChatMessage *)newMsg;
+
+// 刷新提交机器人踩 标签消息 25的状态
+-(void)updateRealuateMsgStatus:(SobotChatMessage *)robotMsg tagId:(NSString *)tagId tipStr:(NSString *)tipStr text:(NSString *)text;
+// 结束会话 过滤本次会话 未提交机器人点踩标签的系统25消息
+-(void)removeRobotSubmitMsg;
+
+//
+-(BOOL)isKeyboardNewSession;
 @end

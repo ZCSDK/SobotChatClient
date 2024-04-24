@@ -66,6 +66,16 @@
    progress:(ProgressBlock) progressBlock;
 
 
++(void)post:(NSString *) stringURL
+      param:(NSDictionary *) dict
+      model:(int)model
+    timeOut:(CGFloat) timeOut
+      start:(StartBlock) startBlock
+     finish:(FinishBlock) finishBlock
+   complete:(CompleteBlock) completeBlock
+       fail:(FailBlock) failBlock
+   progress:(ProgressBlock) progressBlock;
+
 
 +(ZCLibHttpManager *) getZCHttpManager;
 

@@ -440,6 +440,9 @@
  */
 @property (nonatomic,strong) UIColor *commentItemButtonBgColor;
 
+// 不可点带透明度的按钮文字颜色
+@property (nonatomic,strong) UIColor *commentItemButtonBgColorAlpha;
+
 @property (nonatomic,strong) UIColor *commentItemButtonSelBgColor;
 
 /**

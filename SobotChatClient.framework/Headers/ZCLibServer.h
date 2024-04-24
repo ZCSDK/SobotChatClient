@@ -443,6 +443,7 @@ typedef void(^SobotKitResultBlock)(ZCNetWorkCode code,id _Nullable obj,NSDiction
 /// @param failedBlock 失败
 +(void)getHistoryMessages:(NSString *)cid
                   withUid:(NSString *) uid
+                 currtCid:(NSString *)currtCid
                     start:(void (^)(NSString *url, NSDictionary *parameters))startBlock
                   success:(void (^)(NSMutableArray *messages, ZCNetWorkCode))successBlock
                    failed:(void (^)(NSString *errormsg, ZCNetWorkCode))failedBlock;
@@ -617,6 +618,47 @@ typedef void(^SobotKitResultBlock)(ZCNetWorkCode code,id _Nullable obj,NSDiction
                        uid:(ZCLibConfig *)config
                      error:(void (^)(ZCNetWorkCode status,NSString *errorMessage))errorBlock
                              success:(void(^)(NSString *msgLeaveTxt,NSString *msgLeaveContentTxt,NSString *leaveExplain)) successBlock;
+
+
+
+
+/// 查询是否可以发送自定义卡片
+/// - Parameters:
+///   - cardId: 卡片ID 唯一键
+///   - cid: 当前会话ID
+///   - startBlock: 开始
+///   - successBlock: 成功
+///   - failedBlock: 失败
++(void)checkCardSendRepeat:(NSString *) cardId
+                cid:(NSString *)cid
+             start:(void (^)(NSString *url))startBlock
+           success:(void(^)(NSDictionary *dict,ZCNetWorkCode sendCode)) successBlock
+                    failed:(void(^)(NSString *errorMessage,ZCNetWorkCode errorCode)) failedBlock;
+
+
+/// 查询机器人点踩配置信息
+/// @param uid 用户ID
+/// @param robotFlag 机器人ID
+/// @param startBlock startBlock description
+/// @param successBlock successBlock description
+/// @param failedBlock failedBlock description
++(void)getRobotRealuateConfigInfo:(NSString *)uid
+                        robotFlag:(NSString *)robotFlag
+                            start:(void (^)(NSString *url))startBlock
+                          success:(void(^)(NSDictionary *dict,ZCNetWorkCode sendCode)) successBlock
+                           failed:(void(^)(NSString *errorMessage,ZCNetWorkCode errorCode)) failedBlock;
+
+
+/// 对点踩信息追加系统消息 或追加标签点踩原因
+/// @param param 入参
+/// @param startBlock startBlock description
+/// @param successBlock successBlock description
+/// @param failedBlock failedBlock description
++(void)postRobotOperation:(NSDictionary *)param
+                    start:(void (^)(NSString *url))startBlock
+                  success:(void(^)(NSDictionary *dict,ZCNetWorkCode sendCode)) successBlock
+                   failed:(void(^)(NSString *errorMessage,ZCNetWorkCode errorCode)) failedBlock;
+
 @end
 
 NS_ASSUME_NONNULL_END

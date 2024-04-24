@@ -10,6 +10,8 @@
 #import <SobotChatClient/ZCLibInitInfo.h>
 #import <SobotCommon/SobotCommon.h>
 
+@class ZCChatRealuateConfigInfo;
+
 /**
  *  配置信息
  */
@@ -36,6 +38,10 @@
 
 @property(nonatomic,assign) BOOL realuateStyle;// realuateStyle 0-右侧展示 1-下方展示！机器人点踩按钮
 
+@property(nonatomic,assign) BOOL realuateInfoFlag;// //点踩原因开关 0关闭 1开启 默认0
+
+@property(nonatomic,strong) ZCChatRealuateConfigInfo *RealuateConfigInfo;// 机器人点踩配置数据
+@property(nonatomic,copy) NSString *realuateConfigInfoJsonStr; // 上传接口使用json 数据
 /**
  *  客服不在线标题
  */
@@ -556,6 +562,9 @@
  */
 @property (nonatomic,copy) NSString *servicePromptWord;
 
+// 分词联想开关  0-关闭 1-开启
+@property(nonatomic,assign) int robotGuessFlag;
+
 
 
 /// *******************************************  v4.0.0 主题相关参数 千人千面  end*******************************************
@@ -608,7 +617,7 @@
 //  同PC端 设置-在线客服分配-排队优先设置-指定客户优先   开启传1 默认不设置
 @property (nonatomic,assign) int queueFirst;
 
-//转人工类型：1-重复提问，2-负向情绪 ,3-关键词转人工 4-多轮会话转人工 5:机器人自动转人工(新版拆分为6-9,activeTransfer此时为1) 6直接转人工，7理解转人工，8引导转人工，9未知转人工 10，点踩转人工
+//转人工类型：1-重复提问，2-负向情绪 ,3-关键词转人工 4-多轮会话转人工 5:机器人自动转人工(新版拆分为6-9,activeTransfer此时为1) 6直接转人工，7理解转人工，8引导转人工，9未知转人工 10，点踩转人工 11，多轮节点转人工
 @property (nonatomic,assign) int transferType;
 
 // 词条触发转人工的词条id
@@ -672,6 +681,9 @@
 @property(nonatomic,copy)NSString *fileName;
 @property(nonatomic,copy)NSString *fileType;
 @property(nonatomic,assign)int msgType;
+
+// 机器人发送自定义卡片使用
+@property(nonatomic,copy)NSString *customCardQuestion;
 @end
 
 // 对话框 拓展功能
@@ -696,4 +708,5 @@
 @property(nonatomic,copy)NSString *extModelPhoto;
 @property(nonatomic,copy)NSString *companyId;
 -(id)initWithMyDict:(NSDictionary *)dict;
+
 @end

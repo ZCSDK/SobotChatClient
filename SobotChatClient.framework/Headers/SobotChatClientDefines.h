@@ -19,8 +19,8 @@
 // 底部弹出标题高度
 #define ZCSheetTitleHeight   60
 
-// 是否开启自动提醒
-#define Sobot_isEnableAutoTips @"Sobot_isEnableAutoTips"
+// 是否开启自动提醒   414 废弃 从初始化接口获取
+//#define Sobot_isEnableAutoTips @"Sobot_isEnableAutoTips"
 
 // 企业ID
 #define Sobot_CompanyId @"Sobot_CompanyId"
