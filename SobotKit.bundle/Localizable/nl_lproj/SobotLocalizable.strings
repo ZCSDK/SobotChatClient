@@ -250,3 +250,14 @@
 "文章" = "artikel";
 
 "引用" = "citaat";
+
+// 4.1.5新增
+"已选"="Geselecteerd";
+"搜索"="zoeken";
+"搜索全部省"="Doorzoek alle provincies";
+"搜索全部市"="Zoek alle steden";
+"搜索全部县（区）"="Doorzoek alle districten (districten)";
+"搜索全部街道"="Doorzoek alle straten";
+
+"无结果"="Geen resultaat";
+

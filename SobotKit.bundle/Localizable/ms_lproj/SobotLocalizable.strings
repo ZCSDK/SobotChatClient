@@ -230,3 +230,14 @@
 "链接" = "Pautan";
 "文章" = "Artikel";
 "引用" = "petikan";
+
+// 4.1.5新增
+"已选"="Dipilih";
+
+"搜索"="Cari";
+"搜索全部省"="Cari semua provinsi";
+"搜索全部市"="Cari semua bandar";
+"搜索全部县（区）"="Cari semua daerah (daerah)";
+"搜索全部街道"="Cari semua jalan";
+
+"无结果"="Tiada hasil";

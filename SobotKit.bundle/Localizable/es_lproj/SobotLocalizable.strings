@@ -230,3 +230,13 @@
 "文章" = "artículo";
 
 "引用" = "Cita";
+
+// 4.1.5新增
+"已选"="seleccionado";
+"搜索"="Buscar";
+"搜索全部省"="Buscar todas las provincias";
+"搜索全部市"="Buscar todas las ciudades";
+"搜索全部县（区）"="Buscar todos los condados (distritos)";
+"搜索全部街道"="Buscar todas las calles";
+
+"无结果"="sin resultados";

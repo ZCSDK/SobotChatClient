@@ -84,7 +84,7 @@
 "找不到图片" = "Picture not found";
 "以下为未读消息" = "Below are new messages";
 "暂无相关内容" = "No relevant content";
-"暂无客服在线" = "Service unavailable";
+"暂无客服在线" = "No Agents Currently Online";
 "更新" = "To update";
 "您的留言状态有" = "Message status updated";
 "条新消息" = "New Messages";
@@ -235,3 +235,14 @@
 "链接" = "Link";
 "文章" = "Article";
 "引用"="Quote";
+
+
+// 4.1.5新增
+"已选"="Selected";
+
+"搜索"="search";
+"搜索全部省"="Search all provinces";
+"搜索全部市"="Search all cities";
+"搜索全部县（区）"="Search all counties (districts)";
+"搜索全部街道"="Search all streets";
+"无结果"="No result";

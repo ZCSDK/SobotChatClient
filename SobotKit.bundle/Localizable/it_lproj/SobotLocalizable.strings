@@ -229,3 +229,13 @@
 "链接" = "Link";
 "文章" = "Articolo";
 "引用" = "citazione";
+
+// 4.1.5新增
+"已选"="Selezionato";
+"搜索"="ricerca";
+"搜索全部省"="Cerca tutte le province";
+"搜索全部市"="Cerca tutte le città";
+"搜索全部县（区）"="Cerca tutte le contee (distretti)";
+"搜索全部街道"="Cerca tutte le strade";
+
+"无结果"="Nessun risultato";

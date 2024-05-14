@@ -231,3 +231,13 @@
 "文章" = "Artikel";
 
 "引用" = "Zitat";
+
+// 4.1.5新增
+"已选"="Ausgewählt";
+
+"搜索"="Suche";
+"搜索全部省"="Alle Provinzen durchsuchen";
+"搜索全部市"="Alle Städte durchsuchen";
+"搜索全部县（区）"="Alle Landkreise durchsuchen";
+"搜索全部街道"="Alle Straßen durchsuchen";
+"无结果"="Kein Ergebnis";

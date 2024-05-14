@@ -203,6 +203,7 @@
 
 /**
  *  返回时开启满意度评价,显示暂不评价
+ *  人工状态下 配置 isShowCloseSatisfaction 和isShowClose 显示暂不评价
  *  默认为NO 未开启
  */
 @property (nonatomic,assign) BOOL canBackWithNotEvaluation;

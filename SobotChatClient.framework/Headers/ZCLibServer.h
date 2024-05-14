@@ -659,6 +659,24 @@ typedef void(^SobotKitResultBlock)(ZCNetWorkCode code,id _Nullable obj,NSDiction
                   success:(void(^)(NSDictionary *dict,ZCNetWorkCode sendCode)) successBlock
                    failed:(void(^)(NSString *errorMessage,ZCNetWorkCode errorCode)) failedBlock;
 
+
+
++(void)getLeaveRegionList:(NSString *) pid
+                    start:(void(^)(NSString *urlString)) startBlock
+                          success:(void(^)(NSDictionary *dict,ZCNetWorkCode sendCode))successBlock
+                           failed:(void(^)(NSString *errorMessage,ZCNetWorkCode errorCode))failedBlock
+                   finish:(void(^)(id response, NSData *data)) finishBlock;
+
+
+/// 搜索地区
++(void)searchLeaveRegion:(NSString *)queryParam
+           regionalLevel:(int )regionalLevel
+                page:(int )pageNo
+                         start:(void(^)(NSString *urlString)) startBlock
+                       success:(void(^)(NSDictionary *dict,ZCNetWorkCode sendCode))successBlock
+                        failed:(void(^)(NSString *errorMessage,ZCNetWorkCode errorCode))failedBlock
+                  finish:(void(^)(NSString *jsonString)) finishBlock;
+
 @end
 
 NS_ASSUME_NONNULL_END

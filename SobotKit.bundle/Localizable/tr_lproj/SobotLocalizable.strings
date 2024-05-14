@@ -229,3 +229,12 @@
 "链接" = "Link";
 "文章" = "Article";
 "引用" = "sitat";
+
+"已选"="Seçili";
+
+"搜索"="arama";
+"搜索全部省"="Bütün eyaletleri arayın";
+"搜索全部市"="Bütün şehirleri arayın";
+"搜索全部县（区）"="Bütün eyaletleri araştır (bölgeler)";
+"搜索全部街道"="Bütün sokakları arayın";
+"无结果"="Sonuç yok";

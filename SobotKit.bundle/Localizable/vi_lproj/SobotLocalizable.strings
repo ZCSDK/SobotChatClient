@@ -229,3 +229,14 @@
 "链接" = "liên kết";
 "文章" = "bài viết";
 "引用" = "Trích dẫn";
+
+
+"已选"="Đã chọn";
+"搜索"="Tìm kiếm";
+"搜索全部省"="Tìm tất cả Province";
+"搜索全部市"="Tìm tất cả thành phố";
+"搜索全部县（区）"="Tìm kiếm tất cả các quận (quận)";
+"搜索全部街道"="Tìm tất cả đường phố";
+
+
+"无结果"="không có kết quả";
