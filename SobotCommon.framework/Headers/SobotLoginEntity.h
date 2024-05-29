@@ -126,9 +126,9 @@ static SobotLoginModuleType _Nullable const SobotLoginModuleType1611  = @"1611";
 static SobotLoginModuleType _Nullable const SobotLoginModuleTypeOrder1231  = @"1231";  // 工单状态，可见与不可见
 
 
-static SobotLoginModuleType _Nullable const SobotLoginModuleTypeBlack  = @"220201";  // 工单状态，可见与不可见
-static SobotLoginModuleType _Nullable const SobotLoginModuleTypeTransfer  = @"220202";  // 工单状态，可见与不可见
-static SobotLoginModuleType _Nullable const SobotLoginModuleTypeDIY_ADMIN  = @"220204";  // 工单状态，可见与不可见
+static SobotLoginModuleType _Nullable const SobotLoginModuleTypeBlack  = @"220201";  // 在线是否有拉黑，使用旧版本验证
+static SobotLoginModuleType _Nullable const SobotLoginModuleTypeTransfer  = @"220202";  // 在线是否转接，使用旧版验证
+static SobotLoginModuleType _Nullable const SobotLoginModuleTypeDIY_ADMIN  = @"220204";  // 未使用
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -54,6 +54,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param appletBlock 获取到的参数对象
 +(void)setAppletClickBlock:(BOOL(^)(SobotChatMessage *_Nonnull))appletBlock;
 
+// 点击拦截留言，跳转到用户自己的留言页面
++(void)customLeavePageClickBlock:(BOOL(^)(NSDictionary *dict))leavePageBlock;
+
 /// 拦截留言事件，如果实现该方法，SDK内部不在处理留言事件，用户可以跳转到自己的留言页面
 /// @param leavePageBlock 获取到的参数对象
 +(void)setCustomLeavePageBlock:(BOOL(^)(NSDictionary * dict))leavePageBlock;

@@ -58,6 +58,8 @@ NS_ASSUME_NONNULL_BEGIN
 // 对象转换为字典
 + (NSDictionary*)getObjectData:(id)obj;
 
+// 处理接口不要的字段 转JSON
++ (NSDictionary*)getObjectData:(id)obj isRemove:(BOOL)isRemove;
 
 /**
  存储本地数据到NSUserDefault中
