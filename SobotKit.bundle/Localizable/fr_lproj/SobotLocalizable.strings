@@ -23,10 +23,10 @@
 "请选择要咨询的内容" = "Veuillez sélectionner le contenu à consulter";
 "请选择要咨询的业务" = "Veuillez sélectionner le service à consulter";
 "换业务" = "Changer du service";
-"换一批" = "Changer un groupe";
+"换一组" = "Changer un groupe";
 "建议为必填" = "Suggérer : Obligatoire";
 "服务评价" = "Évaluation";
-"留言" = "Laisser un mot";
+"留言" = "Laisser un mot ";
 "您好，客服" = "Bonjour, service client";
 "接受了您的请求" = "a accepté votre demande";
 "服务器请求错误！" = "Erreur de demande du serveur!";
@@ -49,7 +49,6 @@
 "评分" = "Evaluation";
 "评语" = "Commentaires";
 "是否解决了您的问题？" = "a-t-il résolu votre problèm?";
-"请选择是否解决了您的问题" = "Veuillez choisir si votre problème est résolu";
 "受理中" = "Acceptant";
 "问题分类" = "Catégorie de question";
 "问题详情" = "Détails de la question";
@@ -200,35 +199,45 @@
 "状态" = "Statut";
 "自定义字段" = "Champ personnalisé";
 "非常不满意" = "Très insatisfait";
-"未解决问题？点击" = "Votre problème n\'a pas été résolu ?";
-"转人工服务" = "Services à la personne";
+"未解决问题？点击" = "Votre problème n'a pas été résolu ?";
+"转人工服务" = "Services à la personne ";
+"展开消息" = "Développer le message";
+"继续发送" = "Continuer à envoyer";
+"拒绝" = "Refuser";
+"您已同意发送个人敏感信息，本次授权有效期24小时" = "Vous avez accepté d\'envoyer des renseignements personnels de nature délicate et cette autorisation est valide 24 heures sur 24.";
+"您已拒绝发送此消息" = "Vous avez refusé d\'envoyer ce message";
+"附件" = "Annexe";
+"保存成功" = "Enregistré avec succès";
+"保存失败" = "L\'enregistrement a échoué";
+
+
+//************* 同步415的数据 ***********
+"填写信息" = "Remplir les informations";
+"排队自动断开结束会话" = "Fin de la session après la déconnexion automatique de la file d\'attente";
 "小程序" = "Applet";
 "小程序只能通过微信打开" = "Les applets ne peuvent être ouverts que par Wechat";
 "解析中..." = "Parsing...";
 "转换失败" = "La conversion a échoué";
 "转换完成" = "Conversion terminée";
-
 "订单号" = "numéro de commande";
 "交易状态"="statut commercial";
 "创建时间"="temps de creation";
 "展开更多" = "Développer plus";
 "共" = "Au total";
-
 "已读"="Lu";
 "未读"="non lu";
 "我"="Moi";
 "机器人"="Robots";
 "链接" = "liens";
 "文章" = "articles";
-
 "引用" = "Citations";
-
-// 4.1.5新增
 "已选"="sélectionné";
-
 "搜索"="Rechercher";
 "搜索全部省"="Rechercher dans toutes les provinces";
 "搜索全部市"="Rechercher dans toutes les villes";
 "搜索全部县（区）"="Rechercher dans tous les comtés (districts)";
 "搜索全部街道"="Rechercher toutes les rues";
 "无结果"="aucun résultat";
+"请选择是否解决了您的问题" = "Veuillez choisir si votre problème est résolu";
+"换一批" = "Changer un groupe";
+//************* 同步415的数据 ***********

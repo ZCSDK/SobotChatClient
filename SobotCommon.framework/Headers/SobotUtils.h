@@ -206,7 +206,7 @@ NSString *sobotGetCurrentLanguages(void);
 
 // 是否为需要支持RTL语言版本
 BOOL sobotIsRTLLayout(void);
-
+BOOL sobotCheckLanIsRTLLayout(NSString *lan);
 
 /**
  *  获取设备的尺寸

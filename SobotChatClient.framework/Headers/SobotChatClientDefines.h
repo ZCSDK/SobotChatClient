@@ -9,6 +9,7 @@
 
 // 国际化
 #define SobotKitLocalString(key) [SobotChatClientCache localKitString:key]
+#define SobotKitIsRTLLayout [SobotChatClientCache checkKitIsRTLLayout]
 
 // 资源
 #define SobotKitGetImage(imageName) [SobotUITools getSysImageByName:imageName bundleName:ChatClientBundelName]

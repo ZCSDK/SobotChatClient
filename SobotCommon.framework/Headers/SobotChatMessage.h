@@ -634,6 +634,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SobotChatMessage : SobotBaseEntity
 
+// 是一问多答的消息 和人工客服回复的新消息 是否要加锁
+@property(nonatomic,assign) BOOL isLockMsg;
+
+// 是否是一问多答的消息
+@property(nonatomic,assign) BOOL isAnswersMsg;
+// 是否是一问多答的最后一条消息
+@property(nonatomic,assign) BOOL isLastAnswersMsg;
 // 消息类型
 @property(nonatomic,assign) SobotMessageType msgType;
 

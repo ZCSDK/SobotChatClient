@@ -23,7 +23,7 @@
 "请选择要咨询的内容" = "Lütfen danışmak istediğiniz içerikleri seçin";
 "请选择要咨询的业务" = "Lütfen danışmak istediğiniz işi seçin";
 "换业务" = "Işler değişimi";
-"换一批" = "Bir grup değiştir";
+"换一组" = "Bir grup değiştir";
 "建议为必填" = "Öneri isteğe bağlı";
 "服务评价" = "Değerlendirme";
 "留言" = "Mesaj bırak";
@@ -49,7 +49,6 @@
 "评分" = "Değerlendirme puanı";
 "评语" = "Yorum";
 "是否解决了您的问题？" = "probleminizi çözdü mü?";
-"请选择是否解决了您的问题" = "Lütfen sorununuz çözüldüğünü seçin.";
 "受理中" = "Kabul edildi";
 "问题分类" = "Problem türü";
 "问题详情" = "Problem detayları";
@@ -201,13 +200,17 @@
 "自定义字段" = "Özelleştirilen metin";
 "非常不满意" = "Çok tatmin olmadı.";
 "未解决问题？点击" = "Sorununuzu çözmediniz mi?";
-"转人工服务" = "İnsan kaynakları";
+"转人工服务" = "İnsan kaynakları ";
 "展开消息" = "Mesajı genişlet";
 "继续发送" = "Göndermeye devam et";
 "拒绝" = "Reddetmek";
 "您已同意发送个人敏感信息，本次授权有效期24小时" = "Kişisel duygusal bilgi göndermeye kabul ettiniz. Bu yetkili 24 saat boyunca geçerli.";
 "您已拒绝发送此消息" = "Bu mesajı göndermeyi reddettiniz";
 "附件" = "kaplama";
+"保存成功" = "Başarıyla kaydedildi";
+"保存失败" = "Depolama başarısız";
+
+//************* 同步415的数据  ***********
 "填写信息" = "Bilgi doldur";
 "排队自动断开结束会话" = "Otomatik bağlantısını kapattıktan sonra oturum bitir";
 "小程序" = "Applet";
@@ -215,13 +218,11 @@
 "解析中..." = "ParsingAnalisi";
 "转换失败" = "Görüntüleri değiştir";
 "转换完成" = "Ağı dönüştür";
-
 "订单号" = "sipariş numarası";
 "交易状态"="ticaret durumu";
 "创建时间"="yaratma zamanı";
 "展开更多" = "Daha fazla genişletin";
 "共" = "ortak";
-
 "已读"="Oku";
 "未读"="Okunmamış";
 "我"="Ben";
@@ -229,12 +230,13 @@
 "链接" = "Link";
 "文章" = "Article";
 "引用" = "sitat";
-
 "已选"="Seçili";
-
 "搜索"="arama";
 "搜索全部省"="Bütün eyaletleri arayın";
 "搜索全部市"="Bütün şehirleri arayın";
 "搜索全部县（区）"="Bütün eyaletleri araştır (bölgeler)";
 "搜索全部街道"="Bütün sokakları arayın";
 "无结果"="Sonuç yok";
+"请选择是否解决了您的问题" = "Lütfen sorununuz çözüldüğünü seçin.";
+"换一批" = "Bir grup değiştir";
+//************* 同步415的数据 end ***********

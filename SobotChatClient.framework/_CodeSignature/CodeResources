@@ -10,11 +10,11 @@
 		</data>
 		<key>Headers/SobotChatClientCache.h</key>
 		<data>
-		RL4totI8iZ1cIqcytxvGEkNwfF4=
+		8cA3Mx5/MzcM1jOCewwnSmqPjA8=
 		</data>
 		<key>Headers/SobotChatClientDefines.h</key>
 		<data>
-		I0nzfg1rkXcDdg1SKT6FPFtKBPU=
+		/0raDhj1HlDAlBM0cuHUEwWnv+4=
 		</data>
 		<key>Headers/SobotMessageDefines.h</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Headers/ZCLibClient.h</key>
 		<data>
-		jITScuVjKbZuWKvGReTUJyZp180=
+		CRw1ivOAR0rdsqaH/VEVz6jIRM8=
 		</data>
 		<key>Headers/ZCLibConfig.h</key>
 		<data>
-		JaZfZSZXrlsiYVccyi6Hv2cXCOs=
+		eZhENTGLWM+8D9xNqu33/MlFT4M=
 		</data>
 		<key>Headers/ZCLibHttpConstants.h</key>
 		<data>
@@ -134,22 +134,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RL4totI8iZ1cIqcytxvGEkNwfF4=
+			8cA3Mx5/MzcM1jOCewwnSmqPjA8=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ad52z62DfhYG6UKF5p2GCPx3WVQo5IhaDcIhov6tvu8=
+			/mrAEUPiuIwGPxI+L2crYUg+zZFmdcw9NPcIuCZkkzQ=
 			</data>
 		</dict>
 		<key>Headers/SobotChatClientDefines.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			I0nzfg1rkXcDdg1SKT6FPFtKBPU=
+			/0raDhj1HlDAlBM0cuHUEwWnv+4=
 			</data>
 			<key>hash2</key>
 			<data>
-			rbUEU+zxvDYIP7fg6rHLHXdHh82ZQPpbD9iijhxPdsc=
+			Hq0MasGx4SElEyuRgoRz4Cw2TkJt3WvIxO/E/wElhLo=
 			</data>
 		</dict>
 		<key>Headers/SobotMessageDefines.h</key>
@@ -189,22 +189,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jITScuVjKbZuWKvGReTUJyZp180=
+			CRw1ivOAR0rdsqaH/VEVz6jIRM8=
 			</data>
 			<key>hash2</key>
 			<data>
-			wETM3olFFpD/wjXa7TQ17whhsIo/+0UW97TLtFqVPqs=
+			HvPujfnaBmqnFfTLvbs9jeMXee61/VWWY6Z90szA5W0=
 			</data>
 		</dict>
 		<key>Headers/ZCLibConfig.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JaZfZSZXrlsiYVccyi6Hv2cXCOs=
+			eZhENTGLWM+8D9xNqu33/MlFT4M=
 			</data>
 			<key>hash2</key>
 			<data>
-			kOgegY9ZmP19HUB4q6/hM7PRPzkMh5moQSXLjlQAADc=
+			FyM1RIl1sSzOWqz0cNJQ0OVXOSw1+ZudNaXstChV5Ow=
 			</data>
 		</dict>
 		<key>Headers/ZCLibHttpConstants.h</key>

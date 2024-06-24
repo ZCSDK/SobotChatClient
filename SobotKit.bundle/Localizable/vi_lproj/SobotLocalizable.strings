@@ -23,7 +23,7 @@
 "请选择要咨询的内容" = "Hãy chọn nội dung cần tư vấn";
 "请选择要咨询的业务" = "Hãy chọn nghiệp vụ cần tư vấn";
 "换业务" = "Đổi  nghiệp vụ";
-"换一批" = "Đổi tổ";
+"换一组" = "Đổi tổ";
 "建议为必填" = "Kiến nghị bắt buộc điền";
 "服务评价" = "Đánh giá";
 "留言" = "Để Lại lời nhắn";
@@ -49,7 +49,6 @@
 "评分" = "Điểm số";
 "评语" = "Lời đánh giá";
 "是否解决了您的问题？" = "Có giải quyết được vấn đề của bạn không?";
-"请选择是否解决了您的问题" = "Vui lòng chọn nếu vấn đề của bạn được giải quyết";
 "受理中" = "Đang xử lý";
 "问题分类" = "Loại câu hỏi";
 "问题详情" = "Chi tiết câu hỏi";
@@ -201,13 +200,17 @@
 "自定义字段" = "Trường tùy chỉnh";
 "非常不满意" = "Rất thất vọng";
 "未解决问题？点击" = "Không giải quyết được vấn đề của bạn?";
-"转人工服务" = "Dịch vụ con người";
+"转人工服务" = "Dịch vụ con người ";
 "展开消息" = "Mở rộng tin nhắn";
 "继续发送" = "Tiếp tục gửi";
 "拒绝" = "Từ chối";
 "您已同意发送个人敏感信息，本次授权有效期24小时" = "Bạn đã đồng ý gởi thông tin nhạy cảm cá nhân. Giấy phép này hợp lệ cả ngày.";
 "您已拒绝发送此消息" = "Bạn đã từ chối gửi tin nhắn này";
 "附件" = "Chung";
+"保存成功" = "đã lưu thành công";
+"保存失败" = "Lưu thất bại";
+
+//************* 同步415的数据  ***********
 "填写信息" = "Điền thông tin vào";
 "排队自动断开结束会话" = "Kết thúc phiên chạy sau khi xếp hàng tự động ngắt";
 "小程序" = "Name";
@@ -215,13 +218,11 @@
 "解析中..." = "Đức";
 "转换失败" = "Chuyển đổi thất bại";
 "转换完成" = "Hoàn thành chuyển đổi";
-
 "订单号" = "số thứ tự";
 "交易状态"="trạng thái giao dịch";
 "创建时间"="thời gian sáng tạo";
 "展开更多" = "Mở rộng thêm";
 "共" = "Tổng cộng";
-
 "已读"="Đã đọc";
 "未读"="Chưa đọc";
 "我"="Tôi";
@@ -229,14 +230,13 @@
 "链接" = "liên kết";
 "文章" = "bài viết";
 "引用" = "Trích dẫn";
-
-
 "已选"="Đã chọn";
 "搜索"="Tìm kiếm";
 "搜索全部省"="Tìm tất cả Province";
 "搜索全部市"="Tìm tất cả thành phố";
 "搜索全部县（区）"="Tìm kiếm tất cả các quận (quận)";
-"搜索全部街道"="Tìm tất cả đường phố";
-
-
+"搜索全部街道"="Tìm tất cả đường phố"
 "无结果"="không có kết quả";
+"请选择是否解决了您的问题" = "Vui lòng chọn nếu vấn đề của bạn được giải quyết";
+"换一批" = "Đổi tổ";
+//************* 同步415的数据 end ***********

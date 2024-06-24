@@ -337,7 +337,7 @@
 @property (nonatomic,strong) NSString *announceClickUrl;
 
 /**
- *  通道点击之后是否关闭
+ *  通告点击之后是否关闭(4.1.6版本开始废弃)
  */
 @property (nonatomic,assign) int   announceClickFlag;
 

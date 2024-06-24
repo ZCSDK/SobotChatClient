@@ -23,7 +23,7 @@
 "请选择要咨询的内容" = "Elegir lo que quiere consultar";
 "请选择要咨询的业务" = "Elegir el asunto que desea consultar";
 "换业务" = "Cambiar aunto";
-"换一批" = "Cambiar el grupo";
+"换一组" = "Cambiar el grupo";
 "建议为必填" = "Se requiere sugerencia";
 "服务评价" = "Evaluación";
 "留言" = "Mensaje";
@@ -49,7 +49,6 @@
 "评分" = "Punto";
 "评语" = "Comentario";
 "是否解决了您的问题？" = "Se resolvió su problema?";
-"请选择是否解决了您的问题" = "Por favor, elija si ha resuelto su problema.";
 "受理中" = "Aceptando";
 "问题分类" = "Categoría de problemas";
 "问题详情" = "Detalles de pregunta";
@@ -201,13 +200,18 @@
 "自定义字段" = "Campos Personalizados";
 "非常不满意" = "Muy insatisfecho";
 "未解决问题？点击" = "¿No resolvió tu problema?";
-"转人工服务" = "Servicios Humanos";
+"转人工服务" = "Servicios Humanos ";
 "展开消息" = "Expandir el mensaje";
 "继续发送" = "Sigue enviando";
 "拒绝" = "Rehusar";
 "您已同意发送个人敏感信息，本次授权有效期24小时" = "Usted ha accedido a enviar información personal sensible, esta autorización es válida durante 24 horas";
 "您已拒绝发送此消息" = "Has rechazado enviar este mensaje.";
 "附件" = "Anexo";
+"保存成功" = "Guardado exitosamente";
+"保存失败" = "Error al guardar";
+
+
+//************* 同步415的数据 ***********
 "填写信息" = "Rellene la información";
 "排队自动断开结束会话" = "Terminar la sesión después de que la cola se desconecte automáticamente";
 "小程序" = "Applet";
@@ -215,28 +219,25 @@
 "解析中..." = "Analizar...";
 "转换失败" = "La conversión falló";
 "转换完成" = "Conversión completada";
-
 "订单号" = "número de orden";
 "交易状态"="estado comercial";
 "创建时间"="tiempo de creación";
 "展开更多" = "Lanza más";
 "共" = "Total";
-
 "已读"="leído";
 "未读"="no leído";
 "我"="Yo";
 "机器人"="Robot";
 "链接" = "enlace";
 "文章" = "artículo";
-
 "引用" = "Cita";
-
-// 4.1.5新增
 "已选"="seleccionado";
 "搜索"="Buscar";
 "搜索全部省"="Buscar todas las provincias";
 "搜索全部市"="Buscar todas las ciudades";
 "搜索全部县（区）"="Buscar todos los condados (distritos)";
 "搜索全部街道"="Buscar todas las calles";
-
 "无结果"="sin resultados";
+"请选择是否解决了您的问题" = "Por favor, elija si ha resuelto su problema.";
+"换一批" = "Cambiar el grupo";
+//************* 同步415的数据 ***********

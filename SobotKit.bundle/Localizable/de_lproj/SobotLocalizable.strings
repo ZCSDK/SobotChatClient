@@ -23,7 +23,7 @@
 "请选择要咨询的内容" = "Bitte wählen sie den zu beratenden inhalt";
 "请选择要咨询的业务" = "Bitte wählen sie die zu beratende berufsarbeit";
 "换业务" = "Berufsarbeit wechseln";
-"换一批" = "Andere gruppe wechseln";
+"换一组" = "Andere gruppe wechseln";
 "建议为必填" = "Rat ist erforderlich";
 "服务评价" = "Auswertung";
 "留言" = "Message";
@@ -49,7 +49,6 @@
 "评分" = "Wertungen";
 "评语" = "Bemerkungen";
 "是否解决了您的问题？" = "Hat  ihr problem gelöst?";
-"请选择是否解决了您的问题" = "Bitte wählen Sie, ob Ihr Problem gelöst wurde";
 "受理中" = "Akzeptiert";
 "问题分类" = "Problemkategorie";
 "问题详情" = "Problemeinzelheiten";
@@ -201,13 +200,18 @@
 "自定义字段" = "Benutzerdefinierte feld";
 "非常不满意" = "Sehr unzufrieden";
 "未解决问题？点击" = "Ihr Problem nicht gelöst?";
-"转人工服务" = "Personaldienstleistungen";
+"转人工服务" = "Personaldienstleistungen ";
 "展开消息" = "Erweitern Sie die Nachricht";
 "继续发送" = "Sende weiterhin";
 "拒绝" = "Sich weigern";
 "您已同意发送个人敏感信息，本次授权有效期24小时" = "Sie haben zugestimmt, persönliche sensible Informationen zu senden. Diese Berechtigung ist für 24-Stunden gültig";
 "您已拒绝发送此消息" = "Sie haben das Senden dieser Nachricht abgelehnt";
 "附件" = "Gehäuse";
+"保存成功" = "Erfolgreich gespeichert";
+"保存失败" = "Fehlgeschlagen speichern";
+
+
+//************* 同步415的数据 ***********
 "填写信息" = "Informationen ausfüllen";
 "排队自动断开结束会话" = "Sitzung nach automatischer Trennung in der Warteschlange beenden";
 "小程序" = "AppletName";
@@ -215,29 +219,25 @@
 "解析中..." = "Analyse";
 "转换失败" = "Ansicht wechseln";
 "转换完成" = "Netzwerk konvertieren";
-
-
 "订单号" = "Bestellnummer";
 "交易状态"="Handelsstatus";
 "创建时间"="Erstellungszeitpunkt";
 "展开更多" = "Mehr erweitern";
 "共" = "häufig";
-
 "已读"="Lesen";
 "未读"="Ungelesen";
 "我"="Ich";
 "机器人"="Roboter";
 "链接" = "Link";
 "文章" = "Artikel";
-
 "引用" = "Zitat";
-
-// 4.1.5新增
 "已选"="Ausgewählt";
-
 "搜索"="Suche";
 "搜索全部省"="Alle Provinzen durchsuchen";
 "搜索全部市"="Alle Städte durchsuchen";
 "搜索全部县（区）"="Alle Landkreise durchsuchen";
 "搜索全部街道"="Alle Straßen durchsuchen";
 "无结果"="Kein Ergebnis";
+"请选择是否解决了您的问题" = "Bitte wählen Sie, ob Ihr Problem gelöst wurde";
+"换一批" = "Andere gruppe wechseln";
+//************* 同步415的数据 ***********

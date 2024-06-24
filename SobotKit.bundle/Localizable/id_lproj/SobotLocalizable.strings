@@ -23,7 +23,7 @@
 "请选择要咨询的内容" = "Pilih konten yang akan dikonsultasikan";
 "请选择要咨询的业务" = "Pilih Proyek yang akan diajak berkonsultasi";
 "换业务" = "Ganti Proyek";
-"换一批" = "Ganti grup";
+"换一组" = "Ganti grup";
 "建议为必填" = "Disarankan sebagai opsional";
 "服务评价" = "Evaluasi";
 "留言" = "Tinggalkan mesej";
@@ -49,7 +49,6 @@
 "评分" = "skor";
 "评语" = "Komentar";
 "是否解决了您的问题？" = "Apakah  memecahkan masalah Anda?";
-"请选择是否解决了您的问题" = "Silakan pilih apakah masalah Anda telah diselesaikan";
 "受理中" = "Sudah diterima";
 "问题分类" = "kategori pertanyaan";
 "问题详情" = "Detail pertanyaan";
@@ -201,13 +200,17 @@
 "自定义字段" = "Tanah adat";
 "非常不满意" = "Sangat tidak puas";
 "未解决问题？点击" = "Tidak menyelesaikan masalah Anda?";
-"转人工服务" = "Layanan manusia";
+"转人工服务" = "Layanan manusia ";
 "展开消息" = "Perluas pesannya";
 "继续发送" = "Terus kirim";
 "拒绝" = "Menolak";
 "您已同意发送个人敏感信息，本次授权有效期24小时" = "Anda telah setuju untuk mengirim informasi sensitif pribadi. Otorisasi ini valid selama 24 jam";
 "您已拒绝发送此消息" = "Anda telah menolak untuk mengirim pesan ini";
 "附件" = "penyamaran";
+"保存成功" = "Berhasil disimpan";
+"保存失败" = "Gagal menyimpan";
+
+//************* 同步415的数据 ***********
 "填写信息" = "Compilare le informazioni";
 "排队自动断开结束会话" = "Termina la sessione dopo la disconnessione automatica in coda";
 "小程序" = "Aplet";
@@ -215,13 +218,11 @@
 "解析中..." = "Menganalisis";
 "转换失败" = "tukar pandangan";
 "转换完成" = "mengubah jaringan";
-
 "订单号" = "jumlah order";
 "交易状态"="status perdagangan";
 "创建时间"="Waktu penciptaan";
 "展开更多" = "Tambah Lebih";
 "共" = "umum";
-
 "已读"="baca";
 "未读"="Belum dibaca";
 "我"="Aku";
@@ -229,14 +230,13 @@
 "链接" = "Link";
 "文章" = "Artikel";
 "引用" = "kutipan";
-
-// 4.1.5新增
 "已选"="Dipilih";
-
 "搜索"="Cari";
 "搜索全部省"="Cari semua provinsi";
 "搜索全部市"="Cari semua kota";
 "搜索全部县（区）"="Cari semua daerah (distrik)";
 "搜索全部街道"="Cari semua jalan";
-
 "无结果"="Tidak ada hasil";
+"请选择是否解决了您的问题" = "Silakan pilih apakah masalah Anda telah diselesaikan";
+"换一批" = "Ganti grup";
+//************* 同步415的数据 ***********

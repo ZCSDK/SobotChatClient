@@ -23,10 +23,10 @@
 "请选择要咨询的内容" = "wybierz treść, z którą chcesz się zapoznać";
 "请选择要咨询的业务" = "wybierz firmę, z którą chcesz się skonsultować";
 "换业务" = "zmień biznes";
-"换一批" = "zmień grupę";
+"换一组" = "zmień grupę";
 "建议为必填" = "sugerowane zgodnie z wymaganiami";
 "服务评价" = "Ocena";
-"留言" = "Wiadomość";
+"留言" = "Wiadomość ";
 "您好，客服" = "Witam, obsługa klienta";
 "接受了您的请求" = "Zaakceptowano Twoją prośbę";
 "服务器请求错误！" = "Wycofano wiadomość";
@@ -49,7 +49,6 @@
 "评分" = "Zezwól na dostęp do swojej kamery w opcji „Ustawienia-Prywatność-Kamera”";
 "评语" = "Przetwarzanie wideo, czekaj!";
 "是否解决了您的问题？" = "Przekroczono limit czasu żądania przyczyny sieci Przeładuj";
-"请选择是否解决了您的问题" = "Proszę wybrać, czy Twój problem został rozwiązany";
 "受理中" = "akceptuję";
 "问题分类" = "kategoria pytań";
 "问题详情" = "szczegóły zapytania";
@@ -201,13 +200,18 @@
 "自定义字段" = "Pole niestandardowe";
 "非常不满意" = "Bardzo niezadowolony";
 "未解决问题？点击" = "Nie rozwiązałeś swojego problemu?";
-"转人工服务" = "Usługi człowieka";
+"转人工服务" = "Usługi człowieka ";
 "展开消息" = "Rozwiń wiadomość";
 "继续发送" = "Wysyłaj dalej";
 "拒绝" = "Odrzucać";
 "您已同意发送个人敏感信息，本次授权有效期24小时" = "Użytkownik zgodził się na przesłanie poufnych danych osobowych. Niniejsze zezwolenie jest ważne przez dobę godzin";
 "您已拒绝发送此消息" = "Odmówiłeś wysłania tej wiadomości";
 "附件" = "obudowa";
+"保存成功" = "Zapisano pomyślnie";
+"保存失败" = "nie udało się zapisać";
+
+
+//************* 同步415的数据 ***********
 "填写信息" = "Wypełnij informacje";
 "排队自动断开结束会话" = "Zakończ sesję po automatycznym rozłączeniu w kolejce";
 "小程序" = "Aplet";
@@ -215,13 +219,11 @@
 "解析中..." = "Analiza";
 "转换失败" = "przełączanie widoków";
 "转换完成" = "konwertuj sieć";
-
 "订单号" = "numer zamówienia";
 "交易状态"="status handlowy";
 "创建时间"="czas utworzenia";
 "展开更多" = "Rozwiń więcej";
 "共" = "często";
-
 "已读"="Czytaj";
 "未读"="Nieprzeczytane";
 "我"="Ja";
@@ -229,14 +231,13 @@
 "链接" = "Link";
 "文章" = "Artykuł";
 "引用" = "cytat";
-
-// 4.1.5新增
 "已选"="Wybrane";
-
 "搜索"="wyszukiwanie";
 "搜索全部省"="Przeszukaj wszystkie prowincje";
 "搜索全部市"="Przeszukaj wszystkie miasta";
 "搜索全部县（区）"="Przeszukaj wszystkie powiaty (okręgi)";
 "搜索全部街道"="Przeszukaj wszystkie ulice";
-
 "无结果"="Brak wyniku";
+"请选择是否解决了您的问题" = "Proszę wybrać, czy Twój problem został rozwiązany";
+"换一批" = "zmień grupę";
+//************* 同步415的数据 ***********

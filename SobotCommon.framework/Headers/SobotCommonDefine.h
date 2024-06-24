@@ -31,6 +31,7 @@
 
 // 多语言支持    这里需要注意 App使用下面的获取方式App有自己的组件图片资源包文件  SDK使用传入的
 #define SobotLocalString(key) [[SobotLocaliable shareSobotLocaliable] sobotGetLocalString:key]
+#define SobotIsRTL [[SobotLocaliable shareSobotLocaliable] sobotCheckRTL]
 
 // 此方法可以废弃，默认取不到资源都会执行SobotCommon
 //#define SobotLocalString(key) [[SobotLocaliable shareSobotLocaliable] sobotGetLocalString:key bundleName:@"SobotCommon"]

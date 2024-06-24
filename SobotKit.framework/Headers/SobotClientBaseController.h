@@ -27,6 +27,7 @@ typedef NS_ENUM(NSInteger, ZCButtonClickTag) {
     BUTTON_EVALUATION =6,// 评价
     BUTTON_TEL   = 7,// 拨打电话
     BUTTON_SEND   = 8, // 清空历史记录
+    BUTTON_NewMsgCount = 9,// 清空新消息计数
 };
 
 // 返回监听
