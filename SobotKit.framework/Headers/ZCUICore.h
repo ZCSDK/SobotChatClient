@@ -153,6 +153,11 @@ typedef void (^DetailViewBlock)(SobotChatMessage * _Nonnull model,int type ,id o
 @property(nonatomic,assign) BOOL isShowRobotGuide; // 是否显示机器人常见问题
 @property(nonatomic,strong) ZCKitInfo     *_Nonnull kitInfo;
 
+// 临时变量记录本次会话是否给机器人发送给自定义消息
+@property(nonatomic,assign) BOOL goodMsgSendToRobot;
+
+// 临时变量记录本次会话是否给客服发送给自定义消息
+@property(nonatomic,assign) BOOL goodMsgSendToService;
 
 // 滑动时，记录已阅读的消息
 @property (nonatomic,strong)NSMutableDictionary * _Nonnull unReadMessageCache;

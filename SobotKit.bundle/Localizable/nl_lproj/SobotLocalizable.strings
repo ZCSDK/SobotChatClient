@@ -257,3 +257,37 @@
 "无结果"="Geen resultaat";
 "保存成功" = "Met succes opgeslagen";
 
+
+/**公共组件翻译*/
+"选择时区" = "Tijdzone selecteren";
+"请选择时区" = "Selecteer een tijdzone";
+"暂无选项内容" = "Er zijn momenteel geen opties beschikbaar";
+"时区"="Tijdzone";
+"年"="Jaar";
+"月"="Maand";
+"日"="Dag";
+
+"区号"="Gebiedscode";
+
+"转换失败" = "Weergave wisselen";
+"转换完成" = "conversie voltooiing";
+"订单号" = "bestelnummer";
+"交易状态" = "Transactiestatus";
+"创建时间" = "Scheppingstijd";
+"展开更多" = "Meer uitbreiden";
+"共" = "In totaal";
+"已读"="Lees";
+"未读"="Ongelezen";
+"我"="I";
+"机器人"="Robot";
+"链接" = "Link";
+"文章" = "Artikel";
+"引用" = "Referentie";
+"已选"="Geselecteerd";
+"搜索"="Zoeken";
+"搜索全部省"="Doorzoek alle provincies";
+"搜索全部市"="Zoek alle steden";
+"搜索全部县（区）"="Zoek alle districten (districten)";
+"搜索全部街道"="Doorzoek alle straten";
+"无结果"="Geen resultaat";
+"请选择是否解决了您的问题" = "Kies of uw probleem is opgelost.";

@@ -213,7 +213,7 @@
 //************* 同步415的数据  ***********
 "填写信息" = "Điền thông tin vào";
 "排队自动断开结束会话" = "Kết thúc phiên chạy sau khi xếp hàng tự động ngắt";
-"小程序" = "Name";
+"小程序" = "Tiểu dụng";
 "小程序只能通过微信打开" = "Táo chỉ có thể mở qua wechat";
 "解析中..." = "Đức";
 "转换失败" = "Chuyển đổi thất bại";
@@ -240,3 +240,14 @@
 "请选择是否解决了您的问题" = "Vui lòng chọn nếu vấn đề của bạn được giải quyết";
 "换一批" = "Đổi tổ";
 //************* 同步415的数据 end ***********
+
+/**公共组件翻译*/
+"选择时区" = "Chọn múi giờ";
+"请选择时区" = "Vui lòng chọn múi giờ";
+"暂无选项内容" = "Tạm thời không có nội dung tùy chọn";
+"时区"="Múi giờ";
+"年"="Năm";
+"月"="Tháng";
+"日"="Ngày";
+
+"区号"="Mã vùng";

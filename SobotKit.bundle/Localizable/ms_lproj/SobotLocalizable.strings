@@ -241,3 +241,14 @@
 "请选择是否解决了您的问题" = "Sila pilih sama ada isu anda telah diselesaikan";
 "换一批" = "Tukar kumpulan lain";
 //************* 同步415的数据 ***********
+
+/**公共组件翻译*/
+"选择时区" = "Pilih zon masa";
+"请选择时区" = "Sila pilih zon masa";
+"暂无选项内容" = "Masa ini tiada pilihan yang tersedia";
+"时区"="Zon masa";
+"年"="Tahun";
+"月"="Bulan";
+"日"="Hari";
+
+"区号"="Kod kawasan";

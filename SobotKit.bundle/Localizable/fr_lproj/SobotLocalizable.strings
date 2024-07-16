@@ -241,3 +241,15 @@
 "请选择是否解决了您的问题" = "Veuillez choisir si votre problème est résolu";
 "换一批" = "Changer un groupe";
 //************* 同步415的数据 ***********
+
+
+/**公共组件翻译*/
+"选择时区" = "choisir un fuseau horaire";
+"请选择时区" = "Veuillez sélectionner un fuseau horaire";
+"暂无选项内容" = "Pas de contenu optionnel pour le moment";
+"时区"="fuseau horaire";
+"年"="Année";
+"月"="Mois";
+"日"="Le jour";
+
+"区号"="Code régional";

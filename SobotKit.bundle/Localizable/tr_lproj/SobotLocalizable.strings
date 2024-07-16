@@ -240,3 +240,16 @@
 "请选择是否解决了您的问题" = "Lütfen sorununuz çözüldüğünü seçin.";
 "换一批" = "Bir grup değiştir";
 //************* 同步415的数据 end ***********
+
+
+/**公共组件翻译*/
+"选择时区" = "Zaman bölgesini seç";
+"请选择时区" = "Lütfen zaman alanını seç";
+"暂无选项内容" = "Şu anda hiçbir seçenek mevcut değil";
+"时区"="Zaman bölgesi";
+"年"="Yıl";
+"月"="Ay";
+"日"="Gün";
+
+
+"区号"="Bölge kodu";

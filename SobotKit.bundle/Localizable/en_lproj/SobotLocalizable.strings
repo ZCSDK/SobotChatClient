@@ -246,3 +246,15 @@
 "请选择是否解决了您的问题" = "Please choose whether your issue has been resolved";
 "换一批" = "Change";
 //************* 同步415的数据 ***********
+
+
+/**公共组件翻译*/
+"选择时区" = "Select time zone";
+"请选择时区" = "Please select time zone";
+"暂无选项内容" = "No option content";
+"时区"="Time zone";
+"年"="Y";
+"月"="M";
+"日"="D";
+
+"区号"="Area code";

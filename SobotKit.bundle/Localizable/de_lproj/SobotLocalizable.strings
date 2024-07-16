@@ -241,3 +241,16 @@
 "请选择是否解决了您的问题" = "Bitte wählen Sie, ob Ihr Problem gelöst wurde";
 "换一批" = "Andere gruppe wechseln";
 //************* 同步415的数据 ***********
+
+
+/**公共组件翻译*/
+"选择时区" = "Zeitzone auswählen";
+"请选择时区" = "Bitte wählen Sie eine Zeitzone";
+"暂无选项内容" = "Derzeit gibt es keinen Optionsinhalt";
+"时区"="Zeitzone";
+"年"="Jahr";
+"月"="Monat";
+"日"="Tag";
+
+
+"区号"="Gebietsnummer";

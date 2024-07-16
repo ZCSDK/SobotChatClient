@@ -138,6 +138,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SobotLoginEntity : SobotBaseEntity
 
+@property(nonatomic,assign) int defaultAppLoginStatus;
+
 // code
 @property (nonatomic,assign) int code;
 

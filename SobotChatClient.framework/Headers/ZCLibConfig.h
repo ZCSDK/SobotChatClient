@@ -634,6 +634,21 @@
 
 @property (nonatomic,copy) NSString *answerMsgId;// 消息ID （直接回答的转人工按钮，对应的消息id）
 
+/**
+ * 语义id
+private String semanticsKeyWordId;
+ * 语义名称
+private String semanticsKeyWordName;
+ * 问法id
+private String semanticsKeyWordQuestionId;
+ * 问法
+private String semanticsKeyWordQuestion;
+**/
+@property (nonatomic,strong) NSString  *semanticsKeyWordId;
+@property (nonatomic,strong) NSString  *semanticsKeyWordName;
+@property (nonatomic,strong) NSString  *semanticsKeyWordQuestionId;
+@property (nonatomic,strong) NSString  *semanticsKeyWordQuestion;
+
 @end
 
 
