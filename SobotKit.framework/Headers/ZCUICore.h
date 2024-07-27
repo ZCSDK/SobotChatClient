@@ -132,6 +132,8 @@ typedef void (^DetailViewBlock)(SobotChatMessage * _Nonnull model,int type ,id o
 
 @property(nonatomic,copy) DetailViewBlock detailViewBlock;
 
+// 是否可以显示 分词联想的页面 页面销毁后 当前页面不要再展示了
+@property(nonatomic,assign) BOOL isCanShowAutoView;
 
 +(ZCUICore * _Nonnull)getUICore;
 @property(nonatomic,assign) CGFloat zc_keyBoardHeight;
