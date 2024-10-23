@@ -347,7 +347,9 @@ NS_ASSUME_NONNULL_BEGIN
 //1030        工单历史记录显示
 @property (nonatomic,strong) NSDictionary * ticketFunction;
 
-
+// 3.3.7版本新增
+//0-关闭，1-开启
+@property (nonatomic,assign) int  readFlag;
 
 // key : SOBOT_LOGIN_MODULE_KEY_
 -(BOOL)checkModule:(NSString *) key;

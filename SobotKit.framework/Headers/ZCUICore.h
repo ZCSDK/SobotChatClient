@@ -34,6 +34,7 @@ typedef NS_ENUM(NSInteger,ZCTurnType) {
     ZCTurnType_LoopAdmin,                   //多轮节点指定客服转人工
     ZCTurnType_LoopGroup,                   //多轮节点指定技能组转人工
     ZCTurnType_LoopNol,                   //多轮节点默认转人工
+    ZCTurnType_InitRemoveByAdmin,                   //被客服离线
 };
 
 typedef NS_ENUM(NSInteger,ZCShowStatus) {

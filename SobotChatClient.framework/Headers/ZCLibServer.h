@@ -237,6 +237,24 @@ typedef void(^SobotKitResultBlock)(ZCNetWorkCode code,id _Nullable obj,NSDiction
                 success:(void(^)(NSDictionary *dict,ZCMessageSendCode sendCode)) successBlock
                    fail:(void(^)(NSString * errorMsg,ZCMessageSendCode errorCode)) failBlock;
 
+/// 4.1.8新增接口，当切换快捷菜单时添加统计数据
++(void)addLabelShowTriggerCount:(ZCLibConfig*)config
+                   menuPlanId:(NSString *) menuPlanId
+                  start:(void(^)(NSString *url))startBlock
+                success:(void(^)(NSDictionary *dict,ZCMessageSendCode sendCode)) successBlock
+                         fail:(void(^)(NSString * errorMsg,ZCMessageSendCode errorCode)) failBlock;
+
+
+/// 
+/// 4.1.8新增接口，本地添加快捷菜单列表，机器人默认，人工模式，如果前两组都没有数据，显示兜底进入会话列表
+/// @param config 当前初始化对象
+/// @param startBlock 开始
+/// @param successBlock 成功
+/// @param failBlock 失败
++(void)getLabelInfoListNew:(ZCLibConfig*)config
+                  start:(void(^)(NSString *url))startBlock
+                success:(void(^)(NSDictionary *dict,ZCMessageSendCode sendCode)) successBlock
+                      fail:(void(^)(NSString * errorMsg,ZCMessageSendCode errorCode)) failBlock;
 
 /// 自定义标签点击次数
 /// @param config 初始化对象
@@ -554,10 +572,12 @@ typedef void(^SobotKitResultBlock)(ZCNetWorkCode code,id _Nullable obj,NSDiction
  * 留言转离线消息接口
  * uid ：用户id
  * content： 留言内容
+ * msgType: 当是文件类型消息时，content为网络url
  * groupId : 技能组ID
  **/
 +(void)getLeaveMsgWith:(NSString*)uid
                Content:(NSString *)content
+               msgType:(SobotMessageType) msgType
                groupId:(NSString *)groupId
                  start:(void (^)(void))startBlock
                success:(void(^)(NSDictionary *dict,ZCNetWorkCode sendCode)) successBlock
@@ -611,10 +631,11 @@ typedef void(^SobotKitResultBlock)(ZCNetWorkCode code,id _Nullable obj,NSDiction
 
 /// 延迟转人工排队时调用
 /// @param content 发送内容
+/// @param msgType 消息类型，当是图片，音频，视频，文件时，content为网络路径
 /// @param config 当前初始化对象
 /// @param errorBlock 失败
 /// @param successBlock 成功
-+ (void)sendAfterModeWithConnectWait:(NSString *)content
++ (void)sendAfterModeWithConnectWait:(NSString *)content msgType:(SobotMessageType) msgType
                        uid:(ZCLibConfig *)config
                      error:(void (^)(ZCNetWorkCode status,NSString *errorMessage))errorBlock
                              success:(void(^)(NSString *msgLeaveTxt,NSString *msgLeaveContentTxt,NSString *leaveExplain)) successBlock;

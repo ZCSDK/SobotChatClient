@@ -565,6 +565,10 @@
 // 分词联想开关  0-关闭 1-开启
 @property(nonatomic,assign) int robotGuessFlag;
 
+// 4.1.8新增需求，如果上次意外结束，转人工需要传入
+@property(nonatomic,assign) int userRemoveConnectFlag;
+@property (nonatomic,copy) NSString *userRemovedAdminId;
+
 
 
 /// *******************************************  v4.0.0 主题相关参数 千人千面  end*******************************************

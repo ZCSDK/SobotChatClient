@@ -22,6 +22,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,assign) int loginStatus;
 @property(nonatomic,assign) int appRegion;
 @property(nonatomic,strong) NSString *appVersion;
+@property(nonatomic,strong) NSString *deviceToken;
+@property(nonatomic,strong) NSString *factorVerifyCode;
 
 @end
 
@@ -69,12 +71,12 @@ NS_ASSUME_NONNULL_BEGIN
 /// - Parameters:
 ///   - loginAcount: 用户名
 ///   - loginPwd: 密码
-///   - version: app版本
 ///   - loginStatue: 当前登录状态
+///   - exParams: 当前登录附加信息：包括版本、推送token，国家等
 ///   - resultBlock: 结果
 ///   --包含登录客服的所有属性，不包含accessToken
 ///   -- 用户信息，新旧权限信息
--(void)doAppLogin:(NSString *  _Nullable)loginAcount pwd:(NSString *  _Nullable)loginPwd appVersin:(NSString *)version status:(int) loginStatue appRegion:(int)appRegion result:(void (^)(NSInteger code, NSDictionary * _Nullable, NSString * _Nullable))resultBlock;
+-(void)doAppLogin:(NSString *  _Nullable)loginAcount pwd:(NSString *  _Nullable)loginPwd status:(int) loginStatue exParams:(SobotLoginParams *)inParams result:(void (^)(NSInteger code, NSDictionary * _Nullable, NSString * _Nullable))resultBlock;
 
 /// 登录
 /// - Parameters:
@@ -121,6 +123,16 @@ NS_ASSUME_NONNULL_BEGIN
 ///   - resultBlock: 结果
 -(void)logOut:(void(^)(NSInteger code,NSDictionary * _Nullable dict,NSString * _Nullable msg)) resultBlock;
 
+
+
+
+/// 多因子验证，发送验证码
+/// - Parameters:
+///   - account:  邮箱
+///   - pwd:密码，需要base64编码
+///   - apiMainhost: 域名
+///   - resultBlock: 结果
+-(void)getLoginSmsCode:(NSString *)account password:(NSString *) pwd with:(NSString *) apiMainhost result:(void(^)(int code,NSDictionary * _Nullable dict, NSString * _Nullable jsonString)) resultBlock;
 
 /// 清理登录数据，退出登录成功接口，会主动调用
 /// 当被踢下线时，可单独调用此接口
