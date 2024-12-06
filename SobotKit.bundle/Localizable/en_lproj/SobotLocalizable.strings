@@ -258,3 +258,12 @@
 "日"="D";
 
 "区号"="Area code";
+
+
+"语言已切换为“xxx”" = "Language has been switched to \"xxx\"";
+"选择语言" = "Select language";
+"请选择您要使用的聊天语言：" = "Select the chat language you want to use: ";
+"更多语言" = "More Languages";
+
+"顶" = "top";
+"踩" = "step on";

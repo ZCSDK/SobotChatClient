@@ -252,3 +252,11 @@
 "日"="Dzień";
 
 "区号"="Kod obszaru";
+
+"语言已切换为“xxx”" = "Język został zmieniony na „xxx”";
+"选择语言" = "Wybierz język";
+"请选择您要使用的聊天语言：" = "Proszę wybrać język czatu, którego chcesz używać:";
+"更多语言" = "Więcej języków";
+
+"顶" = "na górze";
+"踩" = "krok na";

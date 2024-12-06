@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import "SobotCacheEntity.h"
+#import <SobotCommon/SobotCacheEntity.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -24,6 +24,18 @@ NS_ASSUME_NONNULL_BEGIN
 @property(strong,nonatomic) SobotCacheEntity *sobotCacheEntity;
 
 @property(assign,nonatomic) BOOL isUseImagesxcassets;
+
+/**
+ 同步的翻译内容，如果有，优先使用同步的翻译
+ */
+@property(nonatomic,strong) NSMutableDictionary *localStringsDict;
+
+
+/**
+ 读取当前缓存语言文件
+ */
+-(void)readCacheToLocalStrings:(NSString *) language;
+
 
 -(void)addCacheEntity:(SobotCacheEntity *) entity;
 

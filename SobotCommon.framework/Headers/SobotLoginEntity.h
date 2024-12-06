@@ -223,7 +223,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 // 登录后赋值
-@property(nonatomic,copy) NSString * accessToken;
+//@property(nonatomic,copy) NSString * accessToken;
 
 // 以下为权限接口返回数据
 @property(nonatomic,assign) int  auditRobotdocFlag;
@@ -333,7 +333,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,assign) int blackFunction;
 
 // 在线接口使用
-@property(nonatomic,copy) NSString *tempId;// 在线产品接口使用
+//@property(nonatomic,copy) NSString *tempId;// 在线产品接口使用
 // 用户状态，2忙碌、1在线,-1在线(有在线会话数据需要同步)  2.6.0新增 1-在线，2-忙碌 statusCode:3-小休，4-培训，5-会议，6-用餐，7-活动
 @property (nonatomic,assign) int  status;
 // 0默认值忙碌 3.小休 4.培训 5.会议 6.用餐 7.活动  (当前客服是在忙碌的状态下 子集的状态码)

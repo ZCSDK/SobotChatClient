@@ -253,3 +253,12 @@
 "日"="Le jour";
 
 "区号"="Code régional";
+
+
+"语言已切换为“xxx”" = "Langue changée en \"xxx\"";
+"选择语言" = "Sélectionnez la langue";
+"请选择您要使用的聊天语言：" = "Veuillez sélectionner la langue dans laquelle vous souhaitez discuter :";
+"更多语言" = "Plus de langues";
+
+"顶" = "TOP";
+"踩" = "Marche!";

@@ -11,6 +11,7 @@
 #import <SobotChatClient/SobotChatClient.h>
 #import <SobotCommon/SobotCommon.h>
 #import "SobotSatisfactionView.h"
+#import <SobotChatClient/ZCLanguageModel.h>
 // 链接点击类型
 typedef NS_ENUM(NSInteger,ZCLinkClickType) {
     ZCLinkClickTypeURL    = 0,
@@ -34,7 +35,6 @@ typedef NS_ENUM(NSInteger,ZCTurnType) {
     ZCTurnType_LoopAdmin,                   //多轮节点指定客服转人工
     ZCTurnType_LoopGroup,                   //多轮节点指定技能组转人工
     ZCTurnType_LoopNol,                   //多轮节点默认转人工
-    ZCTurnType_InitRemoveByAdmin,                   //被客服离线
 };
 
 typedef NS_ENUM(NSInteger,ZCShowStatus) {
@@ -98,6 +98,7 @@ typedef NS_ENUM(NSInteger,ZCInitStatus) {
     ZCInitStatusLoading           = 1,  // 正在调用接口初始化
     ZCInitStatusLoadSuc           = 2,  // 初始化完成
     ZCInitStatusFail              = 3,  // 初始化失败
+    ZCInitStatusLanguage          = 4,  // 切换语言
 };
 
 
@@ -127,6 +128,7 @@ typedef NS_ENUM(NSInteger,ZCInitStatus) {
 @end
 
 typedef void (^DetailViewBlock)(SobotChatMessage * _Nonnull model,int type ,id obj);
+typedef void (^ChangeLanguageBlock)(ZCLanguageModel *_Nonnull model,NSDictionary *dict);
 @interface ZCUICore : NSObject
 
 @property(nonatomic,copy) void (^PageLoadBlock)(id object,ZCPageStateType type);
@@ -184,6 +186,8 @@ typedef void (^DetailViewBlock)(SobotChatMessage * _Nonnull model,int type ,id o
 @property (nonatomic,assign) BOOL isSendToUser;
 @property (nonatomic,assign) BOOL isSendToRobot;
 
+@property(nonatomic,assign) BOOL isInitLoading;
+
 // 是否锁定当前的消息
 @property(nonatomic,assign) BOOL isLockMsg;
 // 锁定当前消息的个数
@@ -192,6 +196,8 @@ typedef void (^DetailViewBlock)(SobotChatMessage * _Nonnull model,int type ,id o
 @property(nonatomic,copy) BOOL (^AppletClickBlock)(SobotChatMessage *model);
 
 @property(nonatomic,copy) BOOL (^CustomLeavePageBlock)(NSDictionary *dict);
+
+@property(nonatomic,copy) ChangeLanguageBlock changeLanguageBlock;
 /** 未知说辞计数*/
 @property (nonatomic, assign) NSUInteger unknownWordsCount;
 @property(nonatomic,strong) NSString * _Nullable inviteSatisfactionCheckLabels; // 邀请评价已选择的标签

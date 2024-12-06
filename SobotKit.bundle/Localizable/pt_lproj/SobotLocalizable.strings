@@ -252,3 +252,12 @@
 "日"="Dia";
 
 "区号"="Código da área";
+
+
+"语言已切换为“xxx”" = "O idioma foi alterado para \"xxx\"";
+"选择语言" = "Selecione o idioma";
+"请选择您要使用的聊天语言：" = "Selecione o idioma em que deseja conversar:";
+"更多语言" = "Mais Línguas";
+
+"顶" = "topo";
+"踩" = "passo em frente";

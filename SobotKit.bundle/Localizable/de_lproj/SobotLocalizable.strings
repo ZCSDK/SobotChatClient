@@ -254,3 +254,11 @@
 
 
 "区号"="Gebietsnummer";
+
+"语言已切换为“xxx”" = "Sprache wurde auf „xxx“ umgestellt";
+"选择语言" = "Sprache auswählen";
+"请选择您要使用的聊天语言：" = "Bitte wählen Sie die Sprache aus, in der Sie chatten möchten:";
+"更多语言" = "Weitere Sprachen";
+
+"顶" = "Spitze";
+"踩" = "aufsteigen";

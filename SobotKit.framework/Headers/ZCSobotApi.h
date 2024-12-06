@@ -35,6 +35,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
+/// 主动获取访客信息，必须配置了appkey和partnerid以后调用
+/// @param resultBlock resultBlock description
+/// code = 0，成功，可直接进入使用
++(void)getVisitorConfigInfo:(void (^)(id object,int code))resultBlock;
+
+
 /// 启动聊天页面，简单处理
 /// @param info 自定义UI属性
 /// @param byController  启动的页面

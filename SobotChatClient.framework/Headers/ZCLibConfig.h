@@ -293,10 +293,16 @@
 @property (nonatomic, assign) int      aiStatus;
 
 
+/// 4.2.0新增
+///
+///
+@property (nonatomic, assign) BOOL      aiAgent;
+@property (nonatomic, copy) NSString *aiAgentCid;
+
 /*
  *  通告是否置顶
  */
-@property (nonatomic,assign) int   announceTopFlag;
+@property (nonatomic,assign) int announceTopFlag;
 
 /**
  *   通告是否打开
@@ -419,6 +425,7 @@
 @property (nonatomic,assign) BOOL adminNoneLineFlag;
 
 
+@property (nonatomic,copy) NSString *queueToMsgDoc;
 /**
  *
  *  转人工排队说辞的 开关  1 显示 0 不显示
@@ -573,6 +580,12 @@
 
 /// *******************************************  v4.0.0 主题相关参数 千人千面  end*******************************************
 
+
+// 4.2.0 新增参数
+@property(nonatomic,assign) int chooseLanType;// 判断是否弹窗语言列表 0 关闭  1 未获取到语言弹  2 总是弹 3.每次都弹
+@property(nonatomic,copy)NSString *language;// 当前接口语言
+@property(nonatomic,copy)NSString *lan;// 当前接口默认语言
+@property(nonatomic,strong)NSMutableArray *languageArr;// 切换语言列表数据
 /**
  *  对象封装
  *

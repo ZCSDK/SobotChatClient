@@ -28,13 +28,17 @@
 		<data>
 		NKm4l572gBeGa3i771ngdRojoik=
 		</data>
+		<key>Headers/ZCLanguageModel.h</key>
+		<data>
+		vJR2PFigrm9OJbUYWF5hlk9FI3k=
+		</data>
 		<key>Headers/ZCLibClient.h</key>
 		<data>
 		CRw1ivOAR0rdsqaH/VEVz6jIRM8=
 		</data>
 		<key>Headers/ZCLibConfig.h</key>
 		<data>
-		UPPxooqyrlehUernbLmjV3YR7RU=
+		a1oXLWKRql+outpF8EDRigpiwGs=
 		</data>
 		<key>Headers/ZCLibHttpConstants.h</key>
 		<data>
@@ -42,11 +46,11 @@
 		</data>
 		<key>Headers/ZCLibHttpManager.h</key>
 		<data>
-		uRl9Pf4X9ljBuZKBc6Gpb27/LPM=
+		mTA1K4SLgT3qVt89lMdy4xUTi/o=
 		</data>
 		<key>Headers/ZCLibInitInfo.h</key>
 		<data>
-		47QTTUNyj3+4dMlENSDwEWdY6aM=
+		AFQaGCb8fvKoMQ3vZQH6s81xaL4=
 		</data>
 		<key>Headers/ZCLibRobotSet.h</key>
 		<data>
@@ -58,7 +62,7 @@
 		</data>
 		<key>Headers/ZCLibServer.h</key>
 		<data>
-		hTceHfua2Yf+YrPhjFQd62jp8x0=
+		oirddDEez71bzHusj2V6GGqX4dA=
 		</data>
 		<key>Headers/ZCLibSkillSet.h</key>
 		<data>
@@ -86,7 +90,7 @@
 		</data>
 		<key>Headers/ZCPlatformTools.h</key>
 		<data>
-		6ZUPImlB40Nd8hmQoGEYe7ugfFE=
+		OZ/RaVtmwLgylOwCUMA/Gn5YKBM=
 		</data>
 		<key>Headers/ZCRecordListModel.h</key>
 		<data>
@@ -104,13 +108,17 @@
 		<data>
 		s7RAXUpyxMavv0e5yJFOXt6VaTs=
 		</data>
+		<key>Headers/ZCVisitorConfig.h</key>
+		<data>
+		ipvmpRLbdqn6DqjGY7Wf5rgRetg=
+		</data>
 		<key>Headers/ZCWsTemplateModel.h</key>
 		<data>
 		ZotEshn+B+iLTGqy1ycTBeLtknc=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ZXtcrrXT/3Y9yd4pf44qmbQvAT4=
+		3ZeYHCAjBJ2PnHWXYbZsWktye+8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -185,6 +193,17 @@
 			kbBT/Kz7a9jRIccVrEEPiTk31oTKN8zDEEC1rwHBbdU=
 			</data>
 		</dict>
+		<key>Headers/ZCLanguageModel.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vJR2PFigrm9OJbUYWF5hlk9FI3k=
+			</data>
+			<key>hash2</key>
+			<data>
+			aLm2DgqV8lZ81X1L9AfjSNMUEql7/1RJW52HvKPHvEI=
+			</data>
+		</dict>
 		<key>Headers/ZCLibClient.h</key>
 		<dict>
 			<key>hash</key>
@@ -200,11 +219,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UPPxooqyrlehUernbLmjV3YR7RU=
+			a1oXLWKRql+outpF8EDRigpiwGs=
 			</data>
 			<key>hash2</key>
 			<data>
-			xu2Hla7u+aS8YleumK5wUetHmVKeKINzjKDNi0Ky1jA=
+			/1CsCeu3aNElfpRC0aCVuuTlI9vOrNmBqHajkJMjcXA=
 			</data>
 		</dict>
 		<key>Headers/ZCLibHttpConstants.h</key>
@@ -222,22 +241,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uRl9Pf4X9ljBuZKBc6Gpb27/LPM=
+			mTA1K4SLgT3qVt89lMdy4xUTi/o=
 			</data>
 			<key>hash2</key>
 			<data>
-			sZdVpoVMTw0FuE29WJhdsCv+Zr/iTSO6TKuDwdzdz5c=
+			xHFQXPqJll66PYbASj/stshQGmyF34QxTAG46Qu46Ag=
 			</data>
 		</dict>
 		<key>Headers/ZCLibInitInfo.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			47QTTUNyj3+4dMlENSDwEWdY6aM=
+			AFQaGCb8fvKoMQ3vZQH6s81xaL4=
 			</data>
 			<key>hash2</key>
 			<data>
-			OgKnYsQjl6wATI2s8Wa8AKsSE4WTN0+6Y7AUsmcMXlg=
+			oGKkGPBRwZZrKqNbiRxl2vtTLodlrB8TlCgt91nLKB8=
 			</data>
 		</dict>
 		<key>Headers/ZCLibRobotSet.h</key>
@@ -266,11 +285,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hTceHfua2Yf+YrPhjFQd62jp8x0=
+			oirddDEez71bzHusj2V6GGqX4dA=
 			</data>
 			<key>hash2</key>
 			<data>
-			pUhRvd7VRoleIj0Pn7DCnYmUz4bNu3mTm/2YOCcKmrA=
+			08kpixbkZ3L8r2fcyxv8+y+OlFydaJTn0mqIbEqqCck=
 			</data>
 		</dict>
 		<key>Headers/ZCLibSkillSet.h</key>
@@ -343,11 +362,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6ZUPImlB40Nd8hmQoGEYe7ugfFE=
+			OZ/RaVtmwLgylOwCUMA/Gn5YKBM=
 			</data>
 			<key>hash2</key>
 			<data>
-			rnEzhpT/cfFcFHrRraRqbBTJSoS2aPyVPhYD9z7xrQA=
+			lvtBseQOhjtYRlUwUa5/N3XTs7nJ3HHMP8t/CXMVyPU=
 			</data>
 		</dict>
 		<key>Headers/ZCRecordListModel.h</key>
@@ -392,6 +411,17 @@
 			<key>hash2</key>
 			<data>
 			GkhRjQdWOvSN9Ua+d2HKg0laWWGeiJB1MVup4JVgq2k=
+			</data>
+		</dict>
+		<key>Headers/ZCVisitorConfig.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ipvmpRLbdqn6DqjGY7Wf5rgRetg=
+			</data>
+			<key>hash2</key>
+			<data>
+			r/I7TXE2wo74GwzqcD5my3RHU3UEhjTxtH4djW7TCG4=
 			</data>
 		</dict>
 		<key>Headers/ZCWsTemplateModel.h</key>

@@ -252,3 +252,12 @@
 "日"="Giorno";
 
 "区号"="Prefisso";
+
+
+"语言已切换为“xxx”" = "La lingua è stata cambiata in \"xxx\"";
+"选择语言" = "Seleziona la lingua";
+"请选择您要使用的聊天语言：" = "Seleziona la lingua in cui desideri chattare:";
+"更多语言" = "Più lingue";
+
+"顶" = "in alto";
+"踩" = "passo avanti";

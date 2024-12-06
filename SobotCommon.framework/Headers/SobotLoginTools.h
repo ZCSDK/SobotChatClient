@@ -44,9 +44,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(BOOL) isLogin;
 -(BOOL) checkSupportV6;
--(NSString *)getTempId;
+//-(NSString *)getTempId;
+
+/**
+ 公共组token赋值到，authoration
+ */
 -(NSString *)getToken;
--(NSString *)getLoginAccessToken;
 -(NSString *)getServiceEmail;
 
 
@@ -111,13 +114,6 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)getLoginUserInfo:(void (^)(NSInteger code,NSDictionary * _Nullable dict,NSString * _Nullable msg))resultBlock;
 
 
-/// 获取当前的accesToken
-/// - Parameters:
-///   - token: 需要先登录成功
-///   - resultBlock: 获取结果
--(void)getAccessTokenWithApi:(NSString *) token result:(void(^)(NSInteger code,NSDictionary * _Nullable dict,NSString * _Nullable msg)) resultBlock;
-
-
 /// 退出登录
 /// - Parameters:
 ///   - resultBlock: 结果
@@ -168,6 +164,31 @@ NS_ASSUME_NONNULL_BEGIN
 /// 多个域名环境时，选中后设置域名
 /// - Parameter checkItem: 当前选择的环境
 -(void)saveHost:(NSDictionary *) checkItem;
+
+
+
+
+/// 登录后请求header
+/// - Parameter timeOut: 请求超时时间，秒
+-(NSDictionary *) getSignHeaderDict:(int) timeOut;
+
+
+
+/// 检测当前语言文件是否需要更新，如果需要更新会自动执行synchronizeLanguage下载同步
+/// - Parameters:
+///   - language: 语言编码
+///   - catalogCodes: 当前所需的分类，@"app,sdk.common,sdk.call,sdk.crm,sdk.order,sdk.chatclient"多个使用逗号隔开
+///   - ResultBlock:
+-(void)checkLangageVersion:(NSString *) language catalogCodes:(NSString *)catalogCodes result:(nonnull void (^)(NSString * _Nonnull message, int code))ResultBlock;
+
+
+/// 下载线上多语言数据
+/// - Parameters:
+///   - language: 语言编码
+///   - catalogCodes: 当前所需的分类，@"app,sdk.common,sdk.call,sdk.crm,sdk.order,sdk.chatclient"多个使用逗号隔开
+///   - isReWrite: 是否写入到本地
+///   - ResultBlock:
+-(void)synchronizeLanguage:(NSString *) language catalogCodes:(NSString *)catalogCodes write:(BOOL) isReWrite result:(nonnull void (^)(NSString * _Nonnull message, int code))ResultBlock;
 
 
 @end

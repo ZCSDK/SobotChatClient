@@ -210,7 +210,7 @@
 "保存成功" = "đã lưu thành công";
 "保存失败" = "Lưu thất bại";
 
-//************* 同步415的数据  ***********
+
 "填写信息" = "Điền thông tin vào";
 "排队自动断开结束会话" = "Kết thúc phiên chạy sau khi xếp hàng tự động ngắt";
 "小程序" = "Tiểu dụng";
@@ -235,12 +235,12 @@
 "搜索全部省"="Tìm tất cả Province";
 "搜索全部市"="Tìm tất cả thành phố";
 "搜索全部县（区）"="Tìm kiếm tất cả các quận (quận)";
-"搜索全部街道"="Tìm tất cả đường phố"
+"搜索全部街道"="Tìm tất cả đường phố";
 "无结果"="không có kết quả";
 "请选择是否解决了您的问题" = "Vui lòng chọn nếu vấn đề của bạn được giải quyết";
 "换一批" = "Đổi tổ";
-//************* 同步415的数据 end ***********
 
+//
 /**公共组件翻译*/
 "选择时区" = "Chọn múi giờ";
 "请选择时区" = "Vui lòng chọn múi giờ";
@@ -251,3 +251,14 @@
 "日"="Ngày";
 
 "区号"="Mã vùng";
+
+
+"语言已切换为“xxx”" = "Ngôn ngữ đã được chuyển sang \"xxx\"";
+"选择语言" = "Chọn ngôn ngữ";
+"请选择您要使用的聊天语言：" = "Vui lòng chọn ngôn ngữ bạn muốn trò chuyện:";
+"更多语言" = "Thêm ngôn ngữ";
+
+
+
+"顶" = "trên";
+"踩" = "bước lên";

@@ -698,6 +698,68 @@ typedef void(^SobotKitResultBlock)(ZCNetWorkCode code,id _Nullable obj,NSDiction
                         failed:(void(^)(NSString *errorMessage,ZCNetWorkCode errorCode))failedBlock
                   finish:(void(^)(NSString *jsonString)) finishBlock;
 
+
+
+/// 查询访客配置信息
+/// - Parameters:
+///   - app_key: app_key description
+///   - partnerid: partnerid description
+///   - startBlock: startBlock description
+///   - successBlock: successBlock description
+///   - failedBlock: failedBlock description
+///   - finishBlock: finishBlock description
++(void)getVisitorHelpConfig:(NSString *)app_key
+          partnerId:(NSString *)partnerid
+                        start:(void(^)(NSString *urlString)) startBlock
+                      success:(void(^)(NSDictionary *dict,ZCNetWorkCode sendCode))successBlock
+                       failed:(void(^)(NSString *errorMessage,ZCNetWorkCode errorCode))failedBlock
+                     finish:(void(^)(NSString *jsonString)) finishBlock;
+
+
+
+
+/// 回调前台，检测当前用户是否已经离线
+/// - Parameters:
+///   - config: 当前正在会话的初始化配置
+///   - startBlock: 开始
+///   - successBlock: 成功
+///   - failedBlock: 失败
+///   - finishBlock: 结束(本接口关注此回调即可)
++(void)checkUserOnlineStatus:(ZCLibConfig *)config
+                        start:(void(^)(NSString *urlString)) startBlock
+                      success:(void(^)(NSDictionary *dict,ZCNetWorkCode sendCode))successBlock
+                       failed:(void(^)(NSString *errorMessage,ZCNetWorkCode errorCode))failedBlock
+                      finish:(void(^)(NSString *jsonString)) finishBlock;
+
+
+/// 获取多语言切换列表数据
+/// - Parameters:
+///   - config: 初始化配置
+///   - startBlock: startBlock description
+///   - successBlock: successBlock description
+///   - failedBlock: failedBlock description
+///   - finishBlock: finishBlock description
++(void)getLanguageList:(ZCLibConfig *)config
+                        start:(void(^)(NSString *urlString)) startBlock
+                      success:(void(^)(NSDictionary *dict,ZCNetWorkCode sendCode))successBlock
+                       failed:(void(^)(NSString *errorMessage,ZCNetWorkCode errorCode))failedBlock
+                      finish:(void(^)(NSString *jsonString)) finishBlock;
+
+
+/// 切换语言之后重新获取初始化配置数据
+/// - Parameters:
+///   - language: 切换选中的语言
+///   - uid: 用户ID
+///   - startBlock: startBlock description
+///   - successBlock: successBlock description
+///   - failedBlock: failedBlock description
+///   - finishBlock: finishBlock description
++(void)sendToAdminChooseLan:(NSString*)language
+                        uid:(NSString *)uid
+                        start:(void(^)(NSString *urlString)) startBlock
+                      success:(void(^)(NSDictionary *dict,ZCNetWorkCode sendCode))successBlock
+                       failed:(void(^)(NSString *errorMessage,ZCNetWorkCode errorCode))failedBlock
+                      finish:(void(^)(NSString *jsonString)) finishBlock;
 @end
 
 NS_ASSUME_NONNULL_END

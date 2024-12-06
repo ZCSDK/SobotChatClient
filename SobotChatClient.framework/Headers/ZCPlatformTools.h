@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import <SobotChatClient/ZCLibConfig.h>
+#import <SobotChatClient/ZCVisitorConfig.h>
 #import <SobotCommon/SobotCommon.h>
 NS_ASSUME_NONNULL_BEGIN
 
@@ -17,6 +18,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (instancetype)sharedInstance;
 
+
+/**
+ 访客配置
+ */
+@property (nonatomic,strong) ZCVisitorConfig *_Nullable visitorConfig;
 
 
 /// 离线消息开关，1:开; 0:关,

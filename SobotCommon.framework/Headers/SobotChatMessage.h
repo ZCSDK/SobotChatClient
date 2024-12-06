@@ -163,6 +163,12 @@ typedef NS_ENUM(NSInteger,SobotMessageActionType) {
      */
     SobotMessageActionTypeRobotTip = 51,
     
+// 切换语言
+   SobotMessageActionTypeLanguage = 52,
+   // 切换语言提示语
+   SobotMessageActionTypeSelLanguage = 53,
+
+    
     /****** 发送留言转离线消息后，结束会话 *****/
     SobotMessageActionTypeChatCloseByLeaveMsg               = 99,
     /**
@@ -718,6 +724,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic , strong) NSString *deployId;
 
 
+
+
 /**
  *  内容[未使用]
  */
@@ -727,6 +735,14 @@ NS_ASSUME_NONNULL_BEGIN
  *  会话id
  */
 @property (nonatomic , strong) NSString *cid;
+
+// AiAgent会话id
+@property (nonatomic , strong) NSString *aiAgentCid;
+
+/**
+ 正在接手数据
+ */
+@property (nonatomic , assign) BOOL      isReceiving;
 
 /**
  *  用户id
@@ -844,6 +860,12 @@ NS_ASSUME_NONNULL_BEGIN
  YES 显示，NO不显示
  */
 @property (nonatomic , assign) BOOL showTurnUser;
+
+
+/**
+ ai 机器人转人工意图
+ */
+@property (nonatomic , assign) BOOL transfer_type;
 
 /**
  *  0 没有评价 1已解决  2未解决
