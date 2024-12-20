@@ -75,6 +75,9 @@ BOOL sobotValidateEmail(NSString* email);
 BOOL sobotValidateMobile(NSString* mobile);
 // 验证手机号，自定义正则
 BOOL sobotValidateMobileWithRegex(NSString* mobile,NSString *regex);
+// 验证自定义字段 9 的类型 电话号码 3～16位数字、英文符号, +
+BOOL sobotValidateTelWithRegex(NSString *mobile,NSString *regex);
+
 BOOL sobotValidateQQNumber(NSString *qqNumber);
 BOOL sobotValiddatePinYin(NSString *pinYin);
 /// 纯数字

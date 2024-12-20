@@ -586,6 +586,19 @@
 @property(nonatomic,copy)NSString *language;// 当前接口语言
 @property(nonatomic,copy)NSString *lan;// 当前接口默认语言
 @property(nonatomic,strong)NSMutableArray *languageArr;// 切换语言列表数据
+
+// 421 新增 询前表单ID
+@property(nonatomic,copy)NSString *inquiryPlanId;
+
+// 421 新增 询前表单 收集信息声明 开关 1 开启 0 关闭
+@property(nonatomic,assign)int formAuthFlag;
+
+// [0,1,2]  2 代表有SDK
+@property(nonatomic,copy)NSString *formEffectiveScope;
+
+// 421 新增 询前表单 声明文案
+@property(nonatomic,copy)NSString *formExplain;
+
 /**
  *  对象封装
  *
@@ -739,6 +752,8 @@ private String semanticsKeyWordQuestion;
 @property(nonatomic,copy)NSString *extModelLink;
 @property(nonatomic,copy)NSString *extModelPhoto;
 @property(nonatomic,copy)NSString *companyId;
+
+
 -(id)initWithMyDict:(NSDictionary *)dict;
 
 @end

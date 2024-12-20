@@ -348,6 +348,13 @@ NS_ASSUME_NONNULL_BEGIN
     */
 @property(nonatomic,copy) NSDictionary *customField;
 
+
+/**
+ 4.2.1版本新增，自定义卡片扩展字段
+ */
+@property(nonatomic,copy) NSDictionary *ticketPartnerField;
+
+
    /**
     * 卡片跳转链接
     */
@@ -381,7 +388,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,assign) SobotMessageType type;//": 0
 // end
 
-@property(nonatomic,copy) NSMutableAttributedString *attr;
+@property(nonatomic,copy) NSMutableAttributedString * _Nullable attr;
 
 // 多伦
 @property(nonatomic,copy) NSString *leaveTemplateId;//": "测试多轮",
@@ -668,6 +675,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 // 未格式化的文件大小
 @property(nonatomic,assign) int size;
+
+
+-(NSMutableDictionary *)getMsgDictionary:(NSString *) tempMessage;
 
 @end
 

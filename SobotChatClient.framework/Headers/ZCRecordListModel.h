@@ -21,6 +21,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,copy) NSString * content; // 工单描述
 @property (nonatomic,copy) NSMutableAttributedString * contentAttr; // 工单描述
 @property (nonatomic,assign) int flag;  //1 创建了  2 受理了 3 关闭了
+@property (nonatomic,assign) int ticketStatus;  //1 创建了  2 受理了 3 关闭了
+
+// 4.2.1版本新增字段，回复记录状态
+@property (nonatomic,assign) int acceptStatus;
+
 @property (nonatomic,assign) int newFlag; // 是否更新
 @property (nonatomic,copy) NSString * ticketCode;  //工单编号
 @property (nonatomic,copy) NSString * ticketId; // 工单id

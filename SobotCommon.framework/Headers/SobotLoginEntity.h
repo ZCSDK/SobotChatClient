@@ -59,6 +59,7 @@ extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_CALL_cccv6_dht_jszlbzm;
 extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_CALL_cccv6_whrw;//呼叫任务
 extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_CALL_cccv6_whrw_rwxxbj;//呼叫任务信息编辑
 extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_CALL_cccv6_whrw_rwzjbj;//呼叫任务总结编辑
+extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_CALL_cccv6_dht_bhp;//拨号盘的权限
 
 //拉黑：
 extern NSString * _Nullable const SOBOT_LOGIN_MODULE_KEY_CHAT_BLACK;

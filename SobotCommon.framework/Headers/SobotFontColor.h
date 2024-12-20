@@ -116,6 +116,18 @@ static SobotTypeColor const SobotTextOrderStatus2 = @"SobotTextOrderStatus2"; //
 static SobotTypeColor const SobotTextOrderStatus3 = @"SobotTextOrderStatus3"; // 工单状态文字颜色
 static SobotTypeColor const SobotTextOrderStatus4 = @"SobotTextOrderStatus4"; // 工单状态文字颜色
 static SobotTypeColor const SobotTextOrderStatus5 = @"SobotTextOrderStatus5"; // 工单状态文字颜色
+static SobotTypeColor const SobotTextOrderStatus6 = @"SobotTextOrderStatus6"; // 工单状态文字颜色
+static SobotTypeColor const SobotTextOrderStatus7 = @"SobotTextOrderStatus7"; // 工单状态文字颜色
+
+// 状态类别 1-新建，2-受理中 3-等待客户回复 4-暂停 5-已解决 6 已关闭#161616 7 已删除#A3A5A8
+
+static SobotTypeColor const SobotTextOrderStatus1Bg = @"SobotTextOrderStatus1Bg"; // 工单状态文字颜色
+static SobotTypeColor const SobotTextOrderStatus2Bg = @"SobotTextOrderStatus2Bg"; // 工单状态文字颜色
+static SobotTypeColor const SobotTextOrderStatus3Bg = @"SobotTextOrderStatus3Bg"; // 工单状态文字颜色
+static SobotTypeColor const SobotTextOrderStatus4Bg = @"SobotTextOrderStatus4Bg"; // 工单状态文字颜色
+static SobotTypeColor const SobotTextOrderStatus5Bg = @"SobotTextOrderStatus5Bg"; // 工单状态文字颜色
+static SobotTypeColor const SobotTextOrderStatus6Bg = @"SobotTextOrderStatus6Bg"; // 工单状态文字颜色
+static SobotTypeColor const SobotTextOrderStatus7Bg = @"SobotTextOrderStatus7Bg"; // 工单状态文字颜色
 
 // 呼叫任务状态背景色
 static SobotTypeColor const SobotTextCallStatus1 = @"SobotTextCallStatus1"; // 呼叫状态文字颜色

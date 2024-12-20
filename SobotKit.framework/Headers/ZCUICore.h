@@ -192,6 +192,8 @@ typedef void (^ChangeLanguageBlock)(ZCLanguageModel *_Nonnull model,NSDictionary
 @property(nonatomic,assign) BOOL isLockMsg;
 // 锁定当前消息的个数
 @property(nonatomic,assign) int lockMsgCount;
+// 当前是否正在aiagent问答中，如果是 不能继续发送消息 需要等到机器人回复完成之后才能发送消息
+//@property(nonatomic,assign) BOOL aiAgentAsking;
 
 @property(nonatomic,copy) BOOL (^AppletClickBlock)(SobotChatMessage *model);
 
@@ -271,6 +273,7 @@ typedef void (^ChangeLanguageBlock)(ZCLanguageModel *_Nonnull model,NSDictionary
 /// 加载星级内容，成功以后，数据存在satisfactionConfig中
 /// @param loadResult 0成功，1失败
 - (void)loadSatisfactionDictlock:(nonnull void (^)(int)) loadResult;
+-(ZCLibSatisfaction *)getSatisFactionWithScore:(int) score;
 
 
 // 校验转人工参数，并执行转人工
@@ -288,7 +291,7 @@ typedef void (^ChangeLanguageBlock)(ZCLanguageModel *_Nonnull model,NSDictionary
 // 邀请评价是，有值了
 -(BOOL)checkSatisfacetion:(BOOL) isEvalutionAdmin type:(SobotSatisfactionFromSrouce ) type rating:(int) rating resolve:(int) resolve;
 // 邀请评价，提交
-- (void)commitSatisfactionWithIsResolved:(int)isResolved Rating:(int)rating problem:(NSString *) problem scoreFlag:(float)scoreFlag;
+- (void)commitSatisfactionWithIsResolved:(int)isResolved Rating:(int)rating problem:(NSString *) problem scoreFlag:(float)scoreFlag scoreExplain:(NSString * _Nullable) scoreExplain;
 
 // 去留言页面
 -(void)goLeavePage;

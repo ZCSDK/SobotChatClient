@@ -46,6 +46,9 @@ NS_ASSUME_NONNULL_BEGIN
 -(BOOL) checkSupportV6;
 //-(NSString *)getTempId;
 
+// 登录接口是否调用成功，成功才能刷新呼叫的页面，要不调用缓存token有可能会999998
+-(BOOL)isLoginRequestSuccess;
+
 /**
  公共组token赋值到，authoration
  */

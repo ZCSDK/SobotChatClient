@@ -289,6 +289,23 @@ typedef void(^SobotKitResultBlock)(ZCNetWorkCode code,id _Nullable obj,NSDiction
                        failed:(void(^)(NSString *errorMessage,ZCNetWorkCode errorCode)) failedBlock;
 
 
+/// 新版询前表单
+/// @param uid 用户ID
+/// @param cid 会话ID
+/// @param companyId 公司ID
+/// @param schemeId 询前表单方案ID
+/// @param language 多语言
+/// @param startBlock startBlock description
+/// @param successBlock successBlock description
+/// @param failedBlock failedBlock description
++(void)postAskTableWithUid:(NSString *)uid
+                       cid:(NSString *)cid
+                 companyId:(NSString *)companyId
+                  schemeId:(NSString *)schemeId
+                  language:(NSString *)language
+                     start:(void (^)(void))startBlock
+                   success:(void(^)(NSDictionary *dict,ZCNetWorkCode sendCode)) successBlock
+                    failed:(void(^)(NSString *errorMessage,ZCNetWorkCode errorCode)) failedBlock;
 
 #pragma mark 继续排队
 //新接口继续排队按钮点击
@@ -760,6 +777,39 @@ typedef void(^SobotKitResultBlock)(ZCNetWorkCode code,id _Nullable obj,NSDiction
                       success:(void(^)(NSDictionary *dict,ZCNetWorkCode sendCode))successBlock
                        failed:(void(^)(NSString *errorMessage,ZCNetWorkCode errorCode))failedBlock
                       finish:(void(^)(NSString *jsonString)) finishBlock;
+
+
+/// 新版询前表单
+/// @param uid  访客Id
+/// @param cid 会话Id
+/// @param schemeId 询前表单方案Id
+/// @param formData array[object (SubmitFormDataReqVo) {7}]
+/// @param startBlock startBlock description
+/// @param successBlock successBlock description
+/// @param failedBlock failedBlock description
++(void)postNewAskTabelWithUid:(NSString *)uid
+                          cid:(NSString *)cid
+                     schemeId:(NSString*)schemeId
+                     formData:(NSMutableArray *)formData
+                     canvasId:(NSString *)canvasId
+                        start:(void (^)(void))startBlock
+                      success:(void(^)(NSDictionary *dict,ZCNetWorkCode sendCode)) successBlock
+                       failed:(void(^)(NSString *errorMessage,ZCNetWorkCode errorCode)) failedBlock;
+
+
+
+
+/// 工单状态列表，用于展示自定义工单状态
+/// @param config 初始化对象，用户获取companyId
+/// @param startBlock 开始
+/// @param successBlock successBlock description
+/// @param failedBlock failedBlock description
+/// @param finishBlock finishBlock description
++(void)getOrderStatusList:(ZCLibConfig *)config
+                        start:(void(^)(NSString *urlString)) startBlock
+                      success:(void(^)(NSDictionary *dict,ZCNetWorkCode sendCode))successBlock
+                       failed:(void(^)(NSString *errorMessage,ZCNetWorkCode errorCode))failedBlock
+                   finish:(void(^)(NSString *jsonString)) finishBlock;
 @end
 
 NS_ASSUME_NONNULL_END
