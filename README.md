@@ -1,6 +1,7 @@
 # SobotChatClient
 智齿SDK_iOS V6 pod
 
+
 ## SDK 4.2.1 版本更新说明[2024-12-20] 
 1.【新增】询前表单                
 2.【新增】AiAgent支持MacDown格式              

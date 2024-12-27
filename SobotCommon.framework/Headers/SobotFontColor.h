@@ -50,7 +50,31 @@
 #define  SobotFont8       [UIFont fontWithName:@"Helvetica" size:8]
 #define  SobotFontBold8   [UIFont fontWithName:@"Helvetica-Bold" size:8]
 
+// 常用高度
+#define SobotHSheetTitle 60
+#define SobotHButton36 36
+#define SobotHButton44 44
 
+// 圆角Radius
+#define SobotRadius18 18
+#define SobotRadius8 8
+#define SobotRadius6 6
+#define SobotRadius4 4
+#define SobotRadiosMax 18
+#define SobotRadiosMiddle 8
+#define SobotRadiosMin 4
+
+// 间距SPACE
+#define SobotSpace20 20
+#define SobotSpace18 18
+#define SobotSpace16 16
+#define SobotSpace12 12
+#define SobotSpace10 10
+// 常用边距
+#define SobotSpaceOut 20
+#define SobotSpaceIn 16
+#define SobotSpaceInLine 8
+#define SobotSpaceInLineMin 4
 
 // Color keys
 typedef NSString *SobotTypeColor NS_STRING_ENUM;
