@@ -53,6 +53,13 @@ NS_ASSUME_NONNULL_BEGIN
 + (UIColor *)getSobotThemeModeByHexAlpha:(NSString *)hexColor alpha:(CGFloat) alpha;
 
 
+
+// 获取RGB和Alpha
++ (NSArray *)getSobotRGBWithColor:(UIColor *)color;
+ 
+// 改变UIColor的Alpha
++ (UIColor *)getSobotNewColorWith:(UIColor *)color alpha:(CGFloat )alpha;
+
 // 读取图片资源
 +(UIImage *)getSysImageByName:(NSString *)imageName;
 +(UIImage *)getSysImageByName:(NSString *)imageName bundleName:(NSString *) bundleName;

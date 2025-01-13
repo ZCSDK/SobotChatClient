@@ -194,6 +194,12 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)synchronizeLanguage:(NSString *) language catalogCodes:(NSString *)catalogCodes write:(BOOL) isReWrite result:(nonnull void (^)(NSString * _Nonnull message, int code))ResultBlock;
 
 
+
+
+/// 根据用户的source返回sourceName
+/// - Parameter source: 来源编码
+-(NSString *)getUserSourceName:(int )source;
+
 @end
 
 NS_ASSUME_NONNULL_END

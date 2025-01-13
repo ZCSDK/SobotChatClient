@@ -48,7 +48,7 @@
 "您收到了一条新消息" = "Anda ada satu mesej baru";
 "评分" = "Skor";
 "评语" = "Komen";
-"是否解决了您的问题？" = "Adakah  mengatasi masalah anda?";
+"是否解决了您的问题？" = "adakah  mengatasi masalah anda?";
 "受理中" = "Dalam penerimaan";
 "问题分类" = "Kategori masalah";
 "问题详情" = "Perincian soalan";
@@ -76,7 +76,7 @@
 "运输中" = "Dalam perjalanan";
 "待发货" = "Belum dihantarkan";
 "待付款" = "Belum dibayar";
-"选填" = "pilihan";
+"选填" = "Pilihan";
 "展开" = "Luas";
 "收起" = "Runtuh";
 "无" = "Tidak ada";
@@ -261,3 +261,6 @@
 
 "顶" = "atas";
 "踩" = "langkah ke depan";
+
+"满意" = "memuaskan";
+"不满意" = "Tak puas hati";

@@ -76,7 +76,7 @@
 "运输中" = "Em trânsito";
 "待发货" = "À espera de expedição";
 "待付款" = "Pagamento pendente";
-"选填" = "opcional";
+"选填" = "Opcional";
 "展开" = "Expandir";
 "收起" = "Colapsar";
 "无" = "Nenhum";
@@ -261,3 +261,6 @@
 
 "顶" = "topo";
 "踩" = "passo em frente";
+
+"满意" = "Satisfeito";
+"不满意" = "Insatisfeito";

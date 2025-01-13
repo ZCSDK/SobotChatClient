@@ -48,7 +48,7 @@
 "您收到了一条新消息" = "Zezwól na dostęp do swojego mikrofonu w opcji „Ustawienia-Prywatność-Mikrofon”";
 "评分" = "Zezwól na dostęp do swojej kamery w opcji „Ustawienia-Prywatność-Kamera”";
 "评语" = "Przetwarzanie wideo, czekaj!";
-"是否解决了您的问题？" = "Przekroczono limit czasu żądania przyczyny sieci Przeładuj";
+"是否解决了您的问题？" = "przekroczono limit czasu żądania przyczyny sieci Przeładuj";
 "受理中" = "akceptuję";
 "问题分类" = "kategoria pytań";
 "问题详情" = "szczegóły zapytania";
@@ -76,7 +76,7 @@
 "运输中" = "w tranzycie";
 "待发货" = "poczekaj na dostawę";
 "待付款" = "poczekaj na wypłatę";
-"选填" = "opcjonalna";
+"选填" = "Opcjonalna";
 "展开" = "rozwiń";
 "收起" = "odłożyj";
 "无" = "zero";

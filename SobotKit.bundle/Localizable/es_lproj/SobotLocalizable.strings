@@ -48,7 +48,7 @@
 "您收到了一条新消息" = "Ha recibido un mensaje nuevo";
 "评分" = "Punto";
 "评语" = "Comentario";
-"是否解决了您的问题？" = "Se resolvió su problema?";
+"是否解决了您的问题？" = "se resolvió su problema?";
 "受理中" = "Aceptando";
 "问题分类" = "Categoría de problemas";
 "问题详情" = "Detalles de pregunta";
@@ -76,7 +76,7 @@
 "运输中" = "En tránsito";
 "待发货" = "Para entregar";
 "待付款" = "Por pagar";
-"选填" = "opcional";
+"选填" = "Opcional";
 "展开" = "Expandir";
 "收起" = "Guardar";
 "无" = "Nada";
@@ -262,3 +262,6 @@
 
 "顶" = "Top";
 "踩" = "Pisotear";
+
+"满意" = "Satisfecho";
+"不满意" = "Insatisfecho";

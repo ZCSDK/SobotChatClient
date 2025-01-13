@@ -48,7 +48,7 @@
 "您收到了一条新消息" = "You have received a new message";
 "评分" = "Score";
 "评语" = "Comment";
-"是否解决了您的问题？" = "Has solved your problem?";
+"是否解决了您的问题？" = "has solved your problem?";
 "受理中" = "Processing";
 "问题分类" = "Problem type";
 "问题详情" = "Issue details";
@@ -76,7 +76,7 @@
 "运输中" = "In transportation";
 "待发货" = "To be shipped";
 "待付款" = "Pending payment";
-"选填" = "optional";
+"选填" = "Optional";
 "展开" = "Expand";
 "收起" = "Collapse";
 "无" = "nothing";
@@ -267,3 +267,6 @@
 
 "顶" = "top";
 "踩" = "step on";
+
+"满意" = "Satisfied";
+"不满意" = "Dissatisfied";

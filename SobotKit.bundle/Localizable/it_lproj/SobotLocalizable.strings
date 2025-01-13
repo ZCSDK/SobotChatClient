@@ -76,7 +76,7 @@
 "运输中" = "In trasporto";
 "待发货" = "Da consegnare";
 "待付款" = "Da pagare";
-"选填" = "a scelta";
+"选填" = "A scelta";
 "展开" = "Estendere";
 "收起" = "Raccogliere";
 "无" = "Nulla";
@@ -261,3 +261,6 @@
 
 "顶" = "in alto";
 "踩" = "passo avanti";
+
+"满意" = "Soddisfatto";
+"不满意" = "Insoddisfacente";

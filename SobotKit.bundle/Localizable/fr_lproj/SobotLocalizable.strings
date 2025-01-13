@@ -76,7 +76,7 @@
 "运输中" = "En transit";
 "待发货" = "En attente de livraison";
 "待付款" = "En attente de paiement";
-"选填" = "facultatif";
+"选填" = "Facultatif";
 "展开" = "Se dérouler";
 "收起" = "Ranger";
 "无" = "Non";
@@ -262,3 +262,6 @@
 
 "顶" = "TOP";
 "踩" = "Marche!";
+
+"满意" = "Satisfait";
+"不满意" = "Non satisfait";

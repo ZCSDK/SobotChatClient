@@ -48,7 +48,7 @@
 "您收到了一条新消息" = "Bạn đã nhận được 1 tin nhắn";
 "评分" = "Điểm số";
 "评语" = "Lời đánh giá";
-"是否解决了您的问题？" = "Có giải quyết được vấn đề của bạn không?";
+"是否解决了您的问题？" = "có giải quyết được vấn đề của bạn không?";
 "受理中" = "Đang xử lý";
 "问题分类" = "Loại câu hỏi";
 "问题详情" = "Chi tiết câu hỏi";
@@ -262,3 +262,6 @@
 
 "顶" = "trên";
 "踩" = "bước lên";
+
+"满意" = "thỏa mãn";
+"不满意" = "Không hài lòng";
