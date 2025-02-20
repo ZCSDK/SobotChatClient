@@ -28,6 +28,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 // 更新导航栏颜色
 -(void)updateTopViewBgColor;
+
+-(void)jumpDocumentVC:(UIViewController*)docVC;
 @end
 
 @interface ZCChatView : UIView
