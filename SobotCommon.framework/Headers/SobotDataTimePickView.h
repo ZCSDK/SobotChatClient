@@ -3,7 +3,7 @@
 //  SobotCommon
 //
 //  Created by zhangxy on 2024/6/25.
-//
+// 日期+时间 + 时区
 
 #import <UIKit/UIKit.h>
 
@@ -33,6 +33,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,copy) UIColor *btnTitleColor;
 @property (nonatomic,copy) UIColor *btnBgColor;
 
+// 是否镜像
+@property (nonatomic,assign) BOOL isRTL;
 // action:0，取消；1；确定
 @property (nonatomic,strong) void(^onCommitBlock)(int action,NSString *resultText,NSString *_Nullable timezoneId,id _Nullable timeZone);
 

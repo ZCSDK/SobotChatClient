@@ -6,11 +6,19 @@
 	<dict>
 		<key>Headers/SobotClientBaseController.h</key>
 		<data>
-		G86ztNn+22sD8r9Pgb3BXvI2lM8=
+		HH8Ef1hJhgOUT1tDsieyI8dljAQ=
 		</data>
 		<key>Headers/SobotKit.h</key>
 		<data>
 		4/qajpcoQBoOPKpWtw1eojDObf8=
+		</data>
+		<key>Headers/SobotRichView.h</key>
+		<data>
+		wUqHWQscXn//+Pa1Pz9nCHUZF7g=
+		</data>
+		<key>Headers/SobotRichtTextTools.h</key>
+		<data>
+		DNnxqvqcqiI0dBvtY3Is23twLag=
 		</data>
 		<key>Headers/SobotSatisfactionView.h</key>
 		<data>
@@ -30,7 +38,7 @@
 		</data>
 		<key>Headers/ZCKitInfo.h</key>
 		<data>
-		2SOhJXsV9e5/284B4g/vSA7W3e0=
+		6o1ATL63wi5PK7/YPfrSmuw1/ww=
 		</data>
 		<key>Headers/ZCLibCusMenu.h</key>
 		<data>
@@ -42,15 +50,15 @@
 		</data>
 		<key>Headers/ZCTitleView.h</key>
 		<data>
-		W6cRyo4BMvnql8M496edri+fvdo=
+		1w/m+CKLHkEFJ45AIBbGXbiFkZM=
 		</data>
 		<key>Headers/ZCUICore.h</key>
 		<data>
-		amz2l9dHh+AMZ16FkG/sWzlyi8A=
+		NUQfHK32LBzFp9DB/hj3KhJTGG8=
 		</data>
 		<key>Headers/ZCUIPlaceHolderTextView.h</key>
 		<data>
-		rFvch0FXAXN3rPf4yB/e8JQFNc4=
+		/zX6LcApEM+/ct/rnBhlyu2h16A=
 		</data>
 		<key>Headers/ZCUIWebController.h</key>
 		<data>
@@ -71,11 +79,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			G86ztNn+22sD8r9Pgb3BXvI2lM8=
+			HH8Ef1hJhgOUT1tDsieyI8dljAQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			3ZkiWUROGs5+STiDuR5+0xjJgpcBgY7YUGSeb+Uu870=
+			gdB0obcdfWVY+VwPUQuiBW3Ss48zRywXX5+PDN0E2Mg=
 			</data>
 		</dict>
 		<key>Headers/SobotKit.h</key>
@@ -87,6 +95,28 @@
 			<key>hash2</key>
 			<data>
 			Ne2dq9uUIXTy+braSaWh7P06pbXWpZlB2kvyzojz6Kk=
+			</data>
+		</dict>
+		<key>Headers/SobotRichView.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wUqHWQscXn//+Pa1Pz9nCHUZF7g=
+			</data>
+			<key>hash2</key>
+			<data>
+			8eAi2u7mo1oqWGW0n1Zz9l3MJlv6IzxJh2ock7tUpPE=
+			</data>
+		</dict>
+		<key>Headers/SobotRichtTextTools.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DNnxqvqcqiI0dBvtY3Is23twLag=
+			</data>
+			<key>hash2</key>
+			<data>
+			C1KHQAEV2gLBg06PzLnqKFaISBjAIaZq3VgcLV2uWdw=
 			</data>
 		</dict>
 		<key>Headers/SobotSatisfactionView.h</key>
@@ -137,11 +167,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2SOhJXsV9e5/284B4g/vSA7W3e0=
+			6o1ATL63wi5PK7/YPfrSmuw1/ww=
 			</data>
 			<key>hash2</key>
 			<data>
-			O/FQJOHJkDTNc/VvPzkFcisMYWlFlAV3b7WKoTNYxlc=
+			eGO2vN3LvAQo+9RE28Vntp4b0UKFI5XT0vUa7i2ydrk=
 			</data>
 		</dict>
 		<key>Headers/ZCLibCusMenu.h</key>
@@ -170,33 +200,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			W6cRyo4BMvnql8M496edri+fvdo=
+			1w/m+CKLHkEFJ45AIBbGXbiFkZM=
 			</data>
 			<key>hash2</key>
 			<data>
-			+UxQSMedS+qwP9yFdnklSShyGPm+NOK1LaK7XW1faDA=
+			2nHwXhm8aUdKU2tLZY2zaSglRFEOHUHpgJlN7QnN4Pk=
 			</data>
 		</dict>
 		<key>Headers/ZCUICore.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			amz2l9dHh+AMZ16FkG/sWzlyi8A=
+			NUQfHK32LBzFp9DB/hj3KhJTGG8=
 			</data>
 			<key>hash2</key>
 			<data>
-			U2W+SJ84LjNTdWd29rN6zAHvgFDiJufCuOLgK00kex4=
+			20/YdYkXTZFAwximeFqaEPA9P82h/zYqYQR5Tx7j2ZU=
 			</data>
 		</dict>
 		<key>Headers/ZCUIPlaceHolderTextView.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rFvch0FXAXN3rPf4yB/e8JQFNc4=
+			/zX6LcApEM+/ct/rnBhlyu2h16A=
 			</data>
 			<key>hash2</key>
 			<data>
-			+PduVY9pfb+6bBPmWk6EiO8ufidYrp1+/P77O6T1Ojk=
+			amKxFgYQSBBNlr5rrNfZjBJ+SQBgEa9TUpjSEft+cuc=
 			</data>
 		</dict>
 		<key>Headers/ZCUIWebController.h</key>

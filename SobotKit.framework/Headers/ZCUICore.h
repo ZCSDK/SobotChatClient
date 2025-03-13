@@ -130,6 +130,8 @@ typedef NS_ENUM(NSInteger,ZCInitStatus) {
 typedef void (^DetailViewBlock)(SobotChatMessage * _Nonnull model,int type ,id obj);
 typedef void (^ChangeLanguageBlock)(ZCLanguageModel *_Nonnull model,NSDictionary *dict);
 @interface ZCUICore : NSObject
+// 记录临时加载失败的图片地址
+@property(nonatomic,strong)NSMutableArray *tempImageArray;
 
 @property(nonatomic,copy) void (^PageLoadBlock)(id object,ZCPageStateType type);
 
@@ -137,7 +139,8 @@ typedef void (^ChangeLanguageBlock)(ZCLanguageModel *_Nonnull model,NSDictionary
 
 // 是否可以显示 分词联想的页面 页面销毁后 当前页面不要再展示了
 @property(nonatomic,assign) BOOL isCanShowAutoView;
-
+// 是否可以显示 分词联想的页面 当输入框的值为空时，即使有返回也不要显示 产品需求
+@property(nonatomic,assign) BOOL isKeyBoardIsClear;
 +(ZCUICore * _Nonnull)getUICore;
 @property(nonatomic,assign) CGFloat zc_keyBoardHeight;
 @property (nonatomic,copy) NSString *checkGroupId;
@@ -187,7 +190,8 @@ typedef void (^ChangeLanguageBlock)(ZCLanguageModel *_Nonnull model,NSDictionary
 @property (nonatomic,assign) BOOL isSendToRobot;
 
 @property(nonatomic,assign) BOOL isInitLoading;
-
+// 当前是否是新会话键盘样式
+@property(nonatomic,assign) BOOL isKeyboardNewSession;
 // 是否锁定当前的消息
 @property(nonatomic,assign) BOOL isLockMsg;
 // 锁定当前消息的个数
@@ -275,6 +279,7 @@ typedef void (^ChangeLanguageBlock)(ZCLanguageModel *_Nonnull model,NSDictionary
 - (void)loadSatisfactionDictlock:(nonnull void (^)(int)) loadResult;
 -(ZCLibSatisfaction *)getSatisFactionWithScore:(int) score;
 
+-(ZCLibSatisfaction *)getLeaveSatisFactionWithScore:(int) score;
 
 // 校验转人工参数，并执行转人工
 -(void)checkUserServiceWithType:(ZCTurnType) type model:(SobotChatMessage *_Nullable) message;
@@ -338,6 +343,11 @@ typedef void (^ChangeLanguageBlock)(ZCLanguageModel *_Nonnull model,NSDictionary
 // 结束会话 过滤本次会话 未提交机器人点踩标签的系统25消息
 -(void)removeRobotSubmitMsg;
 
-//
--(BOOL)isKeyboardNewSession;
+
+#pragma mark -- 全局回收键盘
+- (void)hideKeyBoard;
+#pragma mark -- 记录临时图片加载失败回显的数据
+-(BOOL)isHasUserWithUrl:(NSString*)url;
+-(void)addUrlToTempImageArray:(NSString*)url;
+-(void)clearTempImageArray;
 @end

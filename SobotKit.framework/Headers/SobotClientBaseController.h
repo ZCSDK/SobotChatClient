@@ -47,15 +47,10 @@ NS_ASSUME_NONNULL_BEGIN
 // 更新导航栏背景色和渐变色
 -(void)updateTopViewBgColor;
 
-// 更新帮助中心导航栏渐变色
--(void)updateCenterViewBgColor;
 
-// 设置导航栏的样式
-- (void)setNavigationBarStyle;
+-(void)btmButtonClick:(UIButton *)sender;
 
-// 设置导航栏按钮
--(void)setNavigationBarLeft:(NSArray *__nullable)leftTags right:(NSArray *__nullable)rightTags;
-
+-(UIView *)createBtmView:(BOOL) addTel;
 @end
 
 NS_ASSUME_NONNULL_END

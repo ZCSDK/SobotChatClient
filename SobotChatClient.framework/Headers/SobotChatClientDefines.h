@@ -18,7 +18,7 @@
 #define UIColorFromKitModeColorAlpha(themeColorKey,a) [SobotUITools getSobotThemeModeColor:themeColorKey alpha:a bundleName:ChatClientBundelName]
 
 // 底部弹出标题高度
-#define ZCSheetTitleHeight   60
+#define ZCSheetTitleHeight   52
 
 // 是否开启自动提醒   414 废弃 从初始化接口获取
 //#define Sobot_isEnableAutoTips @"Sobot_isEnableAutoTips"

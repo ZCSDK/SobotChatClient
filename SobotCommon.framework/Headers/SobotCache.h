@@ -30,6 +30,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property(nonatomic,strong) NSMutableDictionary *localStringsDict;
 
+// 记录是否要镜像处理
+@property(nonatomic,assign) BOOL isRTL;
 
 /**
  读取当前缓存语言文件

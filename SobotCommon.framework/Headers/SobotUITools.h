@@ -184,10 +184,22 @@ NS_ASSUME_NONNULL_BEGIN
 +(NSMutableAttributedString *) attributedStringByHTML:(NSString *)html textColor:(UIColor *) textColor linkColor:(UIColor *) linkColor;
 
 
++(CGSize )getSizeContain:(NSString *)string font:(UIFont *)font Width:(CGSize) size;
 +(CGFloat)getHeightContain:(NSString *)string font:(UIFont *)font Width:(CGFloat) width;
 
 +(CGFloat)getWidthContain:(NSString *)string font:(UIFont *)font Height:(CGFloat) height;
 
+
+/// 设置文本的行间距，并返回最大高度
+/// - Parameters:
+///   - label: 控件UILabel
+///   - text: 文本
+///   - lineSpacing: 行间距
+///   - maxWidth: 最大宽度
++ (CGFloat )setLabel:(UILabel *)label withText:(NSString *)text lineHeight:(CGFloat)lineSpacing width:(CGFloat) maxWidth;
+
+
++ (void ) sobotButon:(UIButton *) iv hSpace:(CGFloat ) spacing top:(CGFloat )imgTBSpace rtl:(BOOL )isRTL;
 
 +(BOOL)getIsIphonX;
 
@@ -202,6 +214,19 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 +(UIImage*)sobotCreateImageWithColor:(UIColor*)color;
+
+
+
+/// 重写布局superView的子view
+/// 子view需要设置好内容
+/// - Parameters:
+///   - paddingInsets: 子view的外边距
+///   - superView: superView
+///   - subViews: 如果为nil，自动去superView.subviews
+///   - maxWidth: 显示的最大宽度
+///   - hspace: 子控件的左右间隔
+///   - vspace: 子控件的上下间隔
++(UIView *)subViewsLineBreak:(UIEdgeInsets )paddingInsets view:(UIView *) superView subview:(NSArray * _Nullable) subViews maxWidth:(CGFloat )maxWidth hSpace:(CGFloat) hspace vSpace:(CGFloat) vspace;
 
 @end
 

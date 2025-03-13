@@ -137,10 +137,10 @@
 "删除" = "Delete";
 "数据错误" = "Data error";
 "客服" = "Customer service";
-"复制成功！" = "Copied successfully!";
+"复制成功" = "Copied successfully";
 "复制" = "Copy";
 "已创建" = "Created";
-"倒计时:" = "Countdown:";
+"倒计时" = "Countdown";
 "消息中心" = "Message";
 "未连接" = "Not connected";
 "连接中..." = "Connecting…";
@@ -270,3 +270,25 @@
 
 "满意" = "Satisfied";
 "不满意" = "Dissatisfied";
+
+"回复了您" = "Replied to you";
+"您的回复" = "Your reply";
+
+"上传附件" = "Upload Attachments";
+"展开全部" = "Expand All";
+"收起" = "Fold";
+"松开 发送" = "Release to Send";
+"松开 取消" = "Release to Cancel";
+"松开发送，上滑取消" = "Release to send, swipe up to cancel";
+"暂无回复" = "No reply";
+"请输入" = "Please enter";
+"最多上传" = "Upload up to";
+"个，" = ",";
+"大小不超过" = " size not exceeding";
+"已达上限 15 个" = "Limit of 15 reached";
+"知道了" = "OK";
+"已拒绝" = "Rejected";
+
+"请选择" = "Please select";
+"暂无客服在线，点击进行留言。" = "No agent online. Click to leave submission";
+"工单处理状态更新后将在会话中提醒您" = "You will be notified in the chat after the ticket processing status is updated";

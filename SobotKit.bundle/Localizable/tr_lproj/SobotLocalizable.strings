@@ -137,10 +137,10 @@
 "删除" = "Sil";
 "数据错误" = "Veriler yanlış";
 "客服" = "Müşteri hizmeti";
-"复制成功！" = "Başarıyla kopyalandı!";
+"复制成功" = "Başarıyla kopyalandı";
 "复制" = "Kopyala";
 "已创建" = "Kuruldu";
-"倒计时:" = "Geri sayım:";
+"倒计时" = "Geri sayım";
 "消息中心" = "Mesaj merkezi";
 "未连接" = "Bağlı değil";
 "连接中..." = "Bağlanıyor";
@@ -264,3 +264,26 @@
 
 "满意" = "tatmin etmek";
 "不满意" = "Memnun değilim";
+
+"回复了您" = "Size yanıt verildi";
+"您的回复" = "Cevabın";
+
+"上传附件" = "Ekleri Yükle";
+"展开全部" = "Tümünü genişlet";
+"收起" = "Katla";
+"松开 发送" = "Göndermek için serbest bırak";
+"松开 取消" = "İptal etmek için serbest bırak";
+"松开发送，上滑取消" = "Göndermek için serbest bırak, iptal etmek için yukarı kaydır";
+"暂无回复" = "Cevap yok";
+"请输入" = "Lütfen girin";
+"最多上传" = "'i geçmiyor";
+"个，" = ", boyut";
+"大小不超过" = "'e kadar yükleyin";
+"已达上限 15 个" = "15 sınırına ulaşıldı";
+"知道了" = "Not edildi";
+"已拒绝" = "Reddedildi";
+
+
+"请选择" = "Lütfen seçin";
+"暂无客服在线，点击进行留言。" = "Çevrimiçi acente yok. Gönderimi bırakmak için tıklayın";
+"工单处理状态更新后将在会话中提醒您" = "Bilet işleme durumu güncellendikten sonra sohbette bilgilendirileceksiniz";

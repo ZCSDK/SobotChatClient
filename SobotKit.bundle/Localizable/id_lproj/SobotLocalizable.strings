@@ -137,10 +137,10 @@
 "删除" = "menghapus";
 "数据错误" = "kesalahan data";
 "客服" = "Pelayanan pelanggan";
-"复制成功！" = "Berhasil menyalin!";
+"复制成功" = "Berhasil menyalin";
 "复制" = "menyalin";
 "已创建" = "Sudah dibangun";
-"倒计时:" = "Hitung mundur:";
+"倒计时" = "Hitung mundur";
 "消息中心" = "Pusat pesan";
 "未连接" = "Tidak terhubung";
 "连接中..." = "menghubungkan ...";
@@ -264,3 +264,27 @@
 
 "满意" = "Puas";
 "不满意" = "Tidak puas";
+
+
+"回复了您" = "Membalasmu";
+"您的回复" = "balasanmu";
+
+"上传附件" = "Unggah Lampiran";
+"展开全部" = "Perluas Semuanya";
+"收起" = "Tutup";
+"松开 发送" = "Rilis untuk Dikirim";
+"松开 取消" = "Rilis untuk Dibatalkan";
+"松开发送，上滑取消" = "Rilis untuk dikirim, geser ke atas untuk membatalkan";
+"暂无回复" = "Tidak ada balasan";
+"请输入" = "Silakan masukkan...";
+"最多上传" = "Batas unggahan maksimum adalah";
+"个，" = "item,";
+"大小不超过" = "dengan ukuran tidak melebihi ";
+"已达上限 15 个" = "Batas 15 item telah tercapai";
+"知道了" = "Mengerti";
+"已拒绝" = "Ditolak";
+
+
+"请选择" = "Silakan pilih";
+"暂无客服在线，点击进行留言。" = "Tidak ada agen yang online. Klik untuk meninggalkan pengajuan";
+"工单处理状态更新后将在会话中提醒您" = "Anda akan diingatkan dalam sesi setelah status pemrosesan perintah kerja diperbarui.";

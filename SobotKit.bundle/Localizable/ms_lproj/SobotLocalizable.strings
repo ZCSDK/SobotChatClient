@@ -137,10 +137,10 @@
 "删除" = "Padam";
 "数据错误" = "Data salah";
 "客服" = "Perkhidmat pelanggan";
-"复制成功！" = "Berjaya salin";
+"复制成功" = "Berjaya salin";
 "复制" = "Salin";
 "已创建" = "Telah dibina";
-"倒计时:" = "Mulai masa dari belakang:";
+"倒计时" = "Mulai masa dari belakang";
 "消息中心" = "Pusat informasi";
 "未连接" = "Belum bersambung";
 "连接中..." = "Menyambung…...";
@@ -264,3 +264,26 @@
 
 "满意" = "memuaskan";
 "不满意" = "Tak puas hati";
+
+"回复了您" = "Dibalas kepada anda";
+"您的回复" = "balasan awak";
+
+
+"上传附件" = "Muat Naik Lampiran";
+"展开全部" = "Kembangkan semua";
+"收起" = "lipat";
+"松开 发送" = "Lepaskan untuk dihantar";
+"松开 取消" = "Lepaskan untuk membatalkan";
+"松开发送，上滑取消" = "Lepaskan untuk menghantar, leret ke atas untuk membatalkan";
+"暂无回复" = "Tiada balasan";
+"请输入" = "Sila masukkan";
+"最多上传" = "Muat naik sehingga";
+"个，" = ",";
+"大小不超过" = "saiz tidak melebihi";
+"已达上限 15 个" = "Had 15 dicapai";
+"知道了" = "Tercatat";
+"已拒绝" = "ditolak";
+
+"请选择" = "Sila pilih";
+"暂无客服在线，点击进行留言。" = "Tiada ejen dalam talian. Klik untuk meninggalkan penyerahan";
+"工单处理状态更新后将在会话中提醒您" = "Anda akan dimaklumkan dalam sembang selepas status pemprosesan tiket dikemas kini";

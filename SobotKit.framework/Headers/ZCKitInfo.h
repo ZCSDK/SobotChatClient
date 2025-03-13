@@ -705,22 +705,22 @@
 /**
  *更多按钮默认图片
  */
-@property (nonatomic,copy) NSString *moreBtnNolImg;
+//@property (nonatomic,copy) NSString *moreBtnNolImg;
 
 /**
  *更多按钮选中图片
  */
-@property (nonatomic,copy) NSString *moreBtnSelImg;
+//@property (nonatomic,copy) NSString *moreBtnSelImg;
 
-/**
- * 转人工按钮默认图片
- */
-@property (nonatomic,copy) NSString *turnBtnNolImg;
+///**
+// * 转人工按钮默认图片
+// */
+//@property (nonatomic,copy) NSString *turnBtnNolImg;
 
 /**
  *转人工按选中图片
  */
-@property (nonatomic,copy) NSString *turnBtnSelImg;
+//@property (nonatomic,copy) NSString *turnBtnSelImg;
 
 /**
  *返回按钮默认图片

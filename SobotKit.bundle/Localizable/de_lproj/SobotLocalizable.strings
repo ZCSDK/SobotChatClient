@@ -137,10 +137,10 @@
 "删除" = "Löschen";
 "数据错误" = "Falsche daten";
 "客服" = "Kundendienst";
-"复制成功！" = "Erfolgreich kopieren!";
+"复制成功" = "Erfolgreich kopieren";
 "复制" = "Kopieren";
 "已创建" = "Erstellt";
-"倒计时:" = "Countdown:";
+"倒计时" = "Countdown";
 "消息中心" = "Nachrichtenzentrum";
 "未连接" = "Nicht verbunden";
 "连接中..." = "Verbunden ...";
@@ -265,3 +265,27 @@
 
 "满意" = "Zufrieden";
 "不满意" = "Unzufrieden";
+
+"回复了您" = "Habe dir geantwortet";
+"您的回复" = "Deine Antwort";
+
+
+"上传附件" = "Anhang Hochladen";
+"展开全部" = "Alles Erweitern";
+"收起" = "Einklappen";
+"松开 发送" = "Loslassen, um zu Senden";
+"松开 取消" = "Loslassen, um Abzubrechen";
+"松开发送，上滑取消" = "Loslassen, um zu senden, nach oben wischen, um abzubrechen";
+"暂无回复" = "Keine Rückmeldungen vorhanden";
+"请输入" = "Bitte eingeben";
+"最多上传" = "Maximal";
+"个，" = " hochladen,";
+"大小不超过" = "mit einer Größe von nicht mehr als";
+"已达上限 15 个" = "Obergrenze erreicht: 15";
+"知道了" = "Verstanden";
+"已拒绝" = "Abgelehnt";
+
+
+"请选择" = "Bitte wählen Sie";
+"暂无客服在线，点击进行留言。" = "Kein Agent online. Klicken Sie hier, um die Übermittlung zu verlassen";
+"工单处理状态更新后将在会话中提醒您" = "Sie werden in der Unterhaltung benachrichtigt, sobald sich der Ticketstatus ändert";

@@ -137,10 +137,10 @@
 "删除" = "Supprimer";
 "数据错误" = "Erreur de donnée";
 "客服" = "Service clients";
-"复制成功！" = "Copiez avec succès!";
+"复制成功" = "Copiez avec succès";
 "复制" = "Copie";
 "已创建" = "Établi";
-"倒计时:" = "Compte à rebours :";
+"倒计时" = "Compte à rebours";
 "消息中心" = "Centre de messagerie";
 "未连接" = "Non connecté";
 "连接中..." = "En cours de connecxion…";
@@ -265,3 +265,27 @@
 
 "满意" = "Satisfait";
 "不满意" = "Non satisfait";
+
+"回复了您" = "Je t'ai répondu";
+"您的回复" = "votre réponse";
+
+// ************** 423  UI改版新增 **************
+"上传附件" = "Pièce Jointe";
+"展开全部" = "Développer Tout";
+"收起" = "Plier";
+"松开 发送" = "Relâcher pour Envoyer";
+"松开 取消" = "Relâcher pour Annuler";
+"松开发送，上滑取消" = "Relâcher pour envoyer, glisser vers le haut pour annuler";
+"暂无回复" = "Aucune réponse pour le moment";
+"请输入" = "Veuillez saisir";
+"最多上传" = "Maximum";
+"个，" = " éléments,";
+"大小不超过" = "taille maximale";
+"已达上限 15 个" = "Limite de 15 atteinte";
+"知道了" = "OK";
+"已拒绝" = "Refusé";
+
+
+"请选择" = "Veuillez sélectionner";
+"暂无客服在线，点击进行留言。" = "Aucun agent en ligne. Cliquez pour quitter la soumission";
+"工单处理状态更新后将在会话中提醒您" = "Vous serez averti dans la conversation lorsque l'état du ticket sera mis à jour.";

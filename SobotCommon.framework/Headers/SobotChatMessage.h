@@ -375,6 +375,9 @@ NS_ASSUME_NONNULL_BEGIN
 // richList and loopchat
 @interface SobotChatRichContent : SobotBaseEntity
 
+// 富文本消息中 视频的占位图
+@property(nonatomic,strong)NSString *videoImgUrl;
+
 // richList 消息体
 @property(nonatomic,copy) NSString *height;//": null,
 @property(nonatomic,copy) NSString *width;//":
@@ -683,7 +686,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 @interface SobotChatMessage : SobotBaseEntity
-
 // 是一问多答的消息 和人工客服回复的新消息 是否要加锁
 @property(nonatomic,assign) BOOL isLockMsg;
 
@@ -989,6 +991,12 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString *)getHtmlAttrStringWithText:(NSString *)text;
 // 不做html处理 只展示存文本
 -(NSString *)getModelDisplayTextUnHtml;
+
+-(id)initWithMyDict:(NSDictionary *)dict addAttr:(BOOL) isAddAttr;
+
+
+-(NSMutableArray *)getSuggestionList;
+
 @end
 
 

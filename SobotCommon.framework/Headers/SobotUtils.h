@@ -224,4 +224,8 @@ BOOL sobotIsIPhoneX(void);
 /// 获取当前展示的window
 UIWindow *sobotGetCurWindow(void);
 
+
+
+
+
 @end

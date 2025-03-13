@@ -137,10 +137,10 @@
 "删除" = "Xóa";
 "数据错误" = "Dữ liệu lỗi";
 "客服" = "Chăm sóc khách hàng";
-"复制成功！" = "Sao chép thành công";
+"复制成功" = "Sao chép thành công";
 "复制" = "Sao chép";
 "已创建" = "Đã tạo";
-"倒计时:" = "Đếm ngược:";
+"倒计时" = "Đếm ngược";
 "消息中心" = "Trung tâm thông tin";
 "未连接" = "Chưa kết nối";
 "连接中..." = "Đang kết nối";
@@ -265,3 +265,26 @@
 
 "满意" = "thỏa mãn";
 "不满意" = "Không hài lòng";
+
+"回复了您" = "Đã trả lời bạn";
+"您的回复" = "câu trả lời của bạn";
+
+"上传附件" = "Tải lên tệp đính kèm";
+"展开全部" = "Mở rộng tất cả";
+"收起" = "Gấp lại";
+"松开 发送" = "Thả để gửi";
+"松开 取消" = "Thả để hủy";
+"松开发送，上滑取消" = "Thả để gửi, vuốt lên để hủy";
+"暂无回复" = "Không trả lời";
+"请输入" = "Vui lòng nhập";
+"最多上传" = "Tải lên tối đa";
+"个，" = ",";
+"大小不超过" = "kích thước không vượt quá";
+"已达上限 15 个" = "Đã đạt giới hạn 15";
+"知道了" = "Đã ghi nhận";
+"已拒绝" = "Đã từ chối";
+
+
+"请选择" = "Vui lòng chọn";
+"暂无客服在线，点击进行留言。" = "Không có đại lý trực tuyến. Nhấp để gửi";
+"工单处理状态更新后将在会话中提醒您" = "Bạn sẽ được thông báo trong cuộc trò chuyện sau khi trạng thái xử lý vé được cập nhật";

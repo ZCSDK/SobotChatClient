@@ -138,10 +138,10 @@
 "删除" = "verwijderen";
 "数据错误" = "gegevensfout";
 "客服" = "klantenservice";
-"复制成功！" = "Succesvol kopiëren!";
+"复制成功" = "Succesvol kopiëren";
 "复制" = "kopiëren";
 "已创建" = "gemaakt";
-"倒计时:" = "Aftellen:";
+"倒计时" = "Aftellen";
 "消息中心" = "Berichten centrum";
 "未连接" = "niet verbonden";
 "连接中..." = "Verbinden...";
@@ -296,3 +296,26 @@
 "选择语言" = "Wybierz język";
 "请选择您要使用的聊天语言：" = "Wybierz język, w którym chcesz rozmawiać:";
 "更多语言" = "Więcej języków";
+
+"回复了您" = "Ik heb je geantwoord";
+"您的回复" = "jouw antwoord";
+
+"上传附件" = "Bijlagen uploaden";
+"展开全部" = "Alles uitvouwen";
+"收起" = "Vouw";
+"松开 发送" = "Vrijgeven om te verzenden";
+"松开 取消" = "Vrijgeven om te annuleren";
+"松开发送，上滑取消" = "Vrijgeven om te verzenden, veeg omhoog om te annuleren";
+"暂无回复" = "Geen antwoord";
+"请输入" = "Voer in";
+"最多上传" = "Upload tot ";
+"个，" = ",";
+"大小不超过" = "grootte niet groter dan";
+"已达上限 15 个" = "Limiet van 15 bereikt";
+"知道了" = "Genoteerd";
+"已拒绝" = "Afgewezen";
+
+
+"请选择" = "Kies alstublieft";
+"暂无客服在线，点击进行留言。" = "Er zijn momenteel geen klantenservice-medewerkers online. Klik om een bericht te achterlaten.";
+"工单处理状态更新后将在会话中提醒您" = "Wanneer de behandelstatus van het werkorder is bijgewerkt, wordt u in de sessie gewaarschuwd.";

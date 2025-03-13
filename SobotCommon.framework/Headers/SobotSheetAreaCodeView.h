@@ -34,6 +34,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 // 0、仅显示title,1:显示左phone_code和右title
 @property(nonatomic,assign) int cellDataType;
+@property(nonatomic,strong) UIColor *customColor;
 
 @end
 

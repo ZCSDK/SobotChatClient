@@ -70,6 +70,8 @@
 #define SobotSpace16 16
 #define SobotSpace12 12
 #define SobotSpace10 10
+#define SobotSpace8 8
+#define SobotSpace2 2
 // 常用边距
 #define SobotSpaceOut 20
 #define SobotSpaceIn 16
@@ -101,6 +103,8 @@ static SobotTypeColor const SobotColorBgActionSheetView = @"SobotColorBgActionSh
 static SobotTypeColor const SobotColorBgGreen = @"SobotColorBgGreen";// 果绿色 #21CFA6
 static SobotTypeColor const SobotColorBgGray = @"SobotColorBgGray";// 果绿色 #21CFA6
 
+static SobotTypeColor const SobotColorHeaderBg = @"SobotColorHeaderBg";// 留言头部文字背景色
+static SobotTypeColor const SobotColorHeaderText = @"SobotColorHeaderText";// 留言头部文字色
 
 // 文字颜色
 static SobotTypeColor const SobotColorTextMain = @"SobotColorTextMain";//主文本颜色
@@ -121,8 +125,11 @@ static SobotTypeColor const SobotColorTextPricetTag = @"SobotColorTextPricetTag"
 static SobotTypeColor const SobotColorBgF5 = @"SobotColorBgF5";// 新增背景颜色
 
 // 线条颜色
+static SobotTypeColor const SobotColorBorderLine  = @"SobotColorBorderLine";// #D9D9D9
 static SobotTypeColor const SobotColorBgLine  = @"SobotColorBgLine";// 线条颜色"#2C2C2C";分割线
 static SobotTypeColor const SobotColorSeparatorLine = @"SobotColorSeparatorLine";// 分割线颜色
+static SobotTypeColor const SobotColorBgTopLine  = @"SobotColorBgTopLine";// 顶部线条颜色线条颜色"#EBEBEB";
+
 
 // 链接颜色
 static SobotTypeColor const SobotColorTextLink = @"SobotColorTextLink";//链接文本颜色"#0DAEAF";

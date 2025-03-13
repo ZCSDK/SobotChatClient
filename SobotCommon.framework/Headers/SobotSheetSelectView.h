@@ -35,6 +35,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 // 底部按钮
 @property (nonatomic,strong)UIButton *btnCommit;
+// 主题色
+@property (nonatomic,strong)UIColor *servecBgColor;
+// 是否镜像
+@property (nonatomic,assign) BOOL isRTL;
+
 
 // 1 总结分类
 @property (nonatomic, strong)  void(^ChooseResultBlock) (id _Nullable item,NSString *names,NSString *ids);
