@@ -177,7 +177,10 @@ typedef void (^ChangeLanguageBlock)(ZCLanguageModel *_Nonnull model,NSDictionary
 //scoreFlag：星级类型 0-旧版5星级评价  1-nps评价
 //status：模板状态开关 0-关闭 1-开启
 @property(nonatomic,strong) ZCSatisfactionConfig *_Nullable satisfactionConfig; // 评价选项
-@property(nonatomic,strong) ZCSatisfactionConfig *satisfactionLeaveConfig; // 留言评价选项
+@property(nonatomic,assign) BOOL isCommentAiAgent; // 是否已经评价过当前大模型会话
+@property(nonatomic,strong) NSString *_Nullable commentTipsString; // 是否已经评价原因
+@property(nonatomic,strong) ZCSatisfactionConfig *_Nullable aiAgentSatisfactionConfig; // 大模型机器人评价选项
+@property(nonatomic,strong) ZCSatisfactionConfig *_Nullable satisfactionLeaveConfig; // 留言评价选项
 
 @property(nonatomic,assign) BOOL isOffline;
 @property (nonatomic,assign) BOOL isOfflineBeBlack; // 是否是拉黑
@@ -268,7 +271,7 @@ typedef void (^ChangeLanguageBlock)(ZCLanguageModel *_Nonnull model,NSDictionary
 ///   - action: 提示消息
 -(void)removeListModelWithType:(SobotMessageType ) type tips:(SobotMessageActionType) action;
 
--(void)setInputListener:(UITextView *)textView;
+-(void)setInputListener:(UITextView * _Nullable)textView;
 
 // 获取历史记录，执行完成会调用delegate通知
 -(void)getChatMessages;
@@ -276,10 +279,18 @@ typedef void (^ChangeLanguageBlock)(ZCLanguageModel *_Nonnull model,NSDictionary
 
 /// 加载星级内容，成功以后，数据存在satisfactionConfig中
 /// @param loadResult 0成功，1失败
-- (void)loadSatisfactionDictlock:(nonnull void (^)(int)) loadResult;
--(ZCLibSatisfaction *)getSatisFactionWithScore:(int) score;
+- (void)loadSatisfactionDictlock:(nonnull void (^)(int code)) loadResult;
 
--(ZCLibSatisfaction *)getLeaveSatisFactionWithScore:(int) score;
+- (void)loadAiAgentSatisfactionDictlock:(nonnull void (^)(int code)) loadResult;
+
+-(ZCLibSatisfaction * _Nullable)getSatisFactionWithScore:(int) score;
+
+-(ZCLibSatisfaction * _Nullable)getLeaveSatisFactionWithScore:(int) score;
+
+-(ZCLibSatisfaction * _Nullable)getAiAgentSatisFactionWithScore:(int) score;
+
+// 判断当前是否可以评价大模型机器人
+- (void)isSatisfactionAiAgentDictlock:(void (^)(int code)) loadResult;
 
 // 校验转人工参数，并执行转人工
 -(void)checkUserServiceWithType:(ZCTurnType) type model:(SobotChatMessage *_Nullable) message;
@@ -296,7 +307,7 @@ typedef void (^ChangeLanguageBlock)(ZCLanguageModel *_Nonnull model,NSDictionary
 // 邀请评价是，有值了
 -(BOOL)checkSatisfacetion:(BOOL) isEvalutionAdmin type:(SobotSatisfactionFromSrouce ) type rating:(int) rating resolve:(int) resolve;
 // 邀请评价，提交
-- (void)commitSatisfactionWithIsResolved:(int)isResolved Rating:(int)rating problem:(NSString *) problem scoreFlag:(float)scoreFlag scoreExplain:(NSString * _Nullable) scoreExplain;
+- (void)commitSatisfactionWithIsResolved:(int)isResolved Rating:(int)rating problem:(NSString *) problem scoreFlag:(float)scoreFlag scoreExplain:(NSString * _Nullable) scoreExplain checkScore:(ZCLibSatisfaction *) model;
 
 // 去留言页面
 -(void)goLeavePage;
@@ -335,6 +346,8 @@ typedef void (^ChangeLanguageBlock)(ZCLanguageModel *_Nonnull model,NSDictionary
 
 // 获取机器人点踩的配置
 -(void)getRobotTip;
+// 获取大模型机器人点踩的配置
+-(void)getAiRobotTip;
 
 -(void)addRobotRealuateMsg:(SobotChatMessage *)robotMsg newMsg:(SobotChatMessage *)newMsg;
 
@@ -350,4 +363,6 @@ typedef void (^ChangeLanguageBlock)(ZCLanguageModel *_Nonnull model,NSDictionary
 -(BOOL)isHasUserWithUrl:(NSString*)url;
 -(void)addUrlToTempImageArray:(NSString*)url;
 -(void)clearTempImageArray;
+#pragma mark -- 清理正在回复中 ai 动效
+-(void)clearAiLoadingCell;
 @end

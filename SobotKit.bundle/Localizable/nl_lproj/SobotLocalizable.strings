@@ -11,7 +11,7 @@
 "暂时无法转接人工客服" = "Tijdelijk niet mogelijk om over te schakelen naar de handmatige klantenservice";
 "暂时无法评价" = "Kan nog geen commentaar geven";
 "网络错误，请检查网络后重试" = "Netwerkfout. Controleer het netwerk en probeer het opnieuw";
-"转人工" = "Ga naar handmatig";
+"转人工" = "Overzetten naar een medewerker";
 "时间" = "tijd";
 "日期" = "datum";
 "标题" = "titel";
@@ -319,3 +319,7 @@
 "请选择" = "Kies alstublieft";
 "暂无客服在线，点击进行留言。" = "Er zijn momenteel geen klantenservice-medewerkers online. Klik om een bericht te achterlaten.";
 "工单处理状态更新后将在会话中提醒您" = "Wanneer de behandelstatus van het werkorder is bijgewerkt, wordt u in de sessie gewaarschuwd.";
+
+"商品数" = "Hoeveelheid";
+"更多信息" = "Meer informatie";
+"查看更多" = "Meer bekijken";

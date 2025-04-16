@@ -228,6 +228,8 @@ NS_ASSUME_NONNULL_BEGIN
 ///   - vspace: 子控件的上下间隔
 +(UIView *)subViewsLineBreak:(UIEdgeInsets )paddingInsets view:(UIView *) superView subview:(NSArray * _Nullable) subViews maxWidth:(CGFloat )maxWidth hSpace:(CGFloat) hspace vSpace:(CGFloat) vspace;
 
+// 获取最大的高度
++(CGFloat)getMaxHeightContain:(NSString *)string font:(UIFont *)font width:(CGFloat) width;
 @end
 
 NS_ASSUME_NONNULL_END

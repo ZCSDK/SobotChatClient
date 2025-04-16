@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef void(^SobotKitResultBlock)(ZCNetWorkCode code,id _Nullable obj,NSDictionary *_Nullable dict,NSString *_Nullable jsonString);
 
+/// <#Description#>
 @interface ZCLibServer : NSObject
 
 /// 查询appkey企业配置信息
@@ -541,6 +542,11 @@ typedef void(^SobotKitResultBlock)(ZCNetWorkCode code,id _Nullable obj,NSDiction
                        fail:(void(^)(NSString* msg, ZCNetWorkCode errorCode)) failedBlock;
 
 
+/**
+ *  获取大模型机器人评价标签
+ *  @parma config uid/cid/templeteId/robotFlag
+ */
++(void)satisfactionAiAgent:(ZCLibConfig *)config start:(void (^)(void))startBlock success:(void (^)(NSDictionary *, ZCNetWorkCode))successBlock fail:(void (^)(NSString *msg ,ZCNetWorkCode))failedBlock;
 
 /// 查询链接的内容
 /// @param url 要查询的url地址
@@ -574,6 +580,36 @@ typedef void(^SobotKitResultBlock)(ZCNetWorkCode code,id _Nullable obj,NSDiction
  userId 用户uid
  */
 +(void)doComment:(NSMutableDictionary *) params result:(void (^)(ZCNetWorkCode code,int status,NSString *msg))resultBlock;
+
+
+
+/**
+ 评价大模型机器人
+ cid
+ aiAgentCid
+ robotFlag
+ uid
+ sourceEnum APP
+ scoreFlag
+ score
+ labelIds array[string] 标签
+ remark
+ commentType评价类型， 0-邀请评价，1-主动评价
+
+ solved 是否解决 0：未解决，1：已解决，-1：未选择
+
+ scoreExplain 星级说明
+ currentTime 当前时间
+ companyId
+ */
++(void)doCommentAiAgent:(NSMutableDictionary *)params result:(void (^)(ZCNetWorkCode, int, NSString *))resultBlock;
+
+
+
+/**
+ 大模型机器人是否已经评价过
+ */
++(void)isCommentAiAgent:(ZCLibConfig *)config result:(void (^)(ZCNetWorkCode, int, NSString *))resultBlock;
 
 
 /**
@@ -810,6 +846,31 @@ typedef void(^SobotKitResultBlock)(ZCNetWorkCode code,id _Nullable obj,NSDiction
                       success:(void(^)(NSDictionary *dict,ZCNetWorkCode sendCode))successBlock
                        failed:(void(^)(NSString *errorMessage,ZCNetWorkCode errorCode))failedBlock
                    finish:(void(^)(NSString *jsonString)) finishBlock;
+
+
+/// 查询大模型机器人点踩配置信息
+/// @param companyId 企业ID
+/// @param robotFlag 机器人ID
+/// @param startBlock startBlock description
+/// @param successBlock successBlock description
+/// @param failedBlock failedBlock description
++(void)getAiRobotRealuateConfigInfo:(NSString *)companyId
+                        robotFlag:(NSString *)robotFlag
+                             config:(ZCLibConfig *)config
+                            start:(void (^)(NSString *url))startBlock
+                          success:(void(^)(NSDictionary *dict,ZCNetWorkCode sendCode)) successBlock
+                           failed:(void(^)(NSString *errorMessage,ZCNetWorkCode errorCode)) failedBlock;
+
+
+/// 大模型机器人点踩收集提交接口
+/// @param param 入参
+/// @param startBlock startBlock description
+/// @param successBlock successBlock description
+/// @param failedBlock failedBlock description
++(void)postAiAgentRobotAnswerComment:(NSDictionary *)param
+                    start:(void (^)(NSString *url))startBlock
+                  success:(void(^)(NSDictionary *dict,ZCNetWorkCode sendCode)) successBlock
+                              failed:(void(^)(NSString *errorMessage,ZCNetWorkCode errorCode)) failedBlock;
 @end
 
 NS_ASSUME_NONNULL_END

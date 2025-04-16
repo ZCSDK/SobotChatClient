@@ -409,7 +409,7 @@
 /**
  * 语音cell选中的背景色
  */
-@property (nonatomic,strong) UIColor *videoCellBgSelColor;
+//@property (nonatomic,strong) UIColor *videoCellBgSelColor;
 
 /**
  * 语音文字颜色背景色
@@ -442,9 +442,9 @@
 @property (nonatomic,strong) UIColor *commentItemButtonBgColor;
 
 // 不可点带透明度的按钮文字颜色
-@property (nonatomic,strong) UIColor *commentItemButtonBgColorAlpha;
-
-@property (nonatomic,strong) UIColor *commentItemButtonSelBgColor;
+@property (nonatomic,strong) UIColor *commentItemButtonBgColorAlpha NS_DEPRECATED_IOS(1.0,4_0_0);
+// V6 UI改版不在使用
+//@property (nonatomic,strong) UIColor *commentItemButtonSelBgColor NS_DEPRECATED_IOS(1.0,4_0_0);
 
 /**
  * 富文本中的线条颜色
@@ -617,7 +617,7 @@
 /**
  *  评价(条件选择 按钮）文字颜色(默认跟随主题色)
  */
-@property (nonatomic,strong) UIColor *commentButtonTextColor;
+//@property (nonatomic,strong) UIColor *commentButtonTextColor;
 
 /**
  *  提价评价按钮的文字颜色
@@ -725,7 +725,7 @@
 /**
  *返回按钮默认图片
  */
-@property (nonatomic,copy) NSString *topBackNolImg;
+//@property (nonatomic,copy) NSString *topBackNolImg;
 
 /**
  *返回按钮选中图片

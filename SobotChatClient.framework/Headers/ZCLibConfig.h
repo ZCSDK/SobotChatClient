@@ -17,6 +17,14 @@
  */
 @interface ZCLibConfig : NSObject
 
+// 会话结束是否推送评价开关：1-开启，0-关闭
+@property(nonatomic,assign) BOOL aiAgentCommentFlag;
+
+
+// 大模型机器人接口，模板id
+@property (nonatomic , strong) NSString *templateId;
+
+
 /**
  *  用户id
  */
@@ -39,6 +47,9 @@
 @property(nonatomic,assign) BOOL realuateStyle;// realuateStyle 0-右侧展示 1-下方展示！机器人点踩按钮
 
 @property(nonatomic,assign) BOOL realuateInfoFlag;// //点踩原因开关 0关闭 1开启 默认0
+
+// 顶踩图标 0-手势 1-心形 默认0 424版本 新增大模型机器人使用
+@property(nonatomic,assign) int realuateButtonStyle;
 
 @property(nonatomic,strong) ZCChatRealuateConfigInfo *RealuateConfigInfo;// 机器人点踩配置数据
 @property(nonatomic,copy) NSString *realuateConfigInfoJsonStr; // 上传接口使用json 数据
@@ -705,7 +716,7 @@ private String semanticsKeyWordQuestion;
 @property (nonatomic,strong) NSString *question;
 @property (nonatomic,strong) NSString *requestText;
 
-// 0,普通消息，1，有docId的普通消息，2有docId的多伦消息
+// 0,普通消息，1，有docId的普通消息，2有docId的多伦消息  3.大模型机器人点击btn 按钮  4.大模型机器人点击自定义卡片发送消息
 @property (nonatomic,strong) NSString *questionFlag;
 @property (nonatomic,strong) NSString *docId;
 @property (nonatomic,strong) NSString *duration;
@@ -729,6 +740,17 @@ private String semanticsKeyWordQuestion;
 
 // 机器人发送自定义卡片使用
 @property(nonatomic,copy)NSString *customCardQuestion;
+
+// 大模型机器人 点击卡片 保持数据 map
+@property(nonatomic,strong)NSDictionary *processInfo;
+
+/************************大模型机器人 点击自定义卡片发送消息使用************************/
+@property(nonatomic,strong)NSDictionary *interfaceInfo;
+// 去掉 paramInfos； cardStyle 改成 0；
+@property(nonatomic,strong)NSDictionary *showQuestion;
+// 拼接参数特殊处理
+@property(nonatomic,strong)NSDictionary *aiQuestion;
+/************************大模型机器人 点击自定义卡片发送消息end************************/
 @end
 
 // 对话框 拓展功能

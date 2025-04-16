@@ -11,7 +11,7 @@
 "暂时无法转接人工客服" = "Al momento non è possibile passare al servizio clienti umano";
 "暂时无法评价" = "Incapace di valutare in questo momento";
 "网络错误，请检查网络后重试" = "Errore di rete, si prega di controllare la rete e riprovare";
-"转人工" = "Passare al servizio clienti umano";
+"转人工" = "Trasferimento a Manuale";
 "时间" = "Tempo";
 "日期" = "Data";
 "标题" = "Titolo";
@@ -288,3 +288,7 @@
 "请选择" = "Seleziona";
 "暂无客服在线，点击进行留言。" = "Nessun agente online. Fai clic per abbandonare l\'invio";
 "工单处理状态更新后将在会话中提醒您" = "Lo stato del ticket, una volta aggiornato, verrà notificato nella conversazione.";
+
+"商品数" = "Quantità";
+"更多信息" = "Maggiori informazioni";
+"查看更多" = "Vedi di più";

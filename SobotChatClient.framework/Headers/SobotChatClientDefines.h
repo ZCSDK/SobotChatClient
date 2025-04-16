@@ -60,6 +60,11 @@ typedef NS_ENUM(NSInteger, ZCNetWorkCode) {
     ZC_NETWORK_New_Data = 2,
     
     /**
+     发送时新增刷新数据 用于处理 大模型机器人触发的转人工操作
+     */
+    ZC_NETWORK_AI_Refresh_Data = 3,
+    
+    /**
      *  连接失败。
      */
      ZC_NETWORK_FAIL = -1,

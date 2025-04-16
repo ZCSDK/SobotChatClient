@@ -11,7 +11,7 @@
 "暂时无法转接人工客服" = "Tidak dapat menyambung kepada perkhidmat pelanggan manual sememtara";
 "暂时无法评价" = "Tidak dapat menilai sementara";
 "网络错误，请检查网络后重试" = "Rangkaian salah, sila cuba lagi selepas memeriksa rangkaiannya";
-"转人工" = "Alih ke manual";
+"转人工" = "Pindahkan ke Manual";
 "时间" = "Masa";
 "日期" = "Tarikh";
 "标题" = "Tajuk";
@@ -287,3 +287,7 @@
 "请选择" = "Sila pilih";
 "暂无客服在线，点击进行留言。" = "Tiada ejen dalam talian. Klik untuk meninggalkan penyerahan";
 "工单处理状态更新后将在会话中提醒您" = "Anda akan dimaklumkan dalam sembang selepas status pemprosesan tiket dikemas kini";
+
+"商品数" = "Jumlah";
+"更多信息" = "Maklumat lanjut";
+"查看更多" = "Lihat lebih banyak";

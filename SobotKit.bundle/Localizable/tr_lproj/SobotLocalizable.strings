@@ -11,7 +11,7 @@
 "暂时无法转接人工客服" = "Müşteri hizmetleri geçici olarak aktarılamaz";
 "暂时无法评价" = "Geçici olarak değerlendirme yapılamaz";
 "网络错误，请检查网络后重试" = "Internet hatası,lütfen interneti kontrol edip yeniden deneyin";
-"转人工" = "Müşteri hizmetlerine bağlayın";
+"转人工" = "Manuele Aktar";
 "时间" = "Zaman";
 "日期" = "Tarih";
 "标题" = "Başlık";
@@ -287,3 +287,7 @@
 "请选择" = "Lütfen seçin";
 "暂无客服在线，点击进行留言。" = "Çevrimiçi acente yok. Gönderimi bırakmak için tıklayın";
 "工单处理状态更新后将在会话中提醒您" = "Bilet işleme durumu güncellendikten sonra sohbette bilgilendirileceksiniz";
+
+"商品数" = "Miktar";
+"更多信息" = "Daha fazla bilgi";
+"查看更多" = "Daha fazla gör";

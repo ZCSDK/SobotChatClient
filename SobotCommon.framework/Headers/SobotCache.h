@@ -15,6 +15,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SobotCache : NSObject
 
+// 记录ai 大模型机器人 一次回复多条数据，只能最后一条消息 显示点踩 点赞，处理完之后 在清理掉
+@property(nonatomic,strong) NSMutableArray *aiMsgIdArray;
+// 记录ai 大模型机器人 存放中间的数据对象，用于找最后一条
+@property(nonatomic,strong) NSMutableArray *aiMsgArray;
+
 // SobotThemeMode,默认0
 //SobotThemeMode_Default    = 0, // 默认，跟随系统
 //SobotThemeMode_Dark       = 1, // 暗黑模式
@@ -130,6 +135,8 @@ NS_ASSUME_NONNULL_BEGIN
 +(NSArray *)getLocalArray:(NSString *)key;
 
 
+/// 清理大模型机器人缓存的数据
+-(void)clearAiMsgArray;
 
 @end
 

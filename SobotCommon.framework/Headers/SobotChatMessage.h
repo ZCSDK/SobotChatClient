@@ -17,6 +17,7 @@ typedef NS_ENUM(NSInteger,SobotMessageType) {
     SobotMessageTypeRichJson = 5, // 对象
 //    SobotMessageTypeRichJsonLoop = 9, // 对象,4.0.5去掉此定义，msgType=5，SobotMessageRichJsonTypeLoop即可确认
     SobotMessageTypeHotGuide = 7,// 热门引导问题
+    SobotMessageTypeAiagentEnum = 8,// 大模型机器人 枚举类型回答
 //    SobotMessageTypeCustomCard  = 20, // 新卡片消息，msgType=5，type=20
 //    SobotMessageTypeLocation  = 22, // 位置
 //    SobotMessageTypeCard = 24,//商品卡片消息
@@ -24,6 +25,7 @@ typedef NS_ENUM(NSInteger,SobotMessageType) {
     SobotMessageTypeTipsText  = -1, //这是一条提示语
     SobotMessageTypeStartSound = -4,//正在录音
     SobotMessageTypeCancelSound = -5,//取消正在闪烁的语音cell
+    SobotMessageTypeShowAiLoading = -6,// 大模型机器人开始回答前，要展示一条加载loading动效的消息
     SobotMessageTypeRobotRealuate = 25,// 机器人点踩 标签 原因  显示的cell  25 是系统消息，当前历史记录接口过滤 只显示机器人点踩的配置数据
 };
 
@@ -37,6 +39,7 @@ typedef NS_ENUM(NSInteger,SobotMessageRichJsonType) {
     SobotMessageRichJsonTypeApplet  = 6, // 小程序卡片
     SobotMessageRichJsonTypeArticle = 17,// 文章
     SobotMessageRichJsonTypeCustomCard = 21,// 通用卡片
+    SobotMessageRichJsonTypeAiCustomCard = 28,// 通用卡片
 };
 
 typedef NS_ENUM(NSInteger,SobotMessageFileType) {
@@ -227,10 +230,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 // 默认可以点击，确认按钮点击一次和历史记录 都不可以点击 置灰
 @property(nonatomic,assign)BOOL isUnEnabled;
+
+@property(nonatomic,copy) NSString *menuMiniProgramUrl;
 @end
 
 // 通用卡片信息
 @interface SobotChatCustomCardInfo: SobotBaseEntity
+
+// 大模型机器人点击卡片发送使用
+@property(nonatomic,strong) NSDictionary *sourceDict;
+
 /**
     * 定制卡片状态: 订单
     * TODO: 客户传什么我们就用什么
@@ -300,6 +309,27 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic,assign)BOOL isHistory;// 临时变量，记录是否是历史记录
 
+/**
+ * 自定义字段
+ * 最多只支持十个自定义字段
+ *  424 ai大模型机器人 新增自定义字段
+ *   大模型机器人这里是个数组啊
+ "customField": [
+     {
+         "è‡ªå®šä¹‰ä¿¡æ¯2": {
+             "variableId": null,
+             "paramValue": "æ‰‹æœº1"
+         }
+     }
+ ],
+ */
+@property(nonatomic,strong) NSMutableArray *customField;
+
+// 对应头部的显示文案
+@property(nonatomic,strong) NSString *customCardHeader;
+
+// paramInfos 大模型机器人新增 点击卡片的时候要
+@property(nonatomic,strong) NSMutableArray *paramInfos;
 
 @end
 
@@ -307,6 +337,13 @@ NS_ASSUME_NONNULL_BEGIN
  通用卡片
  */
 @interface SobotChatCustomCard : SobotBaseEntity
+
+// 原数据，大模型机器人 提交接口使用
+@property(nonatomic,strong)NSDictionary *sourceDict;
+
+// 4.2.4大模型机器人新增数据  =1 代表大模型机器人的卡片
+@property(nonatomic,copy) NSString *cardForm;
+
 /**
     * 卡片风格，0=平铺，1=列表
     *
@@ -706,6 +743,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,copy) NSString *sensitiveWord;
 @property(nonatomic,strong) SobotChatContent *richModel;
 @property(nonatomic,strong) SobotChatRobotAnswerContent *robotAnswer;
+
+// 大模型机器人 点踩点赞 传answer 提交接口使用
+@property(nonatomic,copy) NSString *ackAnswer;
 // 当前机器人 点踩标签 提示语
 @property(nonatomic,copy) NSString *robotTipMsg;
 // 当前机器人 点踩标签数据
@@ -751,6 +791,15 @@ NS_ASSUME_NONNULL_BEGIN
 // AiAgent会话id
 @property (nonatomic , strong) NSString *aiAgentCid;
 
+/**********************大模型机器人新增消息类型 枚举 回答显示成卡片的样式 历史记录不用处理**********************/
+// 下面三个参数 点击按钮的时候回传
+@property (nonatomic,copy) NSString *variableId;
+@property (nonatomic,copy) NSString *processId;
+@property (nonatomic,copy) NSString *nodeId;
+// 按钮的数据 字符串
+@property (nonatomic,strong) NSMutableArray *variableValueEnums;
+@property (nonatomic,assign) int clickFlag;//": "临时文案" 记录是否可以点击
+/**********************大模型机器人新增消息类型 枚举 回答显示成卡片的样式 历史记录不用处理*****end*****************/
 /**
  正在接手数据
  */
@@ -873,6 +922,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic , assign) BOOL showTurnUser;
 
+// specialMsgFlag字段=1 时，调用转人工接口前端需要transferType设置为17
+@property (nonatomic , assign) int specialMsgFlag;
 
 /**
  ai 机器人转人工意图
@@ -1009,8 +1060,41 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,copy) NSString *realuateAfterWord ;
 @property(nonatomic,copy) NSString *realuateEvaluateWord;
 @property(nonatomic,copy) NSString *realuateSubmitWord;
+@property(nonatomic,copy) NSString *realuateSubmitWordLan;
 @property(nonatomic,strong) NSMutableArray *chatRealuateTagInfoList;
 @property(nonatomic,assign) BOOL realuateInfoFlag;//是否开启点踩 标签
+
+
+/*******************************以下是大模型机器人使用字段**********************************/
+// 点踩开关 0关闭 1开启 默认0
+@property(nonatomic,assign) int realuateFlag;
+// 顶踩样式 0-右侧展示 1-下方展示 默认0
+@property(nonatomic,assign) int realuateStyle;
+// 顶踩图标 0-手势 1-心形 默认0
+@property(nonatomic,assign) int realuateButtonStyle;
+// 点踩转人工开关：0关闭，1开启 默认0
+@property(nonatomic,assign) int realuateTransferFlag;
+// 点踩原因开关 0关闭 1开启 默认0  // 上面有不在加
+//@property(nonatomic,assign) int realuateInfoFlag;
+//点踩后评价引导语  上面有不再加
+//@property(nonatomic,copy) NSString *realuateAfterWord;
+// 点踩后评价引导语 上面有不再加
+//@property(nonatomic,copy) NSString *realuateEvaluateWord;
+// 提交成功提示语 上面有不再加
+//@property(nonatomic,copy) NSString *realuateSubmitWord;
+// 大模型机器人标签
+@property(nonatomic,strong)NSMutableArray *aiRobotRealuateTagInfoVOList;
+// 创建人
+@property(nonatomic,copy) NSString *createId;
+// 创建时间
+@property(nonatomic,copy) NSString *createTime;
+// 编辑人
+@property(nonatomic,copy) NSString *updateId;
+// 编辑时间
+@property(nonatomic,copy) NSString *updateTime;
+
+
+/*******************************以下是大模型机器人使用字段******end****************************/
 -(id)initWithMyDict:(NSDictionary *)dict;
 @end
 
@@ -1027,6 +1111,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,copy) NSString *realuateTag;
 @property(nonatomic,copy) NSString *chatRealuateConfigId;
 @property(nonatomic,copy) NSString *companyId;
+@property(nonatomic,copy) NSString *realuateTagLan;
 @property(nonatomic,assign) BOOL isSel;// 是否被选中
 -(id)initWithMyDict:(NSDictionary *)dict;
 

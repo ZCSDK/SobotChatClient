@@ -11,7 +11,7 @@
 "暂时无法转接人工客服" = "Tạm thời không thể kết nối với chăm sóc khách hàng";
 "暂时无法评价" = "Tạm thời không thể bình luận";
 "网络错误，请检查网络后重试" = "Mạng lỗi, hãy kiểm tra lại mạng rồi thử lại";
-"转人工" = "Chuyển sang nhân công";
+"转人工" = "Chuyển sang hướng dẫn sử dụng";
 "时间" = "Thời gian";
 "日期" = "Ngày tháng";
 "标题" = "Tiêu đề";
@@ -288,3 +288,7 @@
 "请选择" = "Vui lòng chọn";
 "暂无客服在线，点击进行留言。" = "Không có đại lý trực tuyến. Nhấp để gửi";
 "工单处理状态更新后将在会话中提醒您" = "Bạn sẽ được thông báo trong cuộc trò chuyện sau khi trạng thái xử lý vé được cập nhật";
+
+"商品数" = "Số lượng";
+"更多信息" = "Thông tin thêm";
+"查看更多" = "Xem thêm";

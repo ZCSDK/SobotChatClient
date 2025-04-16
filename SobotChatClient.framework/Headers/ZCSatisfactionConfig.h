@@ -13,6 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,assign) int isCreated;// 0,未复制，1赋值
 
+// 4.2.4新增
+@property (nonatomic,strong) NSString *tempDescribe;//模板描述
+@property (nonatomic,strong) NSString *tempDescribeLan;//模板描述「多语言占位符」
 
 @property (nonatomic,assign) int defaultQuestionFlag;//：“问题是否解决”默认选中状态：(0)-未解决 (1)-解决 (-1)-不选中
 @property (nonatomic,assign) int defaultType;//：默认显示星级  0-5星,1-0星 / 0-10分，1-5分，2-0分，3-不选中
