@@ -56,6 +56,9 @@ NS_ASSUME_NONNULL_BEGIN
 // 2.8.2
 @property (nonatomic,strong) NSMutableArray * fileList; // 文件
 
+// 4.2.5版本接口新增字段，返回工单内容的文件列表
+@property (nonatomic,strong) NSMutableArray * ticketFileList; // 文件
+
 // 4.2.3版本 接口数据改动
 @property (nonatomic,copy) NSString * content; // 工单描述
 @property (nonatomic,strong) NSDictionary * cusNewSatisfactionVO;// 评价配置

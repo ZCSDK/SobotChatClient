@@ -17,6 +17,20 @@
  */
 @interface ZCKitInfo : NSObject
 /**
+ *   设置换行方式  同系统NSLineBreakMode 枚举值，默认为0  当语言是日文时 为 NSLineBreakByCharWrapping
+ *
+ *typedef NS_ENUM(NSInteger, NSLineBreakMode) {
+ NSLineBreakByWordWrapping = 0,         // Wrap at word boundaries, default
+ NSLineBreakByCharWrapping,        // Wrap at character boundaries
+ NSLineBreakByClipping,        // Simply clip
+ NSLineBreakByTruncatingHead,    // Truncate at head of line: "...wxyz"
+ NSLineBreakByTruncatingTail,    // Truncate at tail of line: "abcd..."
+ NSLineBreakByTruncatingMiddle    // Truncate middle of line:  "ab...yz"
+} API_AVAILABLE(macos(10.0), ios(6.0), watchos(2.0), tvos(9.0), visionos(1.0));
+ */
+@property(nonatomic,assign) NSInteger lineBreakModel;
+
+/**
  *   调整行间距 ，默认为 0
  */
 @property (nonatomic,assign) NSInteger lineSpacing;

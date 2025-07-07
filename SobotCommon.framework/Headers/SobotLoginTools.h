@@ -11,6 +11,7 @@
 #import "SobotLoginEntity.h"
 #define SobotNotification_PermissionsRefresh @"SobotNotification_PermissionsRefresh"
 #define KVAppLoginDict @"SobotAppLoginInfo"
+#define KVAppLoginDictChatInfo @"SobotAppLoginChatInfo"
 NS_ASSUME_NONNULL_BEGIN
 
 // 主要是登录APP或在线SDK时使用

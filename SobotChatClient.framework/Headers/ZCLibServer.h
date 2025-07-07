@@ -871,6 +871,21 @@ typedef void(^SobotKitResultBlock)(ZCNetWorkCode code,id _Nullable obj,NSDiction
                     start:(void (^)(NSString *url))startBlock
                   success:(void(^)(NSDictionary *dict,ZCNetWorkCode sendCode)) successBlock
                               failed:(void(^)(NSString *errorMessage,ZCNetWorkCode errorCode)) failedBlock;
+
+
+/// 大模型机器人切换完语言之后 重新获取 transferSuccessWord + transferFailureWord
+/// @param uid 用户ID
+/// @param language 当前选中的语言
+/// @param robotFlag 大模型机器人ID
+/// @param startBlock startBlock description
+/// @param successBlock successBlock description
+/// @param failedBlock failedBlock description
++(void)getAiAgentRobotConfigInfoByLan:(NSString*)uid
+                             language:(NSString*)language
+                            robotFlag:(NSString*)robotFlag
+                                start:(void (^)(NSString *url))startBlock
+                              success:(void(^)(NSDictionary *dict,ZCNetWorkCode sendCode)) successBlock
+                                          failed:(void(^)(NSString *errorMessage,ZCNetWorkCode errorCode)) failedBlock;
 @end
 
 NS_ASSUME_NONNULL_END

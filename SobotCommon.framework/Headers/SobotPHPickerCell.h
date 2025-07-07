@@ -26,9 +26,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (assign, nonatomic) NSInteger targetMark; // 0:列表 1:详情
 typedef void (^tapSelectPicBlock)(SobotCustomAlbumModel *object);
-typedef void (^tapPlayVideoBlock)(BOOL isPlay,SobotCustomAlbumModel *object,NSIndexPath *indexPath);
+typedef void (^cellPlayVideoBlock)(BOOL isPlay,SobotCustomAlbumModel *object,NSIndexPath *indexPath);
 @property (strong, nonatomic) tapSelectPicBlock selectPicBlock;
-@property (strong, nonatomic) tapPlayVideoBlock playVideoBlock;
+@property (strong, nonatomic) cellPlayVideoBlock cellPlayVideoBlock;
 
 - (void)initWithObject:(id)object IndexPath:(NSIndexPath *)indexPath;
 

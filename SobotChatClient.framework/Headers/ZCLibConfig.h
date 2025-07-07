@@ -17,6 +17,17 @@
  */
 @interface ZCLibConfig : NSObject
 
+
+/***大模型机器人 新增转人工说辞 425新增***/
+// 大模型机器人转人工成功提示语
+@property(nonatomic,copy) NSString *transferSuccessWord;
+// 大模型机器人转人工失败提示语
+@property(nonatomic,copy) NSString *transferFailureWord;
+// 大模型精准话术
+@property(nonatomic,copy) NSString *preciseWord;
+/***大模型机器人 新增转人工说辞 end***/
+
+
 // 会话结束是否推送评价开关：1-开启，0-关闭
 @property(nonatomic,assign) BOOL aiAgentCommentFlag;
 
@@ -609,6 +620,9 @@
 
 // 421 新增 询前表单 声明文案
 @property(nonatomic,copy)NSString *formExplain;
+
+// 425新增 进入会话时 弹询前表单 cusActFlag「客户侧触发动作收集表单 1-转人工时 2-进入会话时」
+@property(nonatomic,assign)int cusActFlag;
 
 /**
  *  对象封装

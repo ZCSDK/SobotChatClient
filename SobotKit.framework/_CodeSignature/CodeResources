@@ -34,11 +34,11 @@
 		</data>
 		<key>Headers/ZCChatView.h</key>
 		<data>
-		x5D2IExw2jEWrzDOpuWbx0C5Pq0=
+		Q2dItOpcCJ+C0igws/muvi/jJQ4=
 		</data>
 		<key>Headers/ZCKitInfo.h</key>
 		<data>
-		iWLBQWBMbmRT1FdHdCek6W8pE8U=
+		8JfrQoq/MlJpKSJ3o22NEPMN9kw=
 		</data>
 		<key>Headers/ZCLibCusMenu.h</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Headers/ZCUICore.h</key>
 		<data>
-		/Oj9BABGgdszTGlGQsrNmbF+L9g=
+		Uwdc95tYJV9bPij6eDi/MSLmyQs=
 		</data>
 		<key>Headers/ZCUIPlaceHolderTextView.h</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		hfg2t+BsYwAtsHqX+Jfyx84SYrQ=
+		guO/DUShiyc+SQGL2QVhvlHVFSU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -160,22 +160,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			x5D2IExw2jEWrzDOpuWbx0C5Pq0=
+			Q2dItOpcCJ+C0igws/muvi/jJQ4=
 			</data>
 			<key>hash2</key>
 			<data>
-			h1eQdODyOvecTzZnHkFb1m84+6gxesIyoYa1vW1NF98=
+			G2DHFVc93XHImEs6OwkZ1A6CVkT7uUe7xh3Qi8riEXM=
 			</data>
 		</dict>
 		<key>Headers/ZCKitInfo.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iWLBQWBMbmRT1FdHdCek6W8pE8U=
+			8JfrQoq/MlJpKSJ3o22NEPMN9kw=
 			</data>
 			<key>hash2</key>
 			<data>
-			fqIwefs6v8T2PC/W5AZLZd10l1orlwX6e06TM2PQJ6I=
+			6QMeB5onaZKWjDLAWW3DNUCpC57mYGyNMugH1ucRU0c=
 			</data>
 		</dict>
 		<key>Headers/ZCLibCusMenu.h</key>
@@ -215,11 +215,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/Oj9BABGgdszTGlGQsrNmbF+L9g=
+			Uwdc95tYJV9bPij6eDi/MSLmyQs=
 			</data>
 			<key>hash2</key>
 			<data>
-			PDsERWSjBfTpjeYDVlKNwEBRWxtgf5deDw209pN8q9Y=
+			udXGRQleXiLUg4UKqvdw/E/zUhzcgTvetO9Gf/WSUX4=
 			</data>
 		</dict>
 		<key>Headers/ZCUIPlaceHolderTextView.h</key>

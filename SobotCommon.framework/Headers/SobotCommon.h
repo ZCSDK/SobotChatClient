@@ -57,6 +57,9 @@
 //#import <SobotCommon/SobotPageSheetView.h>
 #import <SobotCommon/SobotLineLabel.h>
 #import <SobotCommon/SobotActivityIndicatorView.h>
+#import <SobotCommon/SobotVideoPlayer.h>
+#import <SobotCommon/SobotPhotoPreviewController.h>
+#import <SobotCommon/SobotDataTimePickView.h>
 
 //! Project version number for SobotCommon.
 FOUNDATION_EXPORT double SobotCommonVersionNumber;

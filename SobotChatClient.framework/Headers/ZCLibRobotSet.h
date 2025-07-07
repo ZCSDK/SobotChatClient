@@ -34,6 +34,11 @@
 
 @property (nonatomic,copy) NSString * robotHelloWord;// 机器人欢迎语
 
+// 大模型机器人转人工说辞
+@property (nonatomic,copy) NSString *preciseWord;
+@property (nonatomic,copy) NSString *transferSuccessWord;
+@property (nonatomic,copy) NSString *transferFailureWord;
+
 @property (nonatomic,strong) NSMutableArray *sessionPhaseAndFaqIdRespVos;// 常见问题
 -(id)initWithMyDict:(NSDictionary *)dict;
 @end

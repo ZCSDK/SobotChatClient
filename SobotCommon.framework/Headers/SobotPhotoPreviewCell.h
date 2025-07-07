@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @class SobotPhotoModel;
 
-typedef void (^tapPlayVideoBlock)(BOOL isPlay,SobotPhotoModel *object,NSIndexPath *indexPath);
+typedef void (^onPreviewPlayVideoBlock)(BOOL isPlay,SobotPhotoModel *object,NSIndexPath *indexPath);
 
 
 @interface SobotPhotoPreviewCell : UICollectionViewCell
@@ -33,7 +33,7 @@ typedef void (^tapPlayVideoBlock)(BOOL isPlay,SobotPhotoModel *object,NSIndexPat
 
 // type=1:保存，0点击页面
 @property (strong, nonatomic) void(^TapClickPicBlock)(int type,SobotPhotoModel *object);
-@property (strong, nonatomic) tapPlayVideoBlock playVideoBlock;
+@property (strong, nonatomic) onPreviewPlayVideoBlock onPlayVideoBlock;
 
 - (void)initWithObject:(id)object IndexPath:(NSIndexPath *)indexPath;
 

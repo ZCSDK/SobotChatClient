@@ -30,6 +30,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)updateTopViewBgColor;
 
 -(void)jumpDocumentVC:(UIViewController*)docVC;
+
 @end
 
 @interface ZCChatView : UIView

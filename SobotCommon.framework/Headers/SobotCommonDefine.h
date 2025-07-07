@@ -112,6 +112,8 @@
 
 // 用法示例SoobtBlockWeakSelf(weakSelf);
 #define SoobtBlockWeakSelf(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+#define SoobtBlockStrongSelf(strongSelf)  __strong __typeof(&*weakSelf)strongSelf = weakSelf;
+
 
 #define SobotWeakSelf(var) __weak typeof(var) XYWeak_##var = var;
 #define SobotStrogSelf(var) \

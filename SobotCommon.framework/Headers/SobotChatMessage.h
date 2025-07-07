@@ -171,7 +171,9 @@ typedef NS_ENUM(NSInteger,SobotMessageActionType) {
    // 切换语言提示语
    SobotMessageActionTypeSelLanguage = 53,
 
-    
+    /** 大模型机器人转人工之后显示成功的提示语 */
+    SobotMessageActionTypeAiRobotHolloWorld  = 55,
+
     /****** 发送留言转离线消息后，结束会话 *****/
     SobotMessageActionTypeChatCloseByLeaveMsg               = 99,
     /**

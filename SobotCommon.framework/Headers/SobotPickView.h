@@ -34,5 +34,8 @@
 - (void)pickViewShow;
 - (void)pickViewDismiss;
 
-- (void)selectRow:(NSInteger)row inComponent:(NSInteger)component animated:(BOOL)animated;  
+- (void)selectRow:(NSInteger)row inComponent:(NSInteger)component animated:(BOOL)animated;
+
+// 设置当前选中的行
+-(void)setRow:(NSInteger)row;
 @end

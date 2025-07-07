@@ -35,6 +35,7 @@ typedef NS_ENUM(NSInteger,ZCTurnType) {
     ZCTurnType_LoopAdmin,                   //多轮节点指定客服转人工
     ZCTurnType_LoopGroup,                   //多轮节点指定技能组转人工
     ZCTurnType_LoopNol,                   //多轮节点默认转人工
+    ZCTurnType_BigRobotTip,                  // 大模型机器人转人工 转人工类型18 判断是否要显示转人工成功失败说辞
 };
 
 typedef NS_ENUM(NSInteger,ZCShowStatus) {
@@ -92,6 +93,8 @@ typedef NS_ENUM(NSInteger,ZCShowStatus) {
     ZCShowStatusRefreshFastMenuView = 38, // 会话保持进入人工聊天刷新快捷菜单
     ZCShowStatusShowReferenceMessage = 39, // 添加引用消息
     ZCShowStatusClearLockMsgBtn = 40,// 发送消息 清理掉新消息按钮
+    /** 设置输入框引导排队文案 */
+    ZCSetKeyBoardTextViewChangeTip          = 41,
 };
 
 typedef NS_ENUM(NSInteger,ZCInitStatus) {
@@ -125,6 +128,8 @@ typedef NS_ENUM(NSInteger,ZCInitStatus) {
  **/
 -(void)showSoketConentStatus:(ZCConnectStatusCode)statusCode;
 
+// 初始化开启询前表单，直接弹
+-(void)getNewAskConfig:(ZCLibConfig *_Nullable)config;
 @end
 
 typedef void (^DetailViewBlock)(SobotChatMessage * _Nonnull model,int type ,id obj);
@@ -365,4 +370,11 @@ typedef void (^ChangeLanguageBlock)(ZCLanguageModel *_Nonnull model,NSDictionary
 -(void)clearTempImageArray;
 #pragma mark -- 清理正在回复中 ai 动效
 -(void)clearAiLoadingCell;
+
+#pragma mark -- 设置询前表单是否显示
+-(void)setIsShowFormPage:(BOOL)isShow;
+#pragma mark -- 获取询前表单是否可以显示
+-(BOOL)getIsShowFormPage;
+#pragma mark -- 初始化完成后渲染页面数据
+-(void)initUIAndGetCidMsg;
 @end

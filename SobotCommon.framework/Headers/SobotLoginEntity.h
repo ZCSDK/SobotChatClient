@@ -139,6 +139,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SobotLoginEntity : SobotBaseEntity
 
+/**
+ * app-默认登陆状态 0-离线，1-人工在线，2-人工忙碌，3-人工小休，4-人工培训，5-人工会议，6-人工用餐，7-人工活动
+ */
 @property(nonatomic,assign) int defaultAppLoginStatus;
 
 // code
@@ -351,6 +354,10 @@ NS_ASSUME_NONNULL_BEGIN
 // 3.3.7版本新增
 //0-关闭，1-开启
 @property (nonatomic,assign) int  readFlag;
+
+// 是否启动socket.io
+// true：使用socket.io;false:使用旧版本stomp
+@property (nonatomic,assign) BOOL  enableSocketIO;
 
 // key : SOBOT_LOGIN_MODULE_KEY_
 -(BOOL)checkModule:(NSString *) key;
