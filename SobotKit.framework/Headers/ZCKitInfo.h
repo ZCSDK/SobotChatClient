@@ -16,6 +16,10 @@
  *  自定义字体（可选） 自定义背景、边框线颜色（可选）
  */
 @interface ZCKitInfo : NSObject
+
+// 取消左滑sdk手势代理，默认NO 开启 设置YES SDK将不再设置左滑手势代理
+@property(nonatomic,assign) BOOL closeSDKPopGestureRecognizerDelegate;
+
 /**
  *   设置换行方式  同系统NSLineBreakMode 枚举值，默认为0  当语言是日文时 为 NSLineBreakByCharWrapping
  *
