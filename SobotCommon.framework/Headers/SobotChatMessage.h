@@ -666,6 +666,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) int transferResult;
 //************* 机器人多轮转人工end ***********
 
+// 大模型机器人 新增 427 转人工+ 结束会话
+@property(nonatomic,assign)int conversionGuideEndSession;
+@property(nonatomic,copy)NSString *transferGuideName;
+@property(nonatomic,copy)NSString *transferGuideGroupId;
+
 @end
 
 

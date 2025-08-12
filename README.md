@@ -1,6 +1,10 @@
 # SobotChatClient
 智齿SDK_iOS V6 pod
 
+## SDK 4.2.7.1 版本更新说明[2025-08-12]  
+1.【新增】监听帮助中心调用viewDidLoad方法的枚举“ZC_HelpCenterViewDidLoad”
+  
+
 ## SDK 4.2.7 版本更新说明[2025-07-28] 
 1.【新增】大模型机器人答案触发敏感词显示对应的提示语   
 2.【优化】引用消息时输入框光标回显问题  

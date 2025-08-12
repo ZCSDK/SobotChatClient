@@ -35,6 +35,14 @@ typedef NS_ENUM(NSInteger, SobotUIImageViewURLDownloadState) {
 // download state
 @property (nonatomic, readonly) SobotUIImageViewURLDownloadState loadingState;
 
+
+@property(nonatomic,strong) NSString *imageName;
+@property(nonatomic,strong) NSString *borderColorName;
+@property(nonatomic,strong) NSString *bundleName;
+// 如果返回UIColor，会自动赋值给self.layer.borderColor,返回空不处理
+// sView为控件本身
+@property (nonatomic, copy, nullable) UIColor *(^traitCollectionChangedBlock)(UITraitCollection *previousTraitCollection,UIView *sView); // 点击事件Block
+
 // UI
 @property (nonatomic, strong) UIView *loadingView;
 // Set UIActivityIndicatorView as loadingView

@@ -53,6 +53,10 @@ NS_ASSUME_NONNULL_BEGIN
 + (UIColor *)getSobotThemeModeByHexAlpha:(NSString *)hexColor alpha:(CGFloat) alpha;
 
 
+/// 判断颜色是否为深色(可以根据背景动态改变文字颜色)
+/// @param color color description
++ (BOOL)isDarkColor:(UIColor *)color;
+
 
 // 获取RGB和Alpha
 + (NSArray *)getSobotRGBWithColor:(UIColor *)color;

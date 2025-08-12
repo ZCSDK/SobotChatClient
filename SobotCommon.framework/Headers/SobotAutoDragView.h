@@ -54,6 +54,10 @@ typedef NS_ENUM(NSUInteger, SobotDraggingType) {
 
 @property (strong, nonatomic) void(^TapClickBlock)(SobotAutoDragView *view);
 
+// 如果返回UIColor，会自动赋值给self.layer.borderColor,返回空不处理
+// sView为控件本身
+@property (nonatomic, copy, nullable) UIColor *(^traitCollectionChangedBlock)(UITraitCollection *previousTraitCollection,UIView *sView); // 点击事件Block
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -94,7 +94,7 @@
 
 
 
-#define XBottomBarHeight                    (Sobot_iPhoneX ? 34.f : 0.0)
+#define XBottomBarHeight                    (Sobot_iPhoneX ? isLandspace?21.0f:34.f : 0.0)
 
 #define isiPad (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 

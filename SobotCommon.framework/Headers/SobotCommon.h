@@ -20,6 +20,7 @@
 #import <SobotCommon/SobotButton.h>
 #import <SobotCommon/SobotView.h>
 #import <SobotCommon/SobotImageTools.h>
+#import <SobotCommon/SobotUIImageView.h>
 #import <SobotCommon/SobotImageView.h>
 #import <SobotCommon/SobotTextView.h>
 #import <SobotCommon/SobotImagePickerTools.h>
@@ -60,6 +61,7 @@
 #import <SobotCommon/SobotVideoPlayer.h>
 #import <SobotCommon/SobotPhotoPreviewController.h>
 #import <SobotCommon/SobotDataTimePickView.h>
+#import <SobotCommon/SobotImgTextButton.h>
 
 //! Project version number for SobotCommon.
 FOUNDATION_EXPORT double SobotCommonVersionNumber;

@@ -885,7 +885,18 @@ typedef void(^SobotKitResultBlock)(ZCNetWorkCode code,id _Nullable obj,NSDiction
                             robotFlag:(NSString*)robotFlag
                                 start:(void (^)(NSString *url))startBlock
                               success:(void(^)(NSDictionary *dict,ZCNetWorkCode sendCode)) successBlock
-                                          failed:(void(^)(NSString *errorMessage,ZCNetWorkCode errorCode)) failedBlock;
+                              failed:(void(^)(NSString *errorMessage,ZCNetWorkCode errorCode)) failedBlock;
+
+
+/// 清理离线消息数据
+/// @param uid 用户ID
+/// @param startBlock startBlock description
+/// @param successBlock successBlock description
+/// @param failedBlock failedBlock description
++(void)getClearofflineMsg:(NSString *)uid
+                    start:(void (^)(NSString *url))startBlock
+                  success:(void(^)(NSDictionary *dict,ZCNetWorkCode sendCode)) successBlock
+                  failed:(void(^)(NSString *errorMessage,ZCNetWorkCode errorCode)) failedBlock;
 @end
 
 NS_ASSUME_NONNULL_END

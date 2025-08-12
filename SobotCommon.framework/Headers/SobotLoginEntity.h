@@ -139,6 +139,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SobotLoginEntity : SobotBaseEntity
 
+// //0关闭 1开启   会话摘要开关
+@property(nonatomic,assign)int cvtDigestButton ;
+
 /**
  * app-默认登陆状态 0-离线，1-人工在线，2-人工忙碌，3-人工小休，4-人工培训，5-人工会议，6-人工用餐，7-人工活动
  */

@@ -105,6 +105,8 @@ static SobotTypeColor const SobotColorBgGray = @"SobotColorBgGray";// 果绿色 
 
 static SobotTypeColor const SobotColorHeaderBg = @"SobotColorHeaderBg";// 留言头部文字背景色
 static SobotTypeColor const SobotColorHeaderText = @"SobotColorHeaderText";// 留言头部文字色
+static SobotTypeColor const SobotColorTextSubHeader = @"SobotColorTextSubHeader";// 询前表单顶部文字颜色
+
 
 // 文字颜色
 static SobotTypeColor const SobotColorTextMain = @"SobotColorTextMain";//主文本颜色
@@ -123,13 +125,15 @@ static SobotTypeColor const SobotColorTextWhite = @"SobotColorTextWhite";// 白�
 static SobotTypeColor const SobotColorTextGoods = @"SobotColorTextGoods";// 商品卡片和订单卡片的文字颜色
 static SobotTypeColor const SobotColorTextPricetTag = @"SobotColorTextPricetTag";// 商品卡片价格标签的文字颜色
 static SobotTypeColor const SobotColorBgF5 = @"SobotColorBgF5";// 新增背景颜色
+static SobotTypeColor const SobotColorInputBg = @"SobotColorInputBg";// 表单背景色
+
 
 // 线条颜色
 static SobotTypeColor const SobotColorBorderLine  = @"SobotColorBorderLine";// #D9D9D9
 static SobotTypeColor const SobotColorBgLine  = @"SobotColorBgLine";// 线条颜色"#2C2C2C";分割线
 static SobotTypeColor const SobotColorSeparatorLine = @"SobotColorSeparatorLine";// 分割线颜色
 static SobotTypeColor const SobotColorBgTopLine  = @"SobotColorBgTopLine";// 顶部线条颜色线条颜色"#EBEBEB";
-
+static SobotTypeColor const SobotColorBorderF1 = @"SobotColorBorderF1";// 表单输入框边框颜色；
 
 // 链接颜色
 static SobotTypeColor const SobotColorTextLink = @"SobotColorTextLink";//链接文本颜色"#0DAEAF";

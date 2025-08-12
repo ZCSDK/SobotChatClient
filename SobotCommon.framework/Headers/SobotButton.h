@@ -30,6 +30,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong) NSString *bundleName;
 
 
+// 如果返回UIColor，会自动赋值给self.layer.borderColor,返回空不处理
+// sView为控件本身
+@property (nonatomic, copy, nullable) UIColor *(^traitCollectionChangedBlock)(UITraitCollection *previousTraitCollection,UIView *sView); // 点击事件Block
+
 -(void) addTapHandle:(void(^)(SobotButton *btnObj)) clickBlock;
 
 

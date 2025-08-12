@@ -19,6 +19,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong) NSMutableArray *aiMsgIdArray;
 // 记录ai 大模型机器人 存放中间的数据对象，用于找最后一条
 @property(nonatomic,strong) NSMutableArray *aiMsgArray;
+// 记录大模型机器人结束会话
+@property(nonatomic,strong) NSMutableArray *closeAiMsgArray;
 
 // SobotThemeMode,默认0
 //SobotThemeMode_Default    = 0, // 默认，跟随系统

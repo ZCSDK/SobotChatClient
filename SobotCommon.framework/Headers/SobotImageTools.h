@@ -88,5 +88,7 @@
 +(UIColor*)gradientColorWithSize:(CGSize)size colorArr:(NSMutableArray*)colorArr startPoint:(CGPoint)startPoint endPoint:(CGPoint)endPoint;
 #pragma mark - 颜色字符串转换成uicolor
 +(UIColor *)colorWithHexString:(NSString *)hexString alpha:(CGFloat)alpha;
-
+#pragma Mark -- 将某个UIColor 添加透明度
+// 方法实现
++ (UIColor *)colorWithAlphaComponent:(UIColor *)originalColor alpha:(CGFloat)alpha;
 @end

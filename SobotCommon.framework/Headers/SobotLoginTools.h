@@ -25,6 +25,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong) NSString *appVersion;
 @property(nonatomic,strong) NSString *deviceToken;
 @property(nonatomic,strong) NSString *factorVerifyCode;
+// =1时，为忽略密码登录
+@property(nonatomic,assign) int ignoreFlag;
 
 @end
 
