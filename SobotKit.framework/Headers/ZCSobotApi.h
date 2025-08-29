@@ -266,6 +266,20 @@ NS_ASSUME_NONNULL_BEGIN
 // 关闭智齿页面
 +(void)closeSobotPage;
 
+
+/// 在不进入SDK页面，获取离线消息数、未确认消息数 和本地记录未读消息数
+/// 如果调用该方法时，消息通道是建立的，还没有断开，还能搜到IM下推消息，SDK收到消息后会给服务端发送确认回执，
+/// - Parameter partnerid: 对接ID
+/// - Parameter appkey: appkey
+/// - Parameter ResultBlock: 回调结果
+///      object 接口返回的全部数据
+///      unReadSize  本地记录的未读消息数 进入SDK页面会清空
+///      offlineSize  离线消息数
+///      unAckSize 未确认消息数
+///      message 收到最后一条消息内容 （eg:您收到了一条新消息）
+///      time  收到最后一条消息的时间戳 （未读消息、离线消息、未确认消息 三者比较取时间为最后的一条消息）
+///      totalSize 总数 = unReadSize + unAckSize + unReadSize
++(void)getOfflineMsgAndUnAckMsgWith:(NSString *)partnerid appkey:(NSString*)appkey resultBlock:(void (^)(NSDictionary *object, NSString *message,int unReadSize,int offlineSize,int unAckSize,NSString *time,int totalSize))ResultBlock;
 @end
 
 NS_ASSUME_NONNULL_END

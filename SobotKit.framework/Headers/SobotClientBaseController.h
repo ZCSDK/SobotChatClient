@@ -37,7 +37,8 @@ typedef NS_ENUM(NSInteger,ZCPageCloseType) {
     ZC_CloseHelpCenter  = 3, // 帮助中心
     ZC_CloseChatList  = 4, // 电商消息中心
     ZC_PhoneCustomerService  = 5, // 电话联系客服
-    ZC_HelpCenterViewDidLoad  = 6, // 帮助中心打开
+    ZC_HelpCenterViewDidLoad  = 6, // 帮助中心ViewDidLoad方法调用时机
+    ZC_ChatVCViewDidLoad  = 7, // 聊天页面ViewDidLoad方法调用时机
 };
 NS_ASSUME_NONNULL_BEGIN
 

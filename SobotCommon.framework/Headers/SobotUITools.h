@@ -234,6 +234,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 // 获取最大的高度
 +(CGFloat)getMaxHeightContain:(NSString *)string font:(UIFont *)font width:(CGFloat) width;
+
++(NSString*)getSobotUrlRegular;
++(NSString*)getSobotTelRegular;
 @end
 
 NS_ASSUME_NONNULL_END

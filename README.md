@@ -1,6 +1,12 @@
 # SobotChatClient
 智齿SDK_iOS V6 pod
 
+## SDK 4.2.8 版本更新说明[2025-08-26] 
+1【新增】获取离线消息数和未确认消息数API    
+2 【优化】SDK 切换机器人 选项展示当前选中状态    
+3【新增】大模型机器人：语义结束会话和转人工至指定组    
+
+
 ## SDK 4.2.7.1 版本更新说明[2025-08-12]  
 1.【新增】监听帮助中心调用viewDidLoad方法的枚举“ZC_HelpCenterViewDidLoad”
   

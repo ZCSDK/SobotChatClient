@@ -992,6 +992,9 @@ NS_ASSUME_NONNULL_BEGIN
 // 是否显示发送者信息
 @property (nonatomic , assign) BOOL isShowSenderFlag;
 
+// 紧跟着的下一个是否显示头像内容
+@property (nonatomic , assign) BOOL isNextShowSenderFlag;
+
 // 点踩提交状态  提交状态 点踩是否提交 0-未标记 1-未提交 2-已提交
 @property(nonatomic,copy) NSString *submitStatus;
 
@@ -1126,3 +1129,5 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 NS_ASSUME_NONNULL_END
+
+
