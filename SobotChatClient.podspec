@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
 
 s.name         = "SobotChatClient"
-s.version      = "4.2.8"
+s.version      = "4.2.13"
 s.summary      = "SobotSDK V6"
 
 s.description      = <<-DESC

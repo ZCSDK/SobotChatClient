@@ -95,6 +95,8 @@ typedef NS_ENUM(NSInteger,ZCShowStatus) {
     ZCShowStatusClearLockMsgBtn = 40,// 发送消息 清理掉新消息按钮
     /** 设置输入框引导排队文案 */
     ZCSetKeyBoardTextViewChangeTip          = 41,
+    ZCShowStatusAIMessageChanged   = 43,  // 大模型机器人消息 更新点踩点赞
+
 };
 
 typedef NS_ENUM(NSInteger,ZCInitStatus) {

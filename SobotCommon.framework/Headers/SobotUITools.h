@@ -67,6 +67,15 @@ NS_ASSUME_NONNULL_BEGIN
 // 读取图片资源
 +(UIImage *)getSysImageByName:(NSString *)imageName;
 +(UIImage *)getSysImageByName:(NSString *)imageName bundleName:(NSString *) bundleName;
+
+
+
+/// 加载gif data
+/// - Parameters:
+///   - imageName: git名称，不要后缀
+///   - bundleName: 当前bundle的名称
++(NSData *)getSysGifDataByName:(NSString *)imageName bundleName:(NSString *) bundleName;
+
 // 读取图片资源
 +(UIImage *)getSysImageByName:(NSString *)imageName bundle:(NSBundle * __nullable) budle;
 

@@ -766,9 +766,22 @@ typedef void(^SobotKitResultBlock)(ZCNetWorkCode code,id _Nullable obj,NSDiction
                         start:(void(^)(NSString *urlString)) startBlock
                       success:(void(^)(NSDictionary *dict,ZCNetWorkCode sendCode))successBlock
                        failed:(void(^)(NSString *errorMessage,ZCNetWorkCode errorCode))failedBlock
+                     finish:(void(^)(NSString *jsonString)) finishBlock DEPRECATED_MSG_ATTRIBUTE("use getVisitorHelpConfig:");
+
+
+/// 4.3.0开始查询访客配置信息
+/// 新增了初始化的所有参数识别
+/// - Parameters:
+///   - initInfo: 用户参数参数，（app_key和partnerid必须设置）
+///   - startBlock: startBlock description
+///   - successBlock: successBlock description
+///   - failedBlock: failedBlock description
+///   - finishBlock: finishBlock description
++(void)getVisitorHelpConfig:(ZCLibInitInfo *)initInfo
+                        start:(void(^)(NSString *urlString)) startBlock
+                      success:(void(^)(NSDictionary *dict,ZCNetWorkCode sendCode))successBlock
+                       failed:(void(^)(NSString *errorMessage,ZCNetWorkCode errorCode))failedBlock
                      finish:(void(^)(NSString *jsonString)) finishBlock;
-
-
 
 
 /// 回调前台，检测当前用户是否已经离线

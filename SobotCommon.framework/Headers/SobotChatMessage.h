@@ -26,6 +26,7 @@ typedef NS_ENUM(NSInteger,SobotMessageType) {
     SobotMessageTypeStartSound = -4,//正在录音
     SobotMessageTypeCancelSound = -5,//取消正在闪烁的语音cell
     SobotMessageTypeShowAiLoading = -6,// 大模型机器人开始回答前，要展示一条加载loading动效的消息
+    SobotMessageTypeGroupList = -7,// V7新版 技能组消息
     SobotMessageTypeRobotRealuate = 25,// 机器人点踩 标签 原因  显示的cell  25 是系统消息，当前历史记录接口过滤 只显示机器人点踩的配置数据
 };
 
@@ -730,6 +731,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 @interface SobotChatMessage : SobotBaseEntity
+
+// 技能组列表数据
+@property(nonatomic,strong) NSMutableArray *groupListArray;
+// 技能组存储临时数据 原机器人转人工消息model
+@property(nonatomic,strong) SobotChatMessage *groupModel;
+// 存储技能组转人工的类型
+@property(nonatomic,assign) NSInteger trunType;
+
 // 是一问多答的消息 和人工客服回复的新消息 是否要加锁
 @property(nonatomic,assign) BOOL isLockMsg;
 

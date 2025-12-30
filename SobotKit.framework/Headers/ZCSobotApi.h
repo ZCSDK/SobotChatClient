@@ -34,12 +34,12 @@ NS_ASSUME_NONNULL_BEGIN
 +(void)initSobotSDK:(NSString *) appkey host:(NSString *) apiHost result:(void (^)(id object))resultBlock;
 
 
-
-/// 主动获取访客信息，必须配置了appkey和partnerid以后调用
+///
+/// 主动获取访客信息设置，
+/// @param initInfo 可以传从[ZCLibClient getZCLibClient].libInitInfo，至少需要配置appkey和partnerid
 /// @param resultBlock resultBlock description
 /// code = 0，成功，可直接进入使用
-+(void)getVisitorConfigInfo:(void (^)(id object,int code))resultBlock;
-
++(void)getVisitorConfigInfo:(ZCLibInitInfo *)initInfo result:(void (^)(id object,int code))resultBlock;
 
 /// 启动聊天页面，简单处理
 /// @param info 自定义UI属性

@@ -46,7 +46,7 @@
 		</data>
 		<key>Headers/ZCSobotApi.h</key>
 		<data>
-		Oz6sbS7Q0Q+BFZ0xJXhsApNzPnA=
+		XZQyfqb4e7jVYsx8lD1d6KKjE0Q=
 		</data>
 		<key>Headers/ZCTitleView.h</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Headers/ZCUICore.h</key>
 		<data>
-		Uwdc95tYJV9bPij6eDi/MSLmyQs=
+		lDtUXzGaTROI0UopcVr975iWseM=
 		</data>
 		<key>Headers/ZCUIPlaceHolderTextView.h</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		guO/DUShiyc+SQGL2QVhvlHVFSU=
+		xGaca+a9dVRYuhK+QsE/YZxmOpk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -193,11 +193,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Oz6sbS7Q0Q+BFZ0xJXhsApNzPnA=
+			XZQyfqb4e7jVYsx8lD1d6KKjE0Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			LYgk7CQhCXZKz8qJNFBgEW6n/TIO4kEYoR2kMTVnBTU=
+			aRQho7ZToXqBkq9PnZIJH0EK3K0uFr2LeFH3+o0hitU=
 			</data>
 		</dict>
 		<key>Headers/ZCTitleView.h</key>
@@ -215,11 +215,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Uwdc95tYJV9bPij6eDi/MSLmyQs=
+			lDtUXzGaTROI0UopcVr975iWseM=
 			</data>
 			<key>hash2</key>
 			<data>
-			udXGRQleXiLUg4UKqvdw/E/zUhzcgTvetO9Gf/WSUX4=
+			7x2ibA3IsanEZk0c5KZZnwaOSt3Xj8MwEgkmMGW+w+Q=
 			</data>
 		</dict>
 		<key>Headers/ZCUIPlaceHolderTextView.h</key>
